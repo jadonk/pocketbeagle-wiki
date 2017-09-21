@@ -63,3 +63,8 @@ How did we make PocketBeagle® so small and affordable?
 
 PocketBeagle is built around Octavo Systems’ System-In-Package that integrates a high-performance TI AM3358 processor, 512MB of DDR3, power management, non-volatile serial memory and over 140 passive components into a single package. This integration saves cost and a small amount of power by eliminating several packages that would otherwise need to be placed on the board, but more notably it saves the space of all those packages and simplifies our board design so we can focus on the user experience.
 
+==How==
+===How do I get additional USB connections?===
+
+===How do I get connected to the Internet?===
+
