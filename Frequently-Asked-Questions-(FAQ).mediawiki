@@ -1,2 +1,6 @@
 __TOC__
+===What does the board look like?===
+[[images/PocketBeagle_Front_BW.jpg]]
+[[images/PocketBeagle_Back_BW.jpg]]
+
 ===What is the pinout for the expansion headers?===
