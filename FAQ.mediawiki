@@ -42,14 +42,14 @@ It is possible to modify the bootloader, device tree and boot scripts on existin
 Read more at [[Software status]].
 
 ==Why==
-===Why is PocketBeagle® good for a novice?===
+===Why is PocketBeagle good for a novice?===
 PocketBeagle is affordable, enabling you to dedicate one to live permanently in each of your different projects. Even though PocketBeagle® is very low-cost, it is made with top quality engineering and manufacturing. In the unlikely event it is damaged due to misuse, it won’t cost much to replace.
 PocketBeagle® will boot directly from on-board ROM that cannot be accidentally modified and will load software via USB, serial or microSD cards. A Chrome plug-in or cross-platform Node.JS Electron app can boot your board to add a Linux distribution to an attached microSD card. This means you can create reliably reproducible instructions on using the board, because it will behave the same way every time.
 
 PocketBeagle runs GNU/Linux, which means you can leverage many different high-level programming languages and a large body of drivers that prevent you from needing to write a lot of your own software.
 PocketBeagle doesn’t require you to install a bunch of tools on your host computer. You develop directly in your web browser, a tool you already know, and most users won’t ever even need administrator privileges on their host computer.
 
-===Why is PocketBeagle® good for a professional?===
+===Why is PocketBeagle good for a professional?===
 PocketBeagle® utilizes a simple open-source hardware design making it easy for you to take control of your own destiny, either customizing the board or sourcing and manufacturing it in any method you’d like. The processor is well-documented and available broadly, avoiding lurking issues that might otherwise be difficult to resolve.
 PocketBeagle® avoids consuming precious hardware resources, leaving them available for your design goals while still exposing features for expansion.
 
@@ -57,7 +57,7 @@ Most importantly, PocketBeagle respects your time and helps you avoid risk by pr
 
 PocketBeagle support is pushed upstream in Linux and u-boot such that you’ll always be able to leverage the latest features and bug fixes in those projects.
 
-===Why does PocketBeagle® really matter anyway?===
+===Why does PocketBeagle really matter anyway?===
 The BeagleBoard.org Foundation has the goal of increasing computer, electronics and robotics literacy at a point they are critical in human history. PocketBeagle® increases access to inspirational hardware and we believe hands-on experience is the best way to build understanding and empowerment. We also believe in empowerment at all ages and experience, so we give you the tools to take our designs forward.
 How did we make PocketBeagle® so small and affordable?
 
