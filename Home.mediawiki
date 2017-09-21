@@ -1,0 +1,12 @@
+Welcome to the PocketBeagle wiki!
+
+https://beagleboard.org/pocket
+
+PocketBeagle® is an ultra-tiny-yet-complete Linux-enabled, community-supported, open-source USB-key-fob computer. PocketBeagle features an incredible low cost, slick design and simple usage, making PocketBeagle® the ideal development board for beginners and professionals alike. You develop directly in a web browser and PocketBeagle® can easily be set back to factory conditions, leaving you free to experiment.
+
+===Key features:===
+* Low cost Linux computer with tremendous expansibility
+* Opportunity to learn many programming aspects from educators on-line
+* Openness and flexibility tear-down limits on your imagination
+
+Head on over to the [[FAQ]].
