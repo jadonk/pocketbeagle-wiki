@@ -4,3 +4,4 @@ __TOC__
 [[images/PocketBeagle_Back_BW.jpg]]
 
 ===What is the pinout for the expansion headers?===
+[[images/PocketBeagle_pinout.png]]
