@@ -8,3 +8,5 @@ PocketBeagle® is an ultra-tiny-yet-complete Linux-enabled, community-supported,
 * Low cost Linux computer with tremendous expansibility
 * Opportunity to learn many programming aspects from educators on-line
 * Openness and flexibility tear-down limits on your imagination
+
+Head on over to the [[FAQ]].
