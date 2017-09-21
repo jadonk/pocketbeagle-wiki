@@ -7,6 +7,9 @@ __TOC__
 ===What is the board size?===
 56mm x 35mm x 5mm
 
+===What is a USB key-fob computer?===
+PocketBeagle® is the size of a tiny mint-tin (35mm x 56mm x 5mm), less than half the size of the larger mint-tin or credit-card sized BeagleBone® Black (55mm x 86mm). Unlike a desktop computer where you connect a monitor, keyboard and mouse, PocketBeagle® is made to live inside your project and enables you to define its interfaces. PocketBeagle® is easily programmed through a web browser running on any other connected desktop.
+
 ===What is the pinout for the expansion headers?===
 [[images/PocketBeagle_pinout.png]]
 
