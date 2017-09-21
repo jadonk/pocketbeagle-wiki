@@ -5,3 +5,18 @@ __TOC__
 
 ===What is the pinout for the expansion headers?===
 [[images/PocketBeagle_pinout.png]]
+
+===What is the price?===
+BeagleBoard.org Foundation doesn't set pricing, but we expect it to be available at $25 through our major distributors.
+
+===Is this open hardware and what is the design in?===
+Yes, it is fully open hardware.
+
+The production design was done in [https://github.com/beagleboard/pocketbeagle/tree/master/EAGLE EAGLE].
+
+We also validated an implementation in [https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD KiCAD].
+
+We are in the process of completing the conversion to [https://upverter.com/Beagle/4178234c2cd6fe88/Pocket-Beagle---NEW/ Upverter], but have a couple of issues to clean up.
+
+===What is the status of the software?===
+It is possible to modify the bootloader, device tree and boot scripts on existing BeagleBone images and we are in the process of releasing an updated image ready to boot. However, we have big plans. This hardware release is just the start and expect the software experience to improve radically over the next few months. We'll be sharing development plans on https://beagleboard.org/discuss.
