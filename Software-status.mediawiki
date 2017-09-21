@@ -1,0 +1,10 @@
+I'm going to work on getting this clarified to everyone in the next few days.
+
+* bootloader patch for boot - WIP
+* bootloader patch for BeagleBoot scripting - WIP
+* kernel device tree patch - WIP
+* boot scripts - done
+* BoneScript - WIP
+* Adafruit-BBIO - WIP
+* BeagleBoot - WIP
+* 
