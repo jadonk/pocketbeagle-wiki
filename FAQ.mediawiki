@@ -4,6 +4,9 @@ __TOC__
 [[images/PocketBeagle_Front_BW.jpg]]
 [[images/PocketBeagle_Back_BW.jpg]]
 
+===What is the board size?===
+56mm x 35mm x 5mm
+
 ===What is the pinout for the expansion headers?===
 [[images/PocketBeagle_pinout.png]]
 
