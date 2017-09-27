@@ -7,4 +7,6 @@ I'm going to work on getting this clarified to everyone in the next few days.
 * BoneScript - WIP
 * Adafruit-BBIO - WIP
 * BeagleBoot - WIP
-* 
+* Botspeak for PRU - WIP
+* Firmata daemon for Botspeak - WIP
+
