@@ -1,7 +1,7 @@
 Some of these Click boards require U-Boot Overlays, double check your installed version:
 ```
-debian@beaglebone:~$ dpkg --list | grep bb-cape-overlays
-ii  bb-cape-overlays                      4.4.20170927.0-0rcnee1~stretch+20170927       armhf        Device tree overlays for Beaglebone.
+debian@beaglebone:~$ dpkg -s bb-cape-overlays | grep '^Version:'
+Version: 4.4.20170927.0-0rcnee1~stretch+20170927
 ```
 
 U-Boot can currently load up to 4 overlays thru /boot/uEnv.txt
@@ -12,8 +12,8 @@ U-Boot can currently load up to 4 overlays thru /boot/uEnv.txt
 #uboot_overlay_addr2=/lib/firmware/<file2>.dtbo
 #uboot_overlay_addr3=/lib/firmware/<file3>.dtbo
 ```
-To load an overlay, remove the # and replace the <fileX>
 
+To load an overlay, remove the # and replace the <fileX>
 
 UART:
 
@@ -34,6 +34,7 @@ PB-I2C2-RTC-6-CLICK.dtbo
 Ethernet:
 
 https://shop.mikroe.com/eth-click
+
 U-Boot Overlay: (minimum version: 4.4.20170927.0-0rcnee1)
 ```
 PB-SPI0-ETH-CLICK.dtbo
