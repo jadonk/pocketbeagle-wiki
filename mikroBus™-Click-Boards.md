@@ -3,6 +3,8 @@ Some of these Click boards require U-Boot Overlays, double check your installed 
 debian@beaglebone:~$ dpkg -s bb-cape-overlays | grep '^Version:'
 Version: 4.4.20170927.0-0rcnee1~stretch+20170927
 ```
+Source: https://github.com/beagleboard/bb.org-overlays/tree/master/src/arm
+
 
 U-Boot can currently load up to 4 overlays thru /boot/uEnv.txt
 
