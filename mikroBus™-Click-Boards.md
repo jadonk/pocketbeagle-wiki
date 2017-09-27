@@ -1,4 +1,4 @@
-[mikroBUS](https://www.mikroe.com/mikrobus/) and, by extension "mikroBUS Click boards", are trademarks of MikroElektronika. We do not make any claims of compatibility nor adherence to their open standard. We've just seen that many of the Click boards "just work".
+[mikroBUS](https://www.mikroe.com/mikrobus/) and, by extension "mikroBUS Click boards", are trademarks of MikroElektronika. We do not make any claims of compatibility nor adherence to their specification. We've just seen that many of the Click boards "just work".
 
 Some of these Click boards require the latest version of bb-cape-overlays, so make sure to double check your installed version:
 ```
