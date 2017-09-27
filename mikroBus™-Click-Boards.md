@@ -1,4 +1,4 @@
-Some of these Click boards require U-Boot Overlays, double check your installed version:
+Some of these Click boards require the latest version of bb-cape-overlays, so make sure to double check your installed version:
 ```
 debian@beaglebone:~$ dpkg -s bb-cape-overlays | grep '^Version:'
 Version: 4.4.20170927.0-0rcnee1~stretch+20170927
