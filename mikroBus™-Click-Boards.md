@@ -19,13 +19,14 @@ U-Boot can currently load up to 4 overlays thru /boot/uEnv.txt
 
 To load an overlay, remove the # and replace the fileX with the matching name.
 
-UART:
+# UART:
 
 https://shop.mikroe.com/usb-uart-click
+
 bb-cape-overlays: (none required)
 
 
-RTC:
+# RTC:
 
 https://shop.mikroe.com/rtc-click
 
@@ -43,7 +44,7 @@ PB-I2C1-RTC-6-CLICK.dtbo
 PB-I2C2-RTC-6-CLICK.dtbo
 ```
 
-Ethernet:
+# Ethernet:
 
 https://shop.mikroe.com/eth-click
 
