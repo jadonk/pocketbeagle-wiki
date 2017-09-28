@@ -27,6 +27,14 @@ bb-cape-overlays: (none required)
 
 RTC:
 
+https://shop.mikroe.com/rtc-click
+
+bb-cape-overlays: (minimum version: 4.4.20170928.1-0rcnee1)
+```
+PB-I2C1-RTC-CLICK.dtbo
+PB-I2C2-RTC-CLICK.dtbo
+```
+
 https://shop.mikroe.com/rtc6-click
 
 bb-cape-overlays: (minimum version: 4.4.20170927.0-0rcnee1)
