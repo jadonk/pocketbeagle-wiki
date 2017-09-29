@@ -68,8 +68,8 @@ PocketBeagle is built around Octavo Systems’ System-In-Package that integrates
 [[images/PocketBeagle_microUSB_bb.png]]
 
 ===How do I get connected to the Internet?===
-1) Many host computers support tethering. Configure your host to utilize tethering then use the virtual serial port to configure your PocketBeagle to acquire networking information from your host rather than providing it to your host. See the on-line [https://groups.google.com/d/msgid/beagleboard/CANN_KV4n36OF%2BM5YdfvEsAo%3DXPSdSYu8Fpq5u_dsFmFSu%2B-YxA%40mail.gmail.com?utm_medium=email&utm_source=footer discussion].
-2) The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but [https://www.amazon.com/Micro-Cable-Samsung-Player-OTHERS/dp/B00CXAC1ZW microUSB Host/OTG cables] sometimes include the power input.
-3) It is possible to add an additional USB port as described above.
-4) You can utilize a mikroBUS Click Ethernet or wireless module.
-5) There are many ways to utilize the expansion interface to create your own networking solution.
+# Many host computers support tethering. Configure your host to utilize tethering then use the virtual serial port to configure your PocketBeagle to acquire networking information from your host rather than providing it to your host. See the on-line [https://groups.google.com/d/msgid/beagleboard/CANN_KV4n36OF%2BM5YdfvEsAo%3DXPSdSYu8Fpq5u_dsFmFSu%2B-YxA%40mail.gmail.com?utm_medium=email&utm_source=footer discussion].
+# The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but [https://www.amazon.com/Micro-Cable-Samsung-Player-OTHERS/dp/B00CXAC1ZW microUSB Host/OTG cables] sometimes include the power input.
+# It is possible to add an additional USB port as described [https://github.com/beagleboard/pocketbeagle/wiki/FAQ#how-do-i-get-additional-usb-connections above].
+# You can utilize a mikroBUS Click Ethernet or wireless module.
+# There are many ways to utilize the expansion interface to create your own networking solution.
