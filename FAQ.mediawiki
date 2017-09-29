@@ -65,7 +65,7 @@ PocketBeagle is built around Octavo Systems’ System-In-Package that integrates
 
 ==How==
 ===How do I get additional USB connections?===
-[[images/PocketBeagle_microUSB.svg]]
+[[images/PocketBeagle_microUSB_bb.svg]]
 
 ===How do I get connected to the Internet?===
 
