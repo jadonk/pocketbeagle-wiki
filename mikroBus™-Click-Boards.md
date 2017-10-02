@@ -36,6 +36,14 @@ PB-I2C1-RTC-CLICK.dtbo
 PB-I2C2-RTC-CLICK.dtbo
 ```
 
+https://shop.mikroe.com/rtc-5-click
+
+bb-cape-overlays: (minimum version: 4.4.20171002.0-0rcnee1)
+```
+PB-SPI0-RTC-5-CLICK.dtbo
+PB-SPI1-RTC-5-CLICK.dtbo
+```
+
 https://shop.mikroe.com/rtc6-click
 
 bb-cape-overlays: (minimum version: 4.4.20170927.0-0rcnee1)
