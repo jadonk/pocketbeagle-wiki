@@ -65,8 +65,7 @@ PocketBeagle is built around Octavo Systems’ System-In-Package that integrates
 
 ==How==
 ===How do I get additional USB connections?===
-# Connect a microUSB breakout. By default in the current software, the system should be configured to use this port as a host. You'll need to modify the device tree to make it a client as of now.
-[[images/PocketBeagle_microUSB_bb.png]]
+# Connect a microUSB breakout. By default in the current software, the system should be configured to use this port as a host. You'll need to modify the device tree to make it a client as of now<br>[[images/PocketBeagle_microUSB_bb.png]]
 # Connect a USB type-A breakout. I still need a picture for this. The big delta is that ID and GND should be connected as the type-A breakout is only 4 pins and ID should be grounded to force host mode.
 
 ===How do I get connected to the Internet?===
