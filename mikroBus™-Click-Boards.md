@@ -76,3 +76,14 @@ https://shop.mikroe.com/mpu-9dof-click
 PB-I2C1-MPU-9DOF-CLICK.dtbo
 PB-I2C2-MPU-9DOF-CLICK.dtbo
 ```
+
+# Sensors:
+
+https://shop.mikroe.com/weather-click
+
+* bb-cape-overlays: (minimum version: 4.4.20171004.1-0rcnee1)
+* Kernel: (minimum version: 4.4/4.9/4.14)
+```
+PB-I2C1-WEATHER-CLICK.dtbo
+PB-I2C2-WEATHER-CLICK.dtbo
+```
