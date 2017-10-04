@@ -1,3 +1,10 @@
+# UART
+* ttyS1
+```
+config-pin P2_09 uart
+config-pin P2_11 uart
+```
+
 # PWM
 
 * ehrpwm0A: P1_08 & P1_36 (shared)
