@@ -1,4 +1,6 @@
 # UART
+* ttyS0 (getty console by default)
+
 * ttyS1 P2_09 = uart1_txd, P2_11 = uart1_rxd
 ```
 config-pin P2_09 uart
