@@ -57,3 +57,20 @@ echo 10000 > ${ocp}/48304000.epwmss/48304200.pwm/pwm/pwmchip*/pwm1/duty_cycle
 echo 1 > ${ocp}/48304000.epwmss/48304200.pwm/pwm/pwmchip*/pwm1/enable
 
 ```
+
+# CAN
+
+* dcan1_rx: P2_09 or P2_25
+```
+config-pin P2_09 can
+#or
+config-pin P2_25 can
+```
+
+* dcan1_tx: P2_11 or P2_27
+```
+config-pin P2_11 can
+#or
+config-pin P2_27 can
+```
+
