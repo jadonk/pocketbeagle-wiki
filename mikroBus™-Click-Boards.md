@@ -24,13 +24,25 @@ To load an overlay, remove the # and replace the fileX with the matching name.
 https://shop.mikroe.com/usb-uart-click
 
 bb-cape-overlays: (none required)
+Kernel: (minimum version: 4.4/4.9/4.14)
 
+# Ethernet:
+
+https://shop.mikroe.com/eth-click
+
+bb-cape-overlays: (minimum version: 4.4.20170927.0-0rcnee1)
+Kernel: (minimum version: 4.4/4.9/4.14)
+```
+PB-SPI0-ETH-CLICK.dtbo
+PB-SPI1-ETH-CLICK.dtbo
+```
 
 # RTC:
 
 https://shop.mikroe.com/rtc-click
 
 bb-cape-overlays: (minimum version: 4.4.20170928.1-0rcnee1)
+Kernel: (minimum version: 4.4/4.9/4.14)
 ```
 PB-I2C1-RTC-CLICK.dtbo
 PB-I2C2-RTC-CLICK.dtbo
@@ -39,6 +51,7 @@ PB-I2C2-RTC-CLICK.dtbo
 https://shop.mikroe.com/rtc-5-click
 
 bb-cape-overlays: (minimum version: 4.4.20171002.0-0rcnee1)
+Kernel: (minimum version: 4.4/4.9/4.14)
 ```
 PB-SPI0-RTC-5-CLICK.dtbo
 PB-SPI1-RTC-5-CLICK.dtbo
@@ -47,18 +60,19 @@ PB-SPI1-RTC-5-CLICK.dtbo
 https://shop.mikroe.com/rtc6-click
 
 bb-cape-overlays: (minimum version: 4.4.20170927.0-0rcnee1)
+Kernel: (minimum version: 4.4/4.9/4.14)
 ```
 PB-I2C1-RTC-6-CLICK.dtbo
 PB-I2C2-RTC-6-CLICK.dtbo
 ```
 
-# Ethernet:
+# Motion:
 
-https://shop.mikroe.com/eth-click
+https://shop.mikroe.com/mpu-9dof-click
 
-bb-cape-overlays: (minimum version: 4.4.20170927.0-0rcnee1)
+bb-cape-overlays: (minimum version: 4.4.20171004.0-0rcnee1)
+Kernel: (minimum version: 4.14.0-rc3-ti-r1)
 ```
-PB-SPI0-ETH-CLICK.dtbo
-PB-SPI1-ETH-CLICK.dtbo
+PB-I2C1-MPU-9DOF-CLICK.dtbo
+PB-I2C2-MPU-9DOF-CLICK.dtbo
 ```
-
