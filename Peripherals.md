@@ -1,5 +1,5 @@
 # UART
-* ttyS1
+* ttyS1 P2_09 = uart1_txd, P2_11 = uart1_rxd
 ```
 config-pin P2_09 uart
 config-pin P2_11 uart
