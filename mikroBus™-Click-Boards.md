@@ -40,7 +40,7 @@ PB-SPI1-ETH-CLICK.dtbo
 https://shop.mikroe.com/eth-wiz-click
 
 * bb-cape-overlays: (minimum version: 4.4.20171005.0-0rcnee1)
-* Kernel: (minimum version: 4.14.0-rc3-ti-r2)
+* Kernel: (minimum version: 4.9.53-ti-r67/4.14.0-rc3-ti-r2)
 ```
 PB-SPI0-ETH-WIZ-CLICK.dtbo
 PB-SPI1-ETH-WIZ-CLICK.dtbo
