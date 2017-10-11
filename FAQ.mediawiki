@@ -74,3 +74,12 @@ PocketBeagle is built around Octavo Systems’ System-In-Package that integrates
 # It is possible to add an additional USB port as described [https://github.com/beagleboard/pocketbeagle/wiki/FAQ#how-do-i-get-additional-usb-connections above].
 # You can utilize a [https://github.com/beagleboard/pocketbeagle/wiki/mikroBus%E2%84%A2-Click-Boards mikroBUS Click] Ethernet or wireless module.
 # There are many ways to utilize the expansion interface to create your own networking solution.
+
+===How do I boot the PocketBeagle?===
+The standard [http://beagleboard.org/getting-started getting started] instructions for a normal Beagle work with PocketBeagle, briefly:
+# Download image from [https://beagleboard.org/latest-images official releases]
+# Write to SD card (etcher, dd, or win32diskimager)
+# Insert into beagle
+# Power up via USB
+# Wait for network adapter to appear and DHCP address assigned
+# ssh or browse to 192.168.6.2
