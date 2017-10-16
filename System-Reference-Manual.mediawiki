@@ -14,11 +14,11 @@
 
 '''THIS DOCUMENT '''
 
-This is some text about the disclaimers and warrenty
+''This is some text about the disclaimers and warranty''
 
 = '''1.0 Introduction ''' =
 
-This document is the '''System Reference Manual''' for the PocketBeagle and covers its use and design. These are some nice introductory sentences regarding the value proposition of the PocketBeagle and BeagleBoard.org
+This document is the '''System Reference Manual''' for the PocketBeagle and covers its use and design. ''These are some nice introductory sentences regarding the value proposition of the PocketBeagle and BeagleBoard.org''
 
 This design is subject to change without notice as we will work to keep improving the design as the product matures based on feedback and experience. Software updates will be frequent and will be independent of the hardware revisions and as such not result in a change in the revision number.
 
@@ -45,25 +45,25 @@ This section describes the change history of this document and board. Document c
 '''By '''
 |-
 |
-A4
+PocketBone
+|
+OSH Park Project
+|
+April 18, 2016
+|
+MW
+|-
+|
+A1
 |
 Preliminary
 |
-January 4, 2013
+''February 14, 2017''
 |
-GC
+JK
 |-
 |
-A5
-|
-Production release
-|
-January 8.2013
-|
-GC
-|-
-|
-A5.1
+A2
 |
 1.<br>
 2.
@@ -88,24 +88,20 @@ April 23 2013
 
 === 2.2 Board Changes  ===
 
-==== 2.2.1 Rev C  ====
+==== 2.2.1 PocketBone  ====
 
-* Changed the eMMC from 2GB to 4GB.
+* ''Information and credit reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
 
-2GB devices are getting harder to get as they are being phased out. This required us to move to 4GB. We now have two sources for the device. This will however, require an increase in the price of the board.
+==== 2.2.2 Rev A1  ====
 
-==== 2.2.2 Rev B  ====
+* '' Changes from PocketBone to PocketBeagle ''
 
-* Changed the processor to the AM3358BZCZ100.
+==== 2.2.3 Rev A2  ====
 
-==== 2.2.3 Rev A6A  ====
-
-* Added connection from 32KHz OSC_GND to system ground and changed C106 to 1uF.
-* Changes C25 to 2.2uF. This resolved an issue we were seeing in a few boards where the board would not boot in 1 in 20 tries.
-* Change required PCB revision to B6.
+* '' Changes from A1 to A2 ''
 
 
-= '''3.0 Connecting Up Your BeagleBone Black ''' =
+= '''3.0 Connecting Up Your PocketBeagle ''' =
 
 This section provides instructions on how to hook up your board. Two scenarios will be discussed:
 
