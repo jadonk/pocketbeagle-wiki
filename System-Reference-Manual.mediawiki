@@ -65,32 +65,19 @@ JK
 |
 A2
 |
-1.<br>
-2.
+Production
 |
-Added information on Power button and the battery access points.<br>
-Final production released version.
+''September 11 2017''
 |
-April 1 2013
+JK
 |-
-|
-A5.2
-|
-1.<br>
-2.
-|
-Edited version.<br>
-Added numerous pictures of the Rev A5A board.
-|
-April 23 2013
-|-
-|
 
 === 2.2 Board Changes  ===
 
 ==== 2.2.1 PocketBone  ====
 
 * ''Information and credit reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
+Not sure that this really belongs in the board revision chart.  Perhaps there is another way that this project should be referenced in the SRM as a preliminary write up paragraph.
 
 ==== 2.2.2 Rev A1  ====
 
@@ -100,23 +87,19 @@ April 23 2013
 
 * '' Changes from A1 to A2 ''
 
-
 = '''3.0 Connecting Up Your PocketBeagle ''' =
 
 This section provides instructions on how to hook up your board. Two scenarios will be discussed:
 
 # Tethered to a PC and
-# As a standalone development platform in a desktop PC configuration.
+# ''As a standalone development platform in a desktop PC configuration.''
 
 === 3.1 What’s In the Box  ===
 
-In the box you will find three main items as shown in '''Figure 1'''.
+In the box you will find two items as shown in '''Figure 1'''.
 
-* BeagleBone Black
-* miniUSB to USB Type A Cable
-* Instruction card with link to the support WIKI address.
-
-This is sufficient for the tethered scenario and creates an out of box experience where the board can be used immediately with no other equipment needed.
+* PocketBeagle
+* Getting Started instruction card with link to the support URL.
 
 [[media/image7.jpg|574x399px]]
 
@@ -139,7 +122,10 @@ For an up-to-date list of confirmed working accessories please go to [http://eli
 
 === 3.3 Tethered To A PC  ===
 
-In this configuration, the board is powered by the PC via the provided USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IEx will not work properly. '''Figure 2''' shows this configuration.
+In this configuration, 
+* miniUSB to USB Type A Cable
+
+the board is powered by the PC via the provided USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IEx will not work properly. '''Figure 2''' shows this configuration.
 
 [[media/image8.jpg|632x166px]]
 
