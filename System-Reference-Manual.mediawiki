@@ -1,4 +1,4 @@
-[[media/PocketBeagle-size-compare-small.jpg|598x400px]]
+[[images/PocketBeagle-size-compare-small.jpg|598x400px]]
 
 '''PocketBeagle'''
 
