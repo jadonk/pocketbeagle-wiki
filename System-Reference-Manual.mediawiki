@@ -1,0 +1,15 @@
+[[media/image1.jpg|598x400px]]
+
+'''PocketBeagle'''
+
+'''System Reference Manual '''
+
+'''Revision A.x (on-line wiki edition)'''
+
+'''October 16, 2017'''
+
+'''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
+
+'''Contributing Editor: Nice Person's Name'''
+
+'''THIS DOCUMENT '''
