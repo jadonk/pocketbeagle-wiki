@@ -13,3 +13,75 @@
 '''Contributing Editor: Nice Person's Name'''
 
 '''THIS DOCUMENT '''
+
+This is some text about the disclaimers and warrenty
+
+= '''1.0 Introduction ''' =
+
+This document is the '''System Reference Manual''' for the PocketBeagle and covers its use and design. These are some nice introductory sentences regarding the value proposition of the PocketBeagle and BeagleBoard.org
+
+This design is subject to change without notice as we will work to keep improving the design as the product matures based on feedback and experience. Software updates will be frequent and will be independent of the hardware revisions and as such not result in a change in the revision number.
+
+Make sure you check the support Wiki frequently for the most up to date information.
+
+[https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
+
+= '''2.0 Change History ''' =
+
+This section describes the change history of this document and board. Document changes are not always a result of a board change. A board change will always result in a document change.
+
+=== 2.1 Document Change History  ===
+
+'''Table 1. Change History '''
+
+{|
+!
+'''Rev '''
+!
+'''Changes '''
+!
+'''Date '''
+!
+'''By '''
+|-
+|
+A4
+|
+Preliminary
+|
+January 4, 2013
+|
+GC
+|-
+|
+A5
+|
+Production release
+|
+January 8.2013
+|
+GC
+|-
+|
+A5.1
+|
+1.<br>
+2.
+|
+Added information on Power button and the battery access points.<br>
+Final production released version.
+|
+April 1 2013
+|-
+|
+A5.2
+|
+1.<br>
+2.
+|
+Edited version.<br>
+Added numerous pictures of the Rev A5A board.
+|
+April 23 2013
+|-
+|
