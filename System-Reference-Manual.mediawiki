@@ -107,25 +107,27 @@ In the box you will find two items as shown in '''Figure 1'''.
 
 === 3.2 Main Connection Scenarios  ===
 
-This section will describe how to connect the board for use. This section is basically a slightly more detailed description of the Quick Start Guide that came in the box. There is also a Quick Start Guide document on the board that should also be referred to. The intent here is that someone looking t purchase the board will be able to read this section and get a good idea as to what the initial set up will be like.
+This section will describe how to connect the board for use. Information can also be found on the Quick Start Guide that came in the box. There is also a Quick Start Guide document on the board itself.
 
-The board can be configured in several different ways, but we will discuss the two most common scenarios as described in the Quick Start Guide card that comes in the box.
+The board can be configured in several different ways, but we will discuss the two most common scenarios.
 
-* Tethered to a PC via the USB cable o Board is accessed as a storage drive o Or a RNDIS Ethernet connection.
-* Standalone desktop o Display o Keyboard and mouse
-
-o External 5V power supply
+* Tethered to a PC via the USB cable
+** Board is accessed as a storage drive
+* Standalone desktop
+** Display
+** Keyboard and mouse
 
 Each of these configurations is discussed in general terms in the following sections.
 
-For an up-to-date list of confirmed working accessories please go to [http://elinux.org/BeagleBone_Black_Accessories ''http://elinux.org/BeagleBone_Black_Accessories'']
+'''will we have this?''': For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
 
 === 3.3 Tethered To A PC  ===
 
-In this configuration, 
+In this configuration, you will need the following additional items: 
 * miniUSB to USB Type A Cable
+* microSD card, 4K minimum
 
-the board is powered by the PC via the provided USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IEx will not work properly. '''Figure 2''' shows this configuration.
+the board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 2''' shows this configuration.
 
 [[media/image8.jpg|632x166px]]
 
