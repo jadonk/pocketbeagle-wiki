@@ -76,7 +76,7 @@ JK
 
 ==== 2.2.1 PocketBone  ====
 
-* ''Information and credit reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
+* ''Information and credit the reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
 Not sure that this really belongs in the board revision chart.  Perhaps there is another way that this project should be referenced in the SRM as a preliminary write up paragraph.
 
 ==== 2.2.2 Rev A1  ====
@@ -92,7 +92,7 @@ Not sure that this really belongs in the board revision chart.  Perhaps there is
 This section provides instructions on how to hook up your board. Two scenarios will be discussed:
 
 # Tethered to a PC and
-# ''As a standalone development platform in a desktop PC configuration.''
+# As a standalone development platform in a desktop PC configuration.''need to validate''
 
 === 3.1 What’s In the Box  ===
 
@@ -101,7 +101,7 @@ In the box you will find two items as shown in '''Figure 1'''.
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 
-[[media/image7.jpg|574x399px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|451x206px]]
 
 '''Figure 1. In The Box '''
 
