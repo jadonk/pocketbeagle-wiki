@@ -6,7 +6,7 @@
 
 '''Revision A.x (on-line wiki edition)'''
 
-'''October 16, 2017'''
+'''October 17, 2017'''
 
 '''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
 
@@ -76,6 +76,7 @@ JK
 
 ==== 2.2.1 PocketBone  ====
 
+<blockquote> what do we want to say about the PocketBone and Rev A1 of the PocketBeagle </blockquote>
 * ''Information and credit the reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
 Not sure that this really belongs in the board revision chart.  Perhaps there is another way that this project should be referenced in the SRM as a preliminary write up paragraph.
 
@@ -92,15 +93,16 @@ Not sure that this really belongs in the board revision chart.  Perhaps there is
 This section provides instructions on how to hook up your board. Two scenarios will be discussed:
 
 # Tethered to a PC and
-# As a standalone development platform in a desktop PC configuration.''need to validate''
+# As a standalone development platform in a desktop PC configuration. <blockquote>need to validate set up and procedure for standalone</blockquote>
 
-=== 3.1 What’s In the Box  ===
+=== 3.1 What’s In the Package  ===
 
-In the box you will find two items as shown in '''Figure 1'''.
+In the package you will find two items as shown in '''Figure 1'''.
 
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle package.jpg|100px|In the Package]]
+
+<blockquote> insert photo of package and both sides of getting started card </blockquote>
 
 '''Figure 1. In The Package '''
 
@@ -118,7 +120,7 @@ The board can be configured in several different ways, but we will discuss the t
 
 Each of these configurations is discussed in general terms in the following sections.
 
-'''will we have this?''': For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
+<blockquote> will we have this type of link </blockquote> : For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
 
 === 3.3 Tethered To A PC  ===
 
@@ -137,10 +139,11 @@ All the power for the board is provided by the PC via the USB cable. In some ins
 ==== 3.3.1 Getting Started  ====
 
 1. Download the latest image at bbb.io/latest 
-2. Transfer the image to a microSD card  (do we need an image here like we have on the getting started SW page)
-(do we need to recommend microSD card burning sw here?)
+2. Transfer the image to a microSD card  
+<blockquote>do we need an image here like we have on the getting started SW page</blockquote>
+<blockquote>do we need to recommend microSD card burning sw here?</blockquote>
 3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot
-(shall we have a photo?)
+<blockquote>shall we have a photo?</blockquote>
 4. Connect the small connector on the USB cable to the board as shown in '''Figure 3'''. 
 
 [[media/image9.jpg|451x206px]]
@@ -178,7 +181,7 @@ In this configuration, the board works more like a PC, totally free from any con
 
 ======  Figure 6. Desktop Configuration  ======
 
-'''How would we recommend network access?'''
+<blockquote> How would we recommend network access?</blockquote>
 
 ==== 3.4.1 Required Accessories  ====
 
@@ -186,7 +189,7 @@ In order to use the board in this configuration, you will need the following acc
 
 * (1) Powered USB HUB
 * (1) USB wireless keyboard and mouse combo.
-* (1) LCD screen such as tethered Adafruit 2.4" TFT LCD with Touchscreen Breakout w/MicroSD Socket
+* (1) LCD screen <blockquote>such as tethered Adafruit 2.4" TFT LCD with Touchscreen Breakout w/MicroSD Socket</blockquote>
 
 For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
 
@@ -242,6 +245,7 @@ While the four user LEDS can be over written and used as desired, they do have s
 # After a minute or two a login screen will appear. You do not have to do anything at this point.
 # After a minute or two the desktop will appear. It should be similar to the one shown in '''Figure 16'''. HOWEVER, it will change from one release to the next, so do not expect your system to look exactly like the one in the figure, but it will be very similar.
 # And at this point you are ready to go! '''Figure 16''' shows the desktop after booting.
+<blockquote> what is the image being used - is it just a command prompt or a more full desk top or perhaps an IoT image? </blockquote>
 
 [[media/image27.jpg|513x288px]]
 
@@ -255,7 +259,7 @@ While the four user LEDS can be over written and used as desired, they do have s
 
 = '''4.0 PocketBeagle Overview ''' =
 
-The PocketBeagle® ((Value Proposition)).   It consists of the OSD3358-512M-BSM, microSD card holder, microUSB connector, and 72 header pins.  The header pins expose many signals that can be used to construct a larger system, like GPIO, PWMs, ADC inputs, USB, and PRU I/O.  
+The PocketBeagle® ((Value Proposition - still in edit)).   It consists of the OSD3358-512M-BSM, microSD card holder, microUSB connector, and 72 header pins.  The header pins expose many signals that can be used to construct a larger system, like GPIO, PWMs, ADC inputs, USB, and PRU I/O.  
 
 It has been equipped with a minimum set of features to allow the user to experience the power of the processor and is not intended as a full development platform as many of the features and interfaces supplied by the processor are not accessible from the BeagleBone Black via onboard support of some interfaces. It is not a complete product designed to do any particular function. It is a foundation for experimentation and learning how to program the processor and to access the peripherals by the creation of your own software and hardware.
 
@@ -270,6 +274,8 @@ The PCB layout was done by xyz
 The Software is written and supported by the thousands of community members, including x,y and z
 
 === 4.1 BeagleBone Black Compatibility  ===
+
+<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. </blockquote>
 
 '''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  This section should really come after the features and specifications table below in 4.2
 
@@ -310,6 +316,7 @@ This section describes the key components on the board. It provides information 
 
 ==== 4.3.2 Key Components  ====
 
+<blockquote> we should combine 4.3.1 and 4.3.2 to simplify </blockquote>
 '''Figure 18''' below shows the locations of the key components on the PCB layout of the board.
 
 [[media/image29.jpg|575x417px]]
@@ -323,7 +330,7 @@ This section describes the key components on the board. It provides information 
 ** TPS65217C from which chip mfr
 ** TL5209 from which chip mfr
 ** xyz quantity of Passives - 
-[[ diagram of the main board components from powerpoint.  ]]
+<blockquote> diagram of the main board components from powerpoint. </blockquote>
 
 
 = '''5.0 PocketBeagle High Level Specification ''' =
@@ -341,24 +348,23 @@ This section provides the high level specification of the PocketBeagle.
 
 === 5.2 System in Package (SiP)  ===
 
-Details here for SiP specification - 
+Details here for SiP specification - The ODS335x-SM Block Diagram and links to appropriate details on the website
 
 ==== 5.3.4 MicroSD Connector  ====
 
-The board is equipped with a single microSD connector to act as the secondary boot source for the board and, if selected as such, can be the primary boot source. The connector will support larger capacity microSD cards. The microSD card is not provided with the board. Booting from MMC0 will be used to flash the eMMC in the production environment or can be used by the user to update the SW as needed.
+The board is equipped with a single microSD connector to act as the primary boot source for the board.  The connector will support larger capacity microSD cards. The microSD card is not provided with the board. <minimum size> 
 
 ==== 5.3.5 Boot Modes  ====
 
-There are four boot modes:  (how much of this section is relavent)
+There are three boot modes:  <blockquote> how much of this section is appropriate </blockquote>
 
-* '''eMMC Boot…'''This is the default boot mode and will allow for the fastest boot time and will enable the board to boot out of the box using the pre-flashed OS image without having to purchase an microSD card or an microSD card writer.
-* '''SD Boot…'''This mode will boot from the microSD slot. This mode can be used to override what is on the eMMC device and can be used to program the eMMC when used in the manufacturing process or for field updates.
+* '''SD Boot…''' microSD connector to act as the primary boot source for the board.
 * '''Serial Boot…'''This mode will use the serial port to allow downloading of the software direct. A separate USB to serial cable is required to use this port.
 * '''USB Boot…'''This mode supports booting over the USB port.
 
-'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''
+'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''  <blockquote> where on the TI website (TI Linux SDK?) should we send them and is it supported for the PocketBeagle </blockquote>
 
-A switch is provided to allow switching between the modes.
+A switch is provided to allow switching between the modes. <blockquote> need engineering review of this section</blockquote>
 
 * Holding the boot switch down during a removal and reapplication of power without a microSD card inserted will force the boot source to be the USB port and if nothing is detected on the USB client port, it will go to the serial port for download.
 * Without holding the switch, the board will boot try to boot from the eMMC. If it is empty, then it will try booting from the microSD slot, followed by the serial port, and then the USB port.
@@ -368,7 +374,7 @@ A switch is provided to allow switching between the modes.
 
 === 5.4 Power Management  ===
 
-Editors note: since the BBBlack had an external PMIC, this section existed.  We could incorporate a mention of power management in the specification section above in section 4 or 5 of the SiP and go into more detail of power mgmt in the power section coming up.
+<blockquote> Editors note: since the BBBlack had an external PMIC, this section existed.  We could incorporate a mention of power management in the specification section above in section 4 or 5 of the SiP and go into more detail of power mgmt in the power section coming up. </blockquote>
 
 
 === 5.5 PC USB Interface  ===
@@ -377,12 +383,13 @@ The board has a miniUSB connector that connects the USB0 port to the SiP.
 
 === 5.6 Serial Debug Port  ===
 
-(do we have this? - how is it highlighted on the P1/P2?) 
+<blockquote> pins 30/32 on the header - is this something to highlight </blockquote> 
 
 Serial debug is provided via UART0 on the processor via a single 1x6 pin header. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.
 
 === 5.7 USB1 Host Port  ===
-(is this is already covered adequately?)
+
+<blockquote> this is on the header </blockquote>
 On the board is a single USB Type A female connector with full LS/FS/HS Host support that connects to USB1 on the processor. The port can provide power on/off control and up to 500mA of current at 5V. Under USB power, the board will not be able to supply the full 500mA, but should be sufficient to supply enough current for a lower power USB device supplying power between 50 to 100mA.
 
 You can use a wireless keyboard/mouse configuration or you can add a HUB for standard keyboard and mouse interfacing.
@@ -395,17 +402,13 @@ The board can be powered from three different sources:
 * A power supply with a USB connector.
 * Expansion connectors
 
-un-needed? '''This port is limited to 500mA by the Power Management IC. It is possible to change the settings in the '''TPS65217C''' to increase this current, but only after the initial boot. And, at that point the PC most likely will complain, but you can also use a dual connector USB cable to the PC to get to 1A.'''
+<blockquote> need engineering review </blockquote> '''This port is limited to 500mA by the Power Management IC. It is possible to change the settings in the '''TPS65217C''' to increase this current, but only after the initial boot. And, at that point the PC most likely will complain, but you can also use a dual connector USB cable to the PC to get to 1A.'''
 
 Power routed to the board via the expansion header could be provided from power derived on a cape. The DC supply should be well regulated and 5V +/-.25V.
 
-=== 5.9 Reset Button  ===
-
-When pressed and released, causes a reset of the board. The reset button used on the BeagleBone Black is a little larger than the one used on the original BeagleBone. It has also been moved out to the edge of the board so that it is more accessible.
-
 === 5.10 Power Button  ===
 
-As we don't have a power button on the board - are their alternative methods for recommending powering down the board?
+<blockquote> do we reference the button as also a reset button </blockquote>
 
 A power button is provided near the reset button close to the Ethernet connector. This button takes advantage of the input to the PMIC for power down features. While a lot of capes have a button, it was decided to add this feature to the board to ensure everyone had access to some new features. These features include:
 
@@ -415,7 +418,7 @@ A power button is provided near the reset button close to the Ethernet connector
 
 If you hold the button down longer than 8 seconds, the board will power off if you release the button when the power LED turns off. If you continue to hold it, the board will power back up completing a power cycle.
 
-'''''''We recommend that you use this method to power down the board. It will also help prevent contamination of the SD card or the eMMC. '''''''
+'''''''We recommend that you use this method to power down the board. It will also help prevent contamination of the SD card '''''''
 
 If you do not remove the power jack, you can press the button again and the board will power up.
 
@@ -440,10 +443,10 @@ The PocketBeagle has the ability to accept up to xyz # of  expansion boards or c
 For more information on cape support refer to ''Section 9.0''.
 
 = '''6.0 Detailed Hardware Design ''' =
-what sections from 6.0 do we need??
+<blockquote> what sections from 6.0 do we need?? <blockquote>
 
 = '''7.0 Connectors ''' =
-
+<blockquote> we will have a chart and pics of the diagrams on the connectors <blockquote>
 This section describes each of the connectors on the board.
 
 === 7.1 Expansion Connectors  ===
@@ -465,6 +468,7 @@ The expansion interface on the board is comprised of two 46 pin connectors. All 
 === 7.1.1 P1 Header  ===
 
 === 7.1.1 P2 Header  ===
+
 === 7.3 USB Client  ===
 
 The USB Client connector is accessible on the bottom side of the board under the row of four LEDs as shown in '''Figure 52'''. It uses a 5 pin miniUSB cable, the same as is used on the original BeagleBone. The cable is provided with the board. The cable can also be used to power the board.
@@ -558,16 +562,20 @@ A place for an optional 20 pin CTI JTAG header is provided on the board to facil
 If you need the JTAG connector you can solder it on yourself. No other components are needed. The connector is made by Samtec and the part number is FTR-110-03-G-D-06. You can purchase it from [http://www.digikey.com/ ''www.digikey.com''.]
 
 = '''8.0 Cape Board and Click Board Support ''' =
+<blockquote> Need a whole section here on Click Board standards </blockquote>
+How much of the cape board section do we pull through
 
-= '''9.0 BeagleBone Black Mechanical ''' =
+= '''9.0 PocketBeagle Mechanical ''' =
 
 === 9.1 Dimensions and Weight  ===
+
+Editors note : this is only a placeholder
 
 Size: 3.5” x 2.15” (86.36mm x 53.34mm)
 
 Max height: .187” (4.76mm)
 
-PCB Layers: 6
+PCB Layers: 4
 
 PCB thickness: .062” 
 
@@ -628,7 +636,7 @@ To see what SW revision is loaded into the eMMC follow the instructions at [http
 
 It is a good idea to always use the latest software. Instructions for how to update your software to the latest version can be found at:
 
-[http://elinux.org/BeagleBoneBlack#Updating_the_eMMC_Software ''http://elinux.org/BeagleBoneBlack#Updating_the_eMMC_S oftware'' ]
+<blockquote> need a URL here </blockquote>
 
 === 11.3 RMA Support  ===
 
