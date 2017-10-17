@@ -129,22 +129,27 @@ In this configuration, you will need the following additional items:
 
 the board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 2''' shows this configuration.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|299x200px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/tethered bbb placeholder.jpg|299x200px]]
 
 ======  Figure 2. Tethered Configuration  ======
 
-All the power for the board is provided by the PC via the USB cable. In some instances, the PC may not be able to supply sufficient power for the board. In that case, an external 5VDC power supply can be used, but this should rarely be necessary.
+All the power for the board is provided by the PC via the USB cable. In some instances, such as when additional add-on boards, or capes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
 
-==== 3.3.1 Connect the Cable to the Board  ====
+==== 3.3.1 Getting Started  ====
 
-1. Connect the small connector on the USB cable to the board as shown in '''Figure 3'''. The connector is on the bottom side of the board.
+1. Download the latest image at bbb.io/latest 
+2. Transfer the image to a microSD card  (do we need an image here like we have on the getting started SW page)
+(do we need to recommend microSD card burning sw here?)
+3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot
+(shall we have a photo?)
+4. Connect the small connector on the USB cable to the board as shown in '''Figure 3'''. 
 
 [[media/image9.jpg|451x206px]]
 
 ======  Figure 3. USB Connection to the Board  ======
 
 <ol start="2" style="list-style-type: decimal;">
-<li><p>Connect the large connector of the USB cable to your PC or laptop USB port.</p></li>
+<li><p>Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.</p></li>
 <li><p>The board will power on and the power LED will be on as shown in '''Figure 4''' below.</p></li></ol>
 
 [[media/image10.jpg|401x267px]]
@@ -159,47 +164,36 @@ All the power for the board is provided by the PC via the USB cable. In some ins
 
 ==== 3.3.2 Accessing the Board as a Storage Drive  ====
 
-The board will appear around a USB Storage drive on your PC after the kernel has booted, which will take a round 10 seconds. The kernel on the board needs to boot before the port gets enumerated. Once the board appears as a storage drive, do the following:
+The board will appear as a USB Storage drive on your PC after the kernel has booted, which will take approximately 10 seconds. The kernel on the board needs to boot before the port gets enumerated. Once the board appears as a storage drive, do the following:
 
 # Open the USB Drive folder.
-# Click on the file named '''start.html'''
+# Click on the file named '''START.HTM'''
 # The file will be opened by your browser on the PC and you should get a display showing the Quick Start Guide.
 # Your board is now operational! Follow the instructions on your PC screen.
 
 === 3.4 Standalone w/Display and Keyboard/Mouse  ===
 
-In this configuration, the board works more like a PC, totally free from any connection to a PC as shown in '''Figure 6'''. It allows you to create your code to make the board do whatever you need it to do. It will however require certain common PC accessories. These accessories and instructions are described in the following section.
+In this configuration, the board works more like a PC, totally free from any connection to a PC as shown in '''Figure 6'''. It allows you to create your code to make the board do whatever you need it to do. This configuration requires common PC accessories and a LCD screen. These accessories and instructions are described in the following section.
 
 [[media/image12.jpg|356x409px]]
 
 ======  Figure 6. Desktop Configuration  ======
 
-Optionally an Ethernet cable can also be used for network access.
+'''How would we recommend network access?'''
 
 ==== 3.4.1 Required Accessories  ====
 
 In order to use the board in this configuration, you will need the following accessories:
 
-* (1) 5VDC 1A power supply
-* (1) HDMI monitor or a DVI-D monitor. ('''NOTE:''' Only HDMI will give you audio capability).
-* (1) Micro HDMI to HDMI cable or a Micro HDMI to DVI-D adapter.
+* (1) Powered USB HUB
 * (1) USB wireless keyboard and mouse combo.
-* (1) USB HUB (OPTIONAL). The board has only one USB host port, so you may need to use a USB Hub if your keyboard and mouse requires two ports.
+* (1) LCD screen such as tethered Adafruit 2.4" TFT LCD with Touchscreen Breakout w/MicroSD Socket
 
-For an up-to-date list of confirmed working accessories please go to [http://elinux.org/BeagleBone_Black_Accessories ''http://elinux.org/BeagleBone_Black_Accessories'']
+For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
 
 ==== 3.4.2 Connecting Up the Board  ====
 
-1. Connect the big end of the HDMI cable as shown in '''Figure 7''' to your HDMI monitor. Refer to your monitor Owner’s Manual for the location of your HDMI port. If you have a DVI-D Monitor go to '''Step 3''', otherwise proceed to '''Step 4.'''
-
-[[media/image13.jpg|260x95px]]
-
-======  Figure 7. Connect microHDMI Cable to the Monitor  ======
-
-<ol start="2" style="list-style-type: decimal;">
-<li><p>If you have a DVI-D monitor you must use a DVI-D to HDMI adapter in addition to your HDMI cable. An example is shown in '''Figure 8''' below from two perspectives. If you use this configuration, you will not have audio support.</p></li></ol>
-
-[[media/image14.jpg|486x281px]]
+Plug your USB hub into the USB connection on the PocketBeagle.  
 
 <ol start="3" style="list-style-type: decimal;">
 <li><p>If you have a single wireless keyboard and mouse combination such as seen in Figure '''9''' below, you need to plug the receiver in the USB host port of the board as shown in '''Figure 10'''.</p></li></ol>
@@ -218,29 +212,15 @@ If you have a wired USB keyboard requiring two USB ports, you will need a HUB si
 
 ====== Figure 11. Keyboard and Mouse Hubs  ======
 
-4. Connect the Ethernet Cable
-
-If you decide you want to connect to your local area network, an Ethernet cable can be used. Connect the Ethernet Cable to the Ethernet port as shown in '''Figure 12'''. Any standard 100M Ethernet cable should work.
-
-[[media/image24.jpg|433x264px]]
-
-====== Figure 12. Ethernet Cable Connection  ======
+Connect the USB powered LCD screen
 
 ==== 3.4.3 Apply Power  ====
 
-The final step is to plug in the DC power supply to the DC power jack as shown in '''Figure 13''' below.
+The final step is to plug in the USB hub to supply to the DC power jack as shown in '''Figure 13''' below.
 
 [[media/image25.jpg|618x298px]]
 
 ====== Figure 13. External DC Power  ======
-
-5. The cable needed to connect to your display is a microHDMI to HDMI. Connect the microHDMI connector end to the board at this time. The connector is on the bottom side of the board as shown in '''Figure 14''' below.
-
-[[media/image26.jpg|540x227px]]
-
-====== Figure 14. Connect microHDMI Cable to the Board  ======
-
-The connector is fairly robust, but we suggest that you not use the cable as a leash for your Beagle. Take proper care not to put too much stress on the connector or cable.
 
 6. Booting the Board
 
@@ -274,15 +254,15 @@ While the four user LEDS can be over written and used as desired, they do have s
 2. The system will power down automatically.
 3. Remove the power jack.
 
-= '''4.0 BeagleBone Black Overview ''' =
+= '''4.0 PocketBeagle Overview ''' =
 
-The BeagleBone Black is the latest addition to the BeagleBoard.org family and like its predecessors, is designed to address the Open Source Community, early adopters, and anyone interested in a low cost ARM Cortex-A8 based processor.
+The PocketBeagle is the ((latest addition to the BeagleBoard.org family and like its predecessors, is designed to address the Open Source Community, early adopters, and anyone interested in a low cost ARM Cortex-A8 based processor.))  Value Proposition
 
 It has been equipped with a minimum set of features to allow the user to experience the power of the processor and is not intended as a full development platform as many of the features and interfaces supplied by the processor are not accessible from the BeagleBone Black via onboard support of some interfaces. It is not a complete product designed to do any particular function. It is a foundation for experimentation and learning how to program the processor and to access the peripherals by the creation of your own software and hardware.
 
 It also offers access to many of the interfaces and allows for the use of add-on boards called capes, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
 
-BeagleBone Black is manufactured and warranted by partners listed at https://beagleboard.org/logo for the benefit of the community and its supporters.
+PocketBeagle is manufactured and warranted by partners listed at https://beagleboard.org/logo for the benefit of the community and its supporters.
 
 The board is designed by x and is based on y
 
