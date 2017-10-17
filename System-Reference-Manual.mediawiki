@@ -129,7 +129,7 @@ In this configuration, you will need the following additional items:
 
 the board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 2''' shows this configuration.
 
-[[media/image8.jpg|632x166px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|299x200px]]
 
 ======  Figure 2. Tethered Configuration  ======
 
