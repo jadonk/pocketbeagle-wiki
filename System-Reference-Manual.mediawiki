@@ -101,7 +101,7 @@ In the box you will find two items as shown in '''Figure 1'''.
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|451x206px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle package.jpg|451x206px]]
 
 '''Figure 1. In The Box '''
 
