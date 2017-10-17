@@ -100,8 +100,9 @@ In the box you will find two items as shown in '''Figure 1'''.
 
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
+https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle package.jpg|{250}px|In the Package
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle package.jpg|{250}px|In the Package]]
+[[images/pocketbeagle package.jpg|{250}px|In the Package]]
 
 '''Figure 1. In The Package '''
 
