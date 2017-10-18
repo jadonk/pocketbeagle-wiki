@@ -617,7 +617,8 @@ All support for this design is through the BeagleBoard.org community at:
 
 === 11.1 Hardware Design  ===
 
-Design documentation can be found on the eMMC of the board under the documents/hardware directory when connected using the USB cable. Provided there is:
+Design documentation can be found on the wiki. <blockquote> need a URL here </blockquote>
+Including:
 
 * Schematic in PDF
 * Schematic in OrCAD (Cadence Design Entry CIS 16.3)
@@ -626,17 +627,12 @@ Design documentation can be found on the eMMC of the board under the documents/h
 * Bill of Material
 * System Reference Manual (This document).
 
-This directory is not always kept up to date in every SW release due to the frequency of changes of the SW. The best solution is to download the files from [https://beagleboard.org/latest-images ''beagleboard.org/latest-images'']
-
-We do not track SW revision of what is in the eMMC. SW is tracked separately from the HW due to the frequency of changes which would require massive relabeling of boards due to the frequent SW changes. You should always use the latest SW revision.
-
-To see what SW revision is loaded into the eMMC follow the instructions at [http://elinux.org/Beagleboard:Updating_The_Software#Checking_The_Angstrom_Image_Version ''http://elinux.org/Beagleboard:Updating_The_Software#Checking_The_Angstrom_Image_Version'' ]
-
 === 11.2 Software Updates  ===
 
 It is a good idea to always use the latest software. Instructions for how to update your software to the latest version can be found at:
 
-<blockquote> need a URL here </blockquote>
+Download the latest software files from [https://beagleboard.org/latest-images ''beagleboard.org/latest-images'']
+
 
 === 11.3 RMA Support  ===
 
@@ -653,8 +649,6 @@ If you feel your board is defective or has issues, request an RMA by filling out
 [[media/image95.jpg|575x222px]]
 
 '''Figure 78. Third Phase Serial Number and Revision Location '''
-
-
 
 == 11.4.7 Getting Help  ==
 
