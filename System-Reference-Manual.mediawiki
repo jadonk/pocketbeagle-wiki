@@ -1,24 +1,31 @@
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg]]
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpeg]]
-
 '''PocketBeagle'''
 
 '''System Reference Manual '''
 
 '''Revision A.x (on-line wiki edition)'''
 
-'''October 17, 2017'''
+'''October 19, 2017'''
 
 '''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
 
-'''Contributing Editor: Nice Person's Name'''
+'''Contributing Editor: Cathy Wicks  ''cwicks@beagleboard.org'''''
 
 '''THIS DOCUMENT '''
 
-''This is some text about the disclaimers and warranty''
+# Terms
+These design materials are *NOT SUPPORTED* and *DO NOT* constitute a reference design. Only “community” support is allowed via resources at [BeagleBoard.org/discuss](https://beagleboard.org/discuss).
+
+THERE IS NO WARRANTY FOR THE DESIGN MATERIALS, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE DESIGN MATERIALS “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE DESIGN MATERIALS IS WITH YOU. SHOULD THE DESIGN MATERIALS PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+In other words, you may use the design materials as you choose and there is no license with regards to usage in the manufacturing process. We mean it, these design materials may be totally unsuitable for any purposes. Don't blame us!
+
+As a general rule, we don't encourage use of this or other off-the-shelf single board computers in commercial products without engaging with a manufacturer to create a supplier agreement and make sure that you can get material as your business demands. Further, we do update the design on occasions where we find it necessary and won't guarantee a supply of older revisions, though we do seek periodic manufacturing of all of our boards for a period of roughly 10 years and will make design changes to replace obsolete parts and that may impact your usage. If you do opt to use it in a product, you take full responsibility for that product.
+
+Do not use the BeagleBoard.org logo or trademarks (such as BeagleBoard, BeagleBone and PocketBeagle) on your products without a [logo license](https://beagleboard.org/logo) from the BeagleBoard.org Foundation, but feel free to reference BeagleBoard.org.
+
+See the [LICENSE](https://github.com/beagleboard/pocketbeagle/blob/master/LICENSE) file regarding the copyright of these materials.
 
 = '''1.0 Introduction ''' =
 
@@ -80,9 +87,9 @@ JK
 
 ==== 2.2.1 PocketBone  ====
 
-<blockquote> what do we want to say about the PocketBone and Rev A1 of the PocketBeagle </blockquote>
+<blockquote> JDK will provide what we want to say about the PocketBone and Rev A1 of the PocketBeagle 
 * ''Information and credit the reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
-Not sure that this really belongs in the board revision chart.  Perhaps there is another way that this project should be referenced in the SRM as a preliminary write up paragraph.
+this may be in the board revision chart or perhaps there is another way that this project should be referenced in the SRM as a preliminary write up paragraph and link to more details. - encourages community members regarding creativity. </blockquote>
 
 ==== 2.2.2 Rev A1  ====
 
@@ -96,8 +103,8 @@ Not sure that this really belongs in the board revision chart.  Perhaps there is
 
 This section provides instructions on how to hook up your board. Two scenarios will be discussed:
 
-# Tethered to a PC and
-# As a standalone development platform in a desktop PC configuration. <blockquote>need to validate set up and procedure for standalone</blockquote>
+# Tethered to a PC with local development and
+# Development over a network connection
 
 === 3.1 What’s In the Package  ===
 
@@ -110,21 +117,17 @@ In the package you will find two items as shown in '''Figure 1'''.
 
 '''Figure 1. In The Package '''
 
-=== 3.2 Main Connection Scenarios  ===
+=== 3.2 Connecting the board ===
 
-This section will describe how to connect the board for use. Information can also be found on the Quick Start Guide that came in the box. There is also a Quick Start Guide document on the board itself.
+This section will describe how to connect the board for use. Information can also be found on the Quick Start Guide that came in the box. Detailed information is also available at
+[https://beagleboard.org/getting-started ''beagleboard.org/getting-started'' ]
 
 The board can be configured in several different ways, but we will discuss the two most common scenarios.
 
-* Tethered to a PC via the USB cable
+* Tethered to a PC via the USB cable with local development
 ** Board is accessed as a storage drive
-* Standalone desktop
-** Display
-** Keyboard and mouse
-
-Each of these configurations is discussed in general terms in the following sections.
-
-<blockquote> will we have this type of link </blockquote> : For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
+* Connecting the PocketBeagle to a PC via USB cable and configuring to share access
+** Board is accessed via the internet
 
 === 3.3 Tethered To A PC  ===
 
@@ -175,60 +178,34 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 # Open the USB Drive folder.
 # Click on the file named '''START.HTM'''
 # The file will be opened by your browser on the PC and you should get a display showing the Quick Start Guide.
-# Your board is now operational! Follow the instructions on your PC screen.
+# Your board is now operational! Follow the instructions on your computer screen.
 
-=== 3.4 Standalone w/Display and Keyboard/Mouse  ===
+=== 3.4 Development Over a Network Connection  ===
 
-In this configuration, the board works more like a PC, totally free from any connection to a PC as shown in '''Figure 6'''. It allows you to create your code to make the board do whatever you need it to do. This configuration requires common PC accessories and a LCD screen. These accessories and instructions are described in the following section.
+Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. This can also make it fun and easy to share projects running on one PocketBeagle.  
 
 [[media/image12.jpg|356x409px]]
 
-======  Figure 6. Desktop Configuration  ======
-
-<blockquote> How would we recommend network access?</blockquote>
-
-==== 3.4.1 Required Accessories  ====
-
-In order to use the board in this configuration, you will need the following accessories:
-
-* (1) Powered USB HUB
-* (1) USB wireless keyboard and mouse combo.
-* (1) LCD screen <blockquote>such as tethered Adafruit 2.4" TFT LCD with Touchscreen Breakout w/MicroSD Socket</blockquote>
-
-For an up-to-date list of confirmed working accessories please go to [http://github.com/PocketBeagle_Accessories ''http://github.com/PocketBeagle_Accessories'']
+======  Figure 6. Network Connected PocketBeagle  ======
 
 ==== 3.4.2 Connecting Up the Board  ====
 
-Plug your USB hub into the USB connection on the PocketBeagle.  
+Follow all instructions above in Section 3.3 above.
 
-<ol start="3" style="list-style-type: decimal;">
-<li><p>If you have a single wireless keyboard and mouse combination such as seen in Figure '''9''' below, you need to plug the receiver in the USB host port of the board as shown in '''Figure 10'''.</p></li></ol>
+Next, configure your host to utilize tethering then use the virtual serial port to configure your PocketBeagle to acquire networking information from your host rather than providing it to your host. 
 
-[[media/image16.jpg|237x108px]]
+[https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
 
-======  Figure 9. Wireless Keyboard and Mouse Combo  ======
+See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
+<blockquote>  We will need additional software notes, a picture of the screen, steps for a typical case pc </blockquote>
 
-[[media/image17.jpg|279x222px]]
 
-====== Figure 10. Connect Keyboard and Mouse Receiver to the Board  ======
+The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
+It is possible to add an additional USB port as described above.
+You can utilize a mikroBUS Click Ethernet or wireless module.
+There are many ways to utilize the expansion interface to create your own networking solution.
 
-If you have a wired USB keyboard requiring two USB ports, you will need a HUB similar to the ones shown in '''Figure 11'''. You may want to have more than one port for other devices. Note that the board can only supply up to 500mA, so if you plan to load it down, it will need to be externally powered.
-
-[[media/image18.jpg|509x152px]]
-
-====== Figure 11. Keyboard and Mouse Hubs  ======
-
-Connect the USB powered LCD screen
-
-==== 3.4.3 Apply Power  ====
-
-The final step is to plug in the USB hub to supply to the DC power jack as shown in '''Figure 13''' below.
-
-[[media/image25.jpg|618x298px]]
-
-====== Figure 13. External DC Power  ======
-
-6. Booting the Board
+==== 3.4.3 Booting the Board ====
 
 As soon as the power is applied to the board, it will start the booting up process. When the board starts to boot the LEDs will come on in sequence as shown in '''Figure 15''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing in an erratic manner as it boots the Linux kernel.
 
@@ -236,22 +213,16 @@ As soon as the power is applied to the board, it will start the booting up proce
 
 ====== Figure 15. Board Boot Status  ======
 
-While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that is shipped with the board once the Linux kernel has booted. 
+While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
 * '''USER0''' is the heartbeat indicator from the Linux kernel.
 * '''USER1''' turns on when the microSD card is being accessed
-* '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
-* '''USER3''' turns on when the onboard eMMC is being accessed. <blockquote>no eMMC so ??</blockquote>
+* '''USER2''' idle  <blockquote>  checking with Robert Nelson </blockquote>
+* '''USER3''' idle
 
-7. A Booted System
+==== 3.4.4  A Booted System ====
 
-# The board will have a mouse pointer appear on the screen as it enters the Linux boot step. You may have to move the physical mouse to get the mouse pointer to appear. The system can come up in the suspend mode with the HDMI port in a sleep mode.
-# After a minute or two a login screen will appear. You do not have to do anything at this point.
-# After a minute or two the desktop will appear. It should be similar to the one shown in '''Figure 16'''. HOWEVER, it will change from one release to the next, so do not expect your system to look exactly like the one in the figure, but it will be very similar.
-# And at this point you are ready to go! '''Figure 16''' shows the desktop after booting.
-<blockquote> what is the image being used - is it just a command prompt or a more full desk top or perhaps an IoT image? </blockquote>
-
-[[media/image27.jpg|513x288px]]
+<blockquote> Option for the Networked system - what do the users see on the screen? </blockquote>
 
 ====== Figure 16. Desktop Screen  ======
 
