@@ -147,32 +147,31 @@ All the power for the board is provided by the PC via the USB cable. In some ins
 ==== 3.3.1 Getting Started  ====
 
 1. Download the latest image at bbb.io/latest
+<blockquote>Additional Software basic instructions and steps, like the getting started SW page.  Include a photo of the software download</blockquote>
 
 2. Transfer the image to a microSD card
 
-<blockquote>do we need an image here like we have on the getting started SW page</blockquote>
-<blockquote>do we need to recommend microSD card burning sw here?</blockquote>
+<blockquote>recommendation of burning software and an image here like we have on the getting started SW page.
+  Include a photo of the PC screen while burning</blockquote>
+
 3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot
 
-<blockquote>shall we have a photo?</blockquote>
-4. Connect the small connector on the USB cable to the board as shown in '''Figure 3'''.
+<blockquote>Include hardware photo</blockquote>
+4. Connect the small connector on the USB cable to the board as shown in '''Figure x'''.
 
-
-[[media/image9.jpg|451x206px]]
+<blockquote>photo here similar to the BBB one </blockquote>[[media/image9.jpg|451x206px]]
 
 ======  Figure 3. USB Connection to the Board  ======
 
-<ol start="2" style="list-style-type: decimal;">
-<li><p>Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.</p></li>
-<li><p>The board will power on and the power LED will be on as shown in '''Figure 4''' below.</p></li></ol>
+5. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.  The board will power on and the power LED will be on as shown in '''Figure 4''' below.
 
-[[media/image10.jpg|401x267px]]
+<blockquote>photo here similar to the BBB one </blockquote> [[media/image10.jpg|401x267px]]
 
 ======  Figure 4. Board Power LED  ======
 
-4. When the board starts to the booting process started by the process of applying power, the LEDs will come on in sequence as shown in '''Figure 5''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing in an erratic manner as it begins to boot the Linux kernel.
+6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure 5''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.
 
-[[media/image11.jpg|541x254px]]
+<blockquote>photo here similar to the BBB one </blockquote> [[media/image11.jpg|541x254px]]
 
 ======  Figure 5. Board Boot Status  ======
 
@@ -193,9 +192,11 @@ Many host computers support tethering.  In this configuration, the board can be 
 
 ======  Figure 6. Network Connected PocketBeagle  ======
 
-==== 3.4.2 Connecting Up the Board  ====
+==== 3.3.1 Getting Started with a Networked PocketBeagle  ====
 
 Follow all instructions above in Section 3.3 above.
+
+==== 3.4.2 Connecting Up the Board  ====
 
 Next, configure your host to utilize tethering then use the virtual serial port to configure your PocketBeagle to acquire networking information from your host rather than providing it to your host. 
 
@@ -231,15 +232,20 @@ While the four user LEDS can be over written and used as desired, they do have s
 
 ====== Figure 16. Desktop Screen  ======
 
-8. Powering Down
+==== 3.5  Powering Down ====
 
-1. Press the power button momentarily 
-2. The system will power down automatically.
-3. Remove the power jack.
+<blockquote> Evaluate pulling in some of the Octavo Systems Power Button Section in the tutorials </blockquote>
+
+1. Standard Power Down: Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.  
+
+2. Hard Power Down:  Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
+ 
+3. Remove the USB cable.  Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
 
 = '''4.0 PocketBeagle Overview ''' =
 
-The PocketBeagle® ((Value Proposition - still in edit)).   It consists of the OSD3358-512M-BSM, microSD card holder, microUSB connector, and 72 header pins.  The header pins expose many signals that can be used to construct a larger system, like GPIO, PWMs, ADC inputs, USB, and PRU I/O.  
+<blockquote> Value proposition and overview paragraph placeholder below </blockquote>
+The PocketBeagle® .   It consists of the OSD3358-512M-BSM, microSD card holder, microUSB connector, and 72 header pins.  The header pins expose many signals that can be used to construct a larger system, like GPIO, PWMs, ADC inputs, USB, and PRU I/O.  
 
 It has been equipped with a minimum set of features to allow the user to experience the power of the processor and is not intended as a full development platform as many of the features and interfaces supplied by the processor are not accessible from the BeagleBone Black via onboard support of some interfaces. It is not a complete product designed to do any particular function. It is a foundation for experimentation and learning how to program the processor and to access the peripherals by the creation of your own software and hardware.
 
@@ -255,21 +261,24 @@ The Software is written and supported by the thousands of community members, inc
 
 === 4.1 BeagleBone Black Compatibility  ===
 
-<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. </blockquote>
+<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. not sure this should be first, perhaps later in this section. </blockquote>
 
-'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  This section should really come after the features and specifications table below in 4.2
+<blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  This section should really come after the features and specifications table below in 4.2 </blockquote>
 
 === 4.2 PocketBeagle Features and Specification  ===
 
 This section covers the specifications and features of the board in a chart and provides a high level description of the major components and interfaces that make up the board.
 
+<blockquote>'''POCKETBEAGLE SPECIFICATION CHART'''</blockquote>
 
 '''Table 2''' provides a list of the features.
 
-=======  Table 2. BeagleBone Black Features  =======
+=======  Table 2. PocketBeagle Features  =======
 
 ==== 4.2.1 OSD3358-512M-BSM System in Package ====
 The Octavo Systems OSD3358-512M-BSM System-In-Package includes:
+
+<blockquote>'''Placeholder for description of OSD3358 etc and links '''</blockquote>
 AM3358, 512MB DDR3L, 4KB EEPROM, 
 TPS65217C, TL5209, xyz quantity of Passives - 
 21mm X 21mm, 256 Ball BGA, 0°C to 85°C
