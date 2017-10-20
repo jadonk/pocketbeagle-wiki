@@ -2,7 +2,7 @@
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|299x200px]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpeg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back.jpg]]
 
 
 
