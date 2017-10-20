@@ -379,7 +379,10 @@ The board can be powered from three different sources:
 
 * A USB port on a PC
 * A power supply with a USB connector.
-* Expansion connectors
+* Expansion connectors - 
+** include utilizing to hook up a battery.
+
+<blockquote>need to include more information regarding the  use of a battery as this is a key feature.  </blockquote>
 
 <blockquote> need engineering review </blockquote> '''This port is limited to 500mA by the Power Management IC. It is possible to change the settings in the '''TPS65217C''' to increase this current, but only after the initial boot. And, at that point the PC most likely will complain, but you can also use a dual connector USB cable to the PC to get to 1A.'''
 
@@ -387,7 +390,7 @@ Power routed to the board via the expansion header could be provided from power 
 
 === 5.10 Power Button  ===
 
-<blockquote> do we reference the button as also a reset button </blockquote>
+<blockquote> some of this is already covered in section 3 </blockquote>
 
 A power button is provided near the reset button close to the Ethernet connector. This button takes advantage of the input to the PMIC for power down features. While a lot of capes have a button, it was decided to add this feature to the board to ensure everyone had access to some new features. These features include:
 
@@ -415,6 +418,8 @@ UPDATE THIS DESCRIPTION TO HIGHLIGHT THE PADS: A place for an optional 20 pin CT
 
 If you need the JTAG connector you can solder it on yourself. No other components are needed. The connector is made by Samtec and the part number is FTR-110-03-G-D-06. You can purchase it from [http://www.digikey.com/ ''www.digikey.com''.]
 
+Is there an example done by a competing board on these PADs.
+
 === 5.14 Cape Board AND CLICK BOARD Support  ===
 
 The PocketBeagle has the ability to accept up to xyz # of  expansion boards or capes that can be stacked onto the expansion headers. The word cape comes from the add-on board shape of the boards that fit onto the original BeagleBone series. (link to story)
@@ -422,11 +427,13 @@ The PocketBeagle has the ability to accept up to xyz # of  expansion boards or c
 For more information on cape support refer to ''Section 9.0''.
 
 = '''6.0 Detailed Hardware Design ''' =
-<blockquote> what sections from 6.0 do we need?? <blockquote>
+<blockquote> what sections from 6.0 do we need - working on the list  <blockquote>
 
 = '''7.0 Connectors ''' =
 <blockquote> we will have a chart and pics of the diagrams on the connectors <blockquote>
 This section describes each of the connectors on the board.
+
+
 
 === 7.1 Expansion Connectors  ===
 
@@ -439,26 +446,27 @@ The expansion interface on the board is comprised of two 46 pin connectors. All 
 '''NO PINS ARE TO BE DRIVEN UNTIL AFTER THE SYS_RESET LINE GOES HIGH. '''
 
 '''Figure 50''' shows the location of the expansion connectors.
-
-[[media/image68.jpg|286x394px]]
-
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
 ====== Figure 50. Expansion Connector Location  ======
 
 === 7.1.1 P1 Header  ===
+<blockquote> Place the electrical spec of the P1 Header here and also a more detailed chart of the PINOUT </blockquote>
 
 === 7.1.1 P2 Header  ===
 
-=== 7.3 USB Client  ===
+<blockquote> Place the electrical spec of the P1 Header here and also a more detailed chart of the PINOUT </blockquote>
 
-The USB Client connector is accessible on the bottom side of the board under the row of four LEDs as shown in '''Figure 52'''. It uses a 5 pin miniUSB cable, the same as is used on the original BeagleBone. The cable is provided with the board. The cable can also be used to power the board.
+=== 7.3 USB   ===
+
+<blockquote> Here is a paragraph about the USB and the Electrical layout of the circuit. </blockquote> 
 
 [[media/image71.jpg|633x454px]]
 
-This port is a USB Client only interface and is intended for connection to a PC.
+This port is a USB Client and host interface and is primarily used for connection to a PC.
 
-=== 7.4 USB Host  ===
+=== 7.4 Setting up an additional USB connection ===
 
-There is a single USB Host connector on the board and is shown in '''Figure 53''' below.
+<blockquote> Reference the example already completed on the FAQ for adding a USB connection </blockquote>
 
 [[media/image71.jpg|593x387px]]
 
@@ -466,13 +474,13 @@ There is a single USB Host connector on the board and is shown in '''Figure 53''
 
 The port is USB 2.0 HS compatible and can supply up to 500mA of current. If more current or ports is needed, then a HUB can be used.
 
-=== 7.5 Serial Header  ===
+=== 7.5 Serial connection through the pin on the header  ===
 
-Each board has a debug serial interface that can be accessed by using a special serial cable that is plugged into the serial header as shown in '''Figure 54''' below.
+details on how to connect and boot through Serial
 
 [[media/image71.jpg|527x351px]]
 
-====== Figure 54. Serial Debug Header  ======
+====== Figure 54. Serial Debug through pins on the header ======
 
 Two signals are provided, TX and RX on this connector. The levels on these signals are 3.3V. In order to access these signals, a FTDI USB to Serial cable is recommended as shown in '''Figure 55''' below.
 
@@ -534,15 +542,32 @@ When plugging in the SD card, the writing on the card should be up. Align the ca
 
 Do not pull the SD card out or you could damage the connector.
 
-=== 7.9 JTAG Connector  ===
+=== 7.9 JTAG PADs and circuitry  ===
 
 A place for an optional 20 pin CTI JTAG header is provided on the board to facilitate the SW development and debugging of the board by using various JTAG emulators. This header is not supplied standard on the board. To use this, a connector will need to be soldered onto the board.
 
 If you need the JTAG connector you can solder it on yourself. No other components are needed. The connector is made by Samtec and the part number is FTR-110-03-G-D-06. You can purchase it from [http://www.digikey.com/ ''www.digikey.com''.]
 
 = '''8.0 Cape Board and Click Board Support ''' =
-<blockquote> Need a whole section here on Click Board standards </blockquote>
-How much of the cape board section do we pull through
+<blockquote> Need a whole section here on Using the Headers for various pins and CLICK Boards also</blockquote>
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
+
+=== 9.1 Detailed section of the functions below  ===
+
+
+
+* System/software sections in SRM regarding usage of:
+- GPIO (LEDs https://gist.github.com/jadonk/d740c45b04bf0298da03075327c38d60, GPIOs pretty good example https://falsinsoft.blogspot.com/2012/11/access-gpio-from-linux-user-space.html, my favorite, but requiring some better background: https://github.com/beagleboard/beaglebone-blue/wiki/One-Liner-Module-Tests#GP0)
+- SPI with special added section on LCDs
+- I2C
+- UART including enabling/disabling consoles and mikrobus power impacts
+- PRU with and without RPMsg and mmap
+- pinmux helpers
+- CAN
+- USB host, client and power control
+
+=== 8.2 Click Board circuitry and using them  =
 
 = '''9.0 PocketBeagle Mechanical ''' =
 
