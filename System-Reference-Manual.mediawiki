@@ -239,33 +239,25 @@ While the four user LEDS can be over written and used as desired, they do have s
 1. Standard Power Down: Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.  
 
 2. Hard Power Down:  Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
- 
+
 3. Remove the USB cable.  Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
 
 = '''4.0 PocketBeagle Overview ''' =
 
+<blockquote>  THE VALUE OF THIS SECTION IS BASICALLY A "WALK AROUND THE BOARD" to tell a new user in chart form and in diagram form what is on the board in front of them from a physical component perspective </blockquote>
+
 <blockquote> Value proposition and overview paragraph placeholder below </blockquote>
+
+
 The PocketBeagle® .   It consists of the OSD3358-512M-BSM, microSD card holder, microUSB connector, and 72 header pins.  The header pins expose many signals that can be used to construct a larger system, like GPIO, PWMs, ADC inputs, USB, and PRU I/O.  
 
 It has been equipped with a minimum set of features to allow the user to experience the power of the processor and is not intended as a full development platform as many of the features and interfaces supplied by the processor are not accessible from the BeagleBone Black via onboard support of some interfaces. It is not a complete product designed to do any particular function. It is a foundation for experimentation and learning how to program the processor and to access the peripherals by the creation of your own software and hardware.
 
 It also offers access to many of the interfaces and allows for the use of add-on boards called capes, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
 
-PocketBeagle is manufactured and warranted by partners listed at https://beagleboard.org/logo for the benefit of the community and its supporters.
+PocketBeagle is manufactured and warranted by partners listed at https://beagleboard.org/logo for the benefit of the community and its supporters.  The board is designed by x and is based on y  The PCB layout was done by xyz  The software is written and maintained by....  invite new users to join in contributing... </blockquote>(how is this different than the board revision part?  Just reiterating the community aspect.)
 
-The board is designed by x and is based on y
-
-The PCB layout was done by xyz
-
-The Software is written and supported by the thousands of community members, including x,y and z
-
-=== 4.1 BeagleBone Black Compatibility  ===
-
-<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. not sure this should be first, perhaps later in this section. </blockquote>
-
-<blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  This section should really come after the features and specifications table below in 4.2 </blockquote>
-
-=== 4.2 PocketBeagle Features and Specification  ===
+=== 4.1 PocketBeagle Features and Specification  ===
 
 This section covers the specifications and features of the board in a chart and provides a high level description of the major components and interfaces that make up the board.
 
@@ -275,7 +267,7 @@ This section covers the specifications and features of the board in a chart and 
 
 =======  Table 2. PocketBeagle Features  =======
 
-==== 4.2.1 OSD3358-512M-BSM System in Package ====
+==== 4.1.1 OSD3358-512M-BSM System in Package ====
 The Octavo Systems OSD3358-512M-BSM System-In-Package includes:
 
 <blockquote>'''Placeholder for description of OSD3358 etc and links '''</blockquote>
@@ -285,32 +277,17 @@ TPS65217C, TL5209, xyz quantity of Passives -
 
 BLOCK DIAGRAM OF THE SIP
 
-=== 4.3 Board Component Locations  ===
+=== 4.2 Board Component Locations  ===
 
-This section describes the key components on the board. It provides information on their location and function. Familiarize yourself with the various components on the board.
+This section describes the key components on the board, their location and function. 
 
-==== 4.3.1 Connectors, LEDs, and Switches  ====
-
-'''Figure 17''' below shows the locations of the connectors, LEDs, and switches on the PCB layout of the board.
+'''Figure xx''' below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
 
 [[media/image28.jpg|509x340px]]
 
-======= Figure 17. Connectors, LEDs and Switches  =======
+======= Figure xx. Key Board Component Locations  =======
 
-* '''USB Client''' is a miniUSB connection to a PC that can also power the board.
-* '''BOOT switch''' can be used to force a boot from the microSD card if the power is cycled on the board, removing power and reapplying the power to the board..
-* There are four blue '''LED'''S that can be used by the user.
-* '''microSD''' slot is where a microSD card can be installed.
-* '''USB Host''' can be connected different USB interfaces such as Wi-Fi, BT, Keyboard, etc.
-
-==== 4.3.2 Key Components  ====
-
-<blockquote> we should combine 4.3.1 and 4.3.2 to simplify </blockquote>
-'''Figure 18''' below shows the locations of the key components on the PCB layout of the board.
-
-[[media/image29.jpg|575x417px]]
-
-======= Figure 18. Key Components  =======
+'''Key Components'''
 
 * '''The Octavo Systems OSD3358-512M-BSM System-In-Package''' is the processor for the board.
 ** AM3358 ARM Cortex A8 Processor from Texas Instruments
@@ -318,8 +295,21 @@ This section describes the key components on the board. It provides information 
 ** 4KB EEPROM (additional spec info)
 ** TPS65217C from which chip mfr
 ** TL5209 from which chip mfr
-** xyz quantity of Passives - 
-<blockquote> diagram of the main board components from powerpoint. </blockquote>
+** xyz quantity of Passives which xyz
+
+* '''microUSB host/client''' is a microUSB connection to a PC that can also power the board.
+* '''Power BUTTON''' can be used to force a boot from the microSD card if the power is cycled on the board, removing power and reapplying the power to the board..
+* There are four blue '''LED'''S that can be used by the user.
+* '''microSD''' slot is where a microSD card can be installed.
+* '''USB Host''' can be connected different USB interfaces such as Wi-Fi, BT, Keyboard, etc.
+
+
+
+ === 4.3 BeagleBone Black Compatibility  ===
+
+<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. not sure this should be here, perhaps later in the section about the headers. </blockquote>
+
+<blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  </blockquote>
 
 
 = '''5.0 PocketBeagle High Level Specification ''' =
