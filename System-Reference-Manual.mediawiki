@@ -1,6 +1,6 @@
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
 
 
 
