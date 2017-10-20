@@ -321,13 +321,17 @@ This section provides the high level specification of the PocketBeagle.
 '''Figure 19''' below is the high level block diagram of the PocketBeagle.
 (may be redundant w/ section 4, combine with section 4 and expand on the spec for the SiP)
 
-[[media/image30.jpg|512x454px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-block-diagram.png]]
 
 '''Figure 19. PocketBeagle Key Components '''
 
 === 5.2 System in Package (SiP)  ===
 
 Details here for SiP specification - The ODS335x-SM Block Diagram and links to appropriate details on the website
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/OSD335x-SIP-blockdiagram.png]]
+
+'''Figure 20. OSD335x SIP Block Diagram '''
 
 ==== 5.3.4 MicroSD Connector  ====
 
