@@ -1,8 +1,5 @@
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
-
-
 
 '''PocketBeagle'''
 
@@ -18,7 +15,7 @@
 
 '''THIS DOCUMENT '''
 
-# Terms
+'''Terms'''
 These design materials are *NOT SUPPORTED* and *DO NOT* constitute a reference design. Only “community” support is allowed via resources at [BeagleBoard.org/discuss](https://beagleboard.org/discuss).
 
 THERE IS NO WARRANTY FOR THE DESIGN MATERIALS, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE DESIGN MATERIALS “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE DESIGN MATERIALS IS WITH YOU. SHOULD THE DESIGN MATERIALS PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
@@ -117,7 +114,7 @@ In the package you will find two items as shown in '''Figure 1'''.
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 
-<blockquote> insert photo of package and both sides of getting started card </blockquote>
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
 
 '''Figure 1. In The Package '''
 
@@ -149,13 +146,17 @@ All the power for the board is provided by the PC via the USB cable. In some ins
 
 ==== 3.3.1 Getting Started  ====
 
-1. Download the latest image at bbb.io/latest 
-2. Transfer the image to a microSD card  
+1. Download the latest image at bbb.io/latest
+
+2. Transfer the image to a microSD card
+
 <blockquote>do we need an image here like we have on the getting started SW page</blockquote>
 <blockquote>do we need to recommend microSD card burning sw here?</blockquote>
 3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot
+
 <blockquote>shall we have a photo?</blockquote>
-4. Connect the small connector on the USB cable to the board as shown in '''Figure 3'''. 
+4. Connect the small connector on the USB cable to the board as shown in '''Figure 3'''.
+
 
 [[media/image9.jpg|451x206px]]
 
