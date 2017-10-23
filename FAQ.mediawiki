@@ -82,4 +82,4 @@ The standard [http://beagleboard.org/getting-started getting started] instructio
 # Insert into beagle
 # Power up via USB
 # Wait for network adapter to appear and DHCP address assigned
-# ssh or browse to 192.168.6.2
+# ssh or browse to 192.168.7.2
