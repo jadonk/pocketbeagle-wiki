@@ -184,32 +184,7 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 # The file will be opened by your browser on the PC and you should get a display showing the Quick Start Guide.
 # Your board is now operational! Follow the instructions on your computer screen.
 
-=== 3.4 Development Over a Network Connection  ===
 
-Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. This can also make it fun and easy to share projects running on one PocketBeagle.  
-
-[[media/image12.jpg|356x409px]]
-
-======  Figure 6. Network Connected PocketBeagle  ======
-
-==== 3.3.1 Getting Started with a Networked PocketBeagle  ====
-
-Follow all instructions above in Section 3.3 above.
-
-==== 3.4.2 Connecting Up the Board  ====
-
-Next, configure your host to utilize tethering then use the virtual serial port to configure your PocketBeagle to acquire networking information from your host rather than providing it to your host. 
-
-[https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
-
-See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
-<blockquote>  We will need additional software notes, a picture of the screen, steps for a typical case pc </blockquote>
-
-
-The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
-It is possible to add an additional USB port as described above.
-You can utilize a mikroBUS Click Ethernet or wireless module.
-There are many ways to utilize the expansion interface to create your own networking solution.
 
 ==== 3.4.3 Booting the Board ====
 
@@ -241,7 +216,32 @@ While the four user LEDS can be over written and used as desired, they do have s
 2. Hard Power Down:  Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
 
 3. Remove the USB cable.  Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
+=== 3.4 Development Over a Network Connection  ===
 
+Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. This can also make it fun and easy to share projects running on one PocketBeagle.  
+
+[[media/image12.jpg|356x409px]]
+
+======  Figure 6. Network Connected PocketBeagle  ======
+
+==== 3.3.1 Getting Started with a Networked PocketBeagle  ====
+
+Follow all instructions above in Section 3.3 above.
+
+==== 3.4.2 Connecting Up the Board  ====
+
+Next, configure your host to utilize tethering then use the virtual serial port to configure your PocketBeagle to acquire networking information from your host rather than providing it to your host. 
+
+[https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
+
+See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
+<blockquote>  We will need additional software notes, a picture of the screen, steps for a typical case pc </blockquote>
+
+
+The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
+It is possible to add an additional USB port as described above.
+You can utilize a mikroBUS Click Ethernet or wireless module.
+There are many ways to utilize the expansion interface to create your own networking solution.
 = '''4.0 PocketBeagle Overview ''' =
 
 <blockquote>  THE VALUE OF THIS SECTION IS BASICALLY A "WALK AROUND THE BOARD" to tell a new user in chart form and in diagram form what is on the board in front of them from a physical component perspective </blockquote>
