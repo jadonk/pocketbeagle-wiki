@@ -247,8 +247,6 @@ It is possible to add an additional USB port as described above.
 
 = '''4.0 PocketBeagle Overview ''' =
 <blockquote>  THE VALUE OF THIS SECTION IS BASICALLY A "WALK AROUND THE BOARD" to tell a new user in chart form and in diagram form what is on the board in front of them from a physical component perspective </blockquote>
-The BeagleBoard.org Foundation has the goal of increasing computer, electronics and robotics literacy at a point they are critical in human history. The PocketBeagle® increases access to inspirational hardware and we believe hands-on experience is the best way to build understanding and empowerment.  
-
 PocketBeagle is built around Octavo Systems' System-In-Package that integrates a high-performance Texas Instruments AM3358 processor, 512MB of DDR3, power management, nonvolatile serial memory and over 140 passive components into a single package.  This integration saves cost and a small amount of power by eliminating several packages that would otherwise need to be placed on the board, but more notably it saves space of all those packages and simplifies our board design so we can focus on the user experience.   
 
 It also offers access through the expansion headers to many of the interfaces and allows for the use of add-on boards called capes and click boards, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
