@@ -107,7 +107,7 @@ this may be in the board revision chart or perhaps there is another way that thi
 
 This section provides instructions on how to hook up your board. Two scenarios will be discussed:
 
-# Tethered to a PC with local development and
+# Tethered to a PC with local development
 # Development over a network connection
 
 === 3.1 What’s In the Package  ===
@@ -145,31 +145,46 @@ the board is powered by the PC via the USB cable--no other cables are required. 
 
 ======  Figure 2. Tethered Configuration  ======
 
-All the power for the board is provided by the PC via the USB cable. In some instances, such as when additional add-on boards, or capes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
+In some instances, such as when additional add-on boards, or capes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
 
 ==== 3.3.1 Getting Started  ====
 
-1. Download the latest image at bbb.io/latest
-<blockquote>Additional Software basic instructions and steps, like the getting started SW page.  Include a photo of the software download</blockquote>
+Follow along with the instructions at [https://beagleboard.org/getting-started ''beagleboard.org/getting-started'']
+
+1. Download the latest image onto your computer at [https://bbb.io/latest ''bbb.io/latest'']
+
+Follow the link to the latest image and click on the Debian image for Stretch IoT (non-GUI) for BeagleBone and PocketBeagle via microSD card.  This will download a .img.xz file into the download folder of your computer.
+<blockquote>Photo of the getting started page</blockquote>
 
 2. Transfer the image to a microSD card
 
-<blockquote>recommendation of burning software and an image here like we have on the getting started SW page.
-  Include a photo of the PC screen while burning</blockquote>
+Download and install an SD card programming utility.  We like [https://etcher.io/ ''https://etcher.io/''] and an image here like we have on the getting started SW page.  Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for burning the image from your computer to the microSD card.  Eject the SD card reader and remove the card when prompted.
+
+ <blockquote> Include a photo of the getting started page about burning</blockquote>
+ <blockquote> Include a photo of a microSD in a SD card writer</blockquote>
 
 3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot
 
 <blockquote>Include hardware photo</blockquote>
+
 4. Connect the small connector on the USB cable to the board as shown in '''Figure x'''.
 
-<blockquote>photo here similar to the BBB one </blockquote>[[media/image9.jpg|451x206px]]
+<blockquote>photo here similar to the BBB one </blockquote>
 
 ======  Figure 3. USB Connection to the Board  ======
 
 5. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.  The board will power on and the power LED will be on as shown in '''Figure 4''' below.
 
-<blockquote>photo here similar to the BBB one </blockquote> [[media/image10.jpg|401x267px]]
 
+
+While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
+
+* '''USER0''' is the heartbeat indicator from the Linux kernel.
+* '''USER1''' turns on when the microSD card is being accessed
+* '''USER2''' idle  <blockquote>  checking with Robert Nelson </blockquote>
+* '''USER3''' idle
+
+<blockquote>photo here similar to the BBB one </blockquote> 
 ======  Figure 4. Board Power LED  ======
 
 6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure 5''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.
@@ -197,12 +212,7 @@ As soon as the power is applied to the board, it will start the booting up proce
 
 ====== Figure 15. Board Boot Status  ======
 
-While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
-* '''USER0''' is the heartbeat indicator from the Linux kernel.
-* '''USER1''' turns on when the microSD card is being accessed
-* '''USER2''' idle  <blockquote>  checking with Robert Nelson </blockquote>
-* '''USER3''' idle
 
 ==== 3.4.4  A Booted System ====
 
@@ -230,6 +240,9 @@ Many host computers support tethering.  In this configuration, the board can be 
 ==== 3.3.1 Getting Started with a Networked PocketBeagle  ====
 
 Follow all instructions above in Section 3.3 above.
+
+Useful instructions:
+https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee
 
 ==== 3.4.2 Connecting Up the Board  ====
 
