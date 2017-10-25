@@ -158,12 +158,12 @@ Follow the link to the latest image and click on the Debian image for Stretch Io
 
 2. Transfer the image to a microSD card
 
-Download and install an SD card programming utility.  We like [https://etcher.io/ ''https://etcher.io/''] and an image here like we have on the getting started SW page.  Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for burning the image from your computer to the microSD card.  Eject the SD card reader and remove the card when prompted.
+Download and install an SD card programming utility.  We like [https://etcher.io/ ''https://etcher.io/''] 
+Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for burning the image from your computer to the microSD card.  Eject the SD card reader when prompted and remove the card.
+<blockquote> Include a photo of the getting started page about burning</blockquote>
+<blockquote> Include a photo of a microSD in a SD card writer</blockquote>
 
- <blockquote> Include a photo of the getting started page about burning</blockquote>
- <blockquote> Include a photo of a microSD in a SD card writer</blockquote>
-
-3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot
+3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot.  It is important that your microSD card is fully inserted prior to powering the system.
 
 <blockquote>Include hardware photo</blockquote>
 
@@ -174,21 +174,15 @@ Download and install an SD card programming utility.  We like [https://etcher.io
 ======  Figure 3. USB Connection to the Board  ======
 
 5. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.  The board will power on and the power LED will be on as shown in '''Figure 4''' below.
-
-
-
-While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
-
-* '''USER0''' is the heartbeat indicator from the Linux kernel.
-* '''USER1''' turns on when the microSD card is being accessed
-* '''USER2''' idle  <blockquote>  checking with Robert Nelson </blockquote>
-* '''USER3''' idle
-
 <blockquote>photo here similar to the BBB one </blockquote> 
 ======  Figure 4. Board Power LED  ======
 
-6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure 5''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.
+6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure 5''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
+* '''USER0''' is the heartbeat indicator from the Linux kernel.
+* '''USER1''' turns on when the microSD card is being accessed
+* '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
+* '''USER3''' idle
 <blockquote>photo here similar to the BBB one </blockquote> [[media/image11.jpg|541x254px]]
 
 ======  Figure 5. Board Boot Status  ======
@@ -202,42 +196,27 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 # The file will be opened by your browser on the PC and you should get a display showing the Quick Start Guide.
 # Your board is now operational! Follow the instructions on your computer screen.
 
-
-
-==== 3.4.3 Booting the Board ====
-
-As soon as the power is applied to the board, it will start the booting up process. When the board starts to boot the LEDs will come on in sequence as shown in '''Figure 15''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing in an erratic manner as it boots the Linux kernel.
-
-[[media/image11.jpg|541x254px]]
-
-====== Figure 15. Board Boot Status  ======
-
-
-
-==== 3.4.4  A Booted System ====
+==== 3.3.3  A Booted System ====
 
 <blockquote> Option for the Networked system - what do the users see on the screen? </blockquote>
 
 ====== Figure 16. Desktop Screen  ======
 
-==== 3.5  Powering Down ====
-
-<blockquote> Evaluate pulling in some of the Octavo Systems Power Button Section in the tutorials </blockquote>
+==== 3.3.4  Powering Down ====
 
 1. Standard Power Down: Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.  
 
 2. Hard Power Down:  Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
 
 3. Remove the USB cable.  Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
+
 === 3.4 Development Over a Network Connection  ===
 
 Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. This can also make it fun and easy to share projects running on one PocketBeagle.  
 
-[[media/image12.jpg|356x409px]]
-
 ======  Figure 6. Network Connected PocketBeagle  ======
 
-==== 3.3.1 Getting Started with a Networked PocketBeagle  ====
+==== 3.4.1 Getting Started with a Networked PocketBeagle  ====
 
 Follow all instructions above in Section 3.3 above.
 
@@ -252,26 +231,29 @@ Next, configure your host to utilize tethering then use the virtual serial port 
 
 See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
 <blockquote>  We will need additional software notes, a picture of the screen, steps for a typical case pc </blockquote>
+check here https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee
+=== 3.5 Other ways to connect your PocketBeagle  ===
 
+Cathy's notes:
+We need to highlight the cloud9 IDE way - equate to how an Arduino user comes at the development relationship.
 
-The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
+Also - notes from Jason - likely these should be handled in a different section - section 5?
+
+Method 4)The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
+5)Adding the extra USB via the header - look at the pocketbeagle FAQ
 It is possible to add an additional USB port as described above.
-You can utilize a mikroBUS Click Ethernet or wireless module.
-There are many ways to utilize the expansion interface to create your own networking solution.
+6)You can utilize a mikroBUS Click Ethernet or wireless module.
+7) There are many ways to utilize the expansion interface to create your own networking solution.
+
 = '''4.0 PocketBeagle Overview ''' =
-
 <blockquote>  THE VALUE OF THIS SECTION IS BASICALLY A "WALK AROUND THE BOARD" to tell a new user in chart form and in diagram form what is on the board in front of them from a physical component perspective </blockquote>
+The BeagleBoard.org Foundation has the goal of increasing computer, electronics and robotics literacy at a point they are critical in human history. The PocketBeagle® increases access to inspirational hardware and we believe hands-on experience is the best way to build understanding and empowerment.  
 
-<blockquote> Value proposition and overview paragraph placeholder below </blockquote>
+PocketBeagle is built around Octavo Systems' System-In-Package that integrates a high-performance Texas Instruments AM3358 processor, 512MB of DDR3, power management, nonvolatile serial memory and over 140 passive components into a single package.  This integration saves cost and a small amount of power by eliminating several packages that would otherwise need to be placed on the board, but more notably it saves space of all those packages and simplifies our board design so we can focus on the user experience.   
 
+It also offers access through the expansion headers to many of the interfaces and allows for the use of add-on boards called capes and click boards, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
 
-The PocketBeagle® .   It consists of the OSD3358-512M-BSM, microSD card holder, microUSB connector, and 72 header pins.  The header pins expose many signals that can be used to construct a larger system, like GPIO, PWMs, ADC inputs, USB, and PRU I/O.  
-
-It has been equipped with a minimum set of features to allow the user to experience the power of the processor and is not intended as a full development platform as many of the features and interfaces supplied by the processor are not accessible from the BeagleBone Black via onboard support of some interfaces. It is not a complete product designed to do any particular function. It is a foundation for experimentation and learning how to program the processor and to access the peripherals by the creation of your own software and hardware.
-
-It also offers access to many of the interfaces and allows for the use of add-on boards called capes, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
-
-PocketBeagle is manufactured and warranted by partners listed at https://beagleboard.org/logo for the benefit of the community and its supporters.  The board is designed by x and is based on y  The PCB layout was done by xyz  The software is written and maintained by....  invite new users to join in contributing... </blockquote>(how is this different than the board revision part?  Just reiterating the community aspect.)
+PocketBeagle is manufactured and warranted by partners listed at https://beagleboard.org/logo for the benefit of the community and its supporters.  The board is designed by x and is based on y  The PCB layout was done by xyz  The software is written and maintained by....  invite new users to join in contributing... </blockquote>(Perhaps this paragraph belongs in section 1 or even 2)</blockquote>
 
 === 4.1 PocketBeagle Features and Specification  ===
 
@@ -370,6 +352,8 @@ A switch is provided to allow switching between the modes. <blockquote> need eng
 * If you hold the boot switch down during the removal and reapplication of power to the board, and you have a microSD card inserted with a bootable image, the board will boot from the microSD card.
 
 '''''NOTE: Pressing the RESET button on the board will NOT result in a change of the'' ''boot mode. You MUST remove power and reapply power to change the boot mode.'' ''The boot pins are sampled during power on reset from the PMIC to the processor.'' ''The reset button on the board is a warm reset only and will not force a boot mode'' ''change.'' '''
+
+<blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
 
 === 5.4 Power Management  ===
 
