@@ -1,5 +1,5 @@
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
-
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-walkaround-2.jpg|598x400px]]
 
 '''PocketBeagle'''
 
