@@ -1,5 +1,4 @@
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-walkaround-3.jpg|598x400px]]
 
 '''PocketBeagle'''
 
@@ -332,7 +331,7 @@ This section describes the key components on the board, their location and funct
 
 '''Figure xx''' below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
 
-[[media/image28.jpg|509x340px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-walkaround-3.jpg]]
 
 ======= Figure xx. Key Board Component Locations  =======
 
