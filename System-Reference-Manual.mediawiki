@@ -367,9 +367,8 @@ This section provides the high level specification of the PocketBeagle.
 === 5.1 Block Diagram  ===
 
 '''Figure 19''' below is the high level block diagram of the PocketBeagle.
-(may be redundant w/ section 4, combine with section 4 and expand on the spec for the SiP)
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-block-diagram.png]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-block-diag2.jpg]]
 
 '''Figure 19. PocketBeagle Key Components '''
 
@@ -381,9 +380,44 @@ Details here for SiP specification - The ODS335x-SM Block Diagram and links to a
 
 '''Figure 20. OSD335x SIP Block Diagram '''
 
-==== 5.3.4 MicroSD Connector  ====
+=== 5.3 Connectivity  ===
 
-The board is equipped with a single microSD connector to act as the primary boot source for the board.  The connector will support larger capacity microSD cards. The microSD card is not provided with the board. <minimum size> 
+==== 5.3.1 MicroSD Connector  ====
+
+The board is equipped with a single microSD connector to act as the primary boot source for the board.  The connector will support larger capacity microSD cards. Just about any microSD card you have will work, the install takes less than 2.0G of the memory.
+
+When plugging in the SD card, the writing on the card should be up. Align the card with the connector and push to insert. Then release. There should be a click and the card will start to eject slightly, but it then should latch into the connector. To eject the card, push the SD card in and then remove your finger. The SD card will be ejected from the connector.
+
+Do not pull the SD card out or you could damage the connector.
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-microSDphoto.jpg]]
+====== Figure 21. microSD Connector  ======
+
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/usdconnector-sch.png]]
+
+====== Figure 22. microSD Connections  ======
+
+==== 5.3.2 USB 2.0 Connector  ====
+
+The board has a miniUSB connector that connects the USB0 port to the SiP.
+[[media/image71.jpg|593x387px]]
+
+====== Figure 53. USB Host Connector  ======
+
+The port is USB 2.0 HS compatible and can supply up to 500mA of current. If more current or ports is needed, then a HUB can be used.
+
+=== 7.3 USB   ===
+
+<blockquote> Here is a paragraph about the USB and the Electrical layout of the circuit. </blockquote> 
+
+[[media/image71.jpg|633x454px]]
+
+This port is a USB Client and host interface and is primarily used for connection to a PC.
+
+====== Figure 53. USB Host Connector  ======
+
+The port is USB 2.0 HS compatible and can supply up to 500mA of current. If more current or ports is needed, then a HUB can be used.
 
 ==== 5.3.5 Boot Modes  ====
 
@@ -410,9 +444,6 @@ A switch is provided to allow switching between the modes. <blockquote> need eng
 <blockquote> Editors note: since the BBBlack had an external PMIC, this section existed.  We could incorporate a mention of power management in the specification section above in section 4 or 5 of the SiP and go into more detail of power mgmt in the power section coming up. </blockquote>
 
 
-=== 5.5 PC USB Interface  ===
-
-The board has a miniUSB connector that connects the USB0 port to the SiP.
 
 === 5.6 Serial Debug Port  ===
 
@@ -420,12 +451,6 @@ The board has a miniUSB connector that connects the USB0 port to the SiP.
 
 Serial debug is provided via UART0 on the processor via a single 1x6 pin header. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.
 
-=== 5.7 USB1 Host Port  ===
-
-<blockquote> this is on the header </blockquote>
-On the board is a single USB Type A female connector with full LS/FS/HS Host support that connects to USB1 on the processor. The port can provide power on/off control and up to 500mA of current at 5V. Under USB power, the board will not be able to supply the full 500mA, but should be sufficient to supply enough current for a lower power USB device supplying power between 50 to 100mA.
-
-You can use a wireless keyboard/mouse configuration or you can add a HUB for standard keyboard and mouse interfacing.
 
 === 5.8 Power Sources  ===
 
@@ -511,7 +536,12 @@ The expansion interface on the board is comprised of two 46 pin connectors. All 
 <blockquote> Place the electrical spec of the P1 Header here and also a more detailed chart of the PINOUT </blockquote>
 
 === 7.3 USB   ===
+=== 5.7 USB1 Host Port  ===
 
+<blockquote> this is on the header </blockquote>
+On the board is a single USB Type A female connector with full LS/FS/HS Host support that connects to USB1 on the processor. The port can provide power on/off control and up to 500mA of current at 5V. Under USB power, the board will not be able to supply the full 500mA, but should be sufficient to supply enough current for a lower power USB device supplying power between 50 to 100mA.
+
+You can use a wireless keyboard/mouse configuration or you can add a HUB for standard keyboard and mouse interfacing.
 <blockquote> Here is a paragraph about the USB and the Electrical layout of the circuit. </blockquote> 
 
 [[media/image71.jpg|633x454px]]
@@ -522,11 +552,7 @@ This port is a USB Client and host interface and is primarily used for connectio
 
 <blockquote> Reference the example already completed on the FAQ for adding a USB connection </blockquote>
 
-[[media/image71.jpg|593x387px]]
 
-====== Figure 53. USB Host Connector  ======
-
-The port is USB 2.0 HS compatible and can supply up to 500mA of current. If more current or ports is needed, then a HUB can be used.
 
 === 7.5 Serial connection through the pin on the header  ===
 
@@ -584,17 +610,7 @@ Transmit
 
 '''Figure 56. Serial Header '''
 
-=== 7.7 microSD  ===
 
-A microSD connector is located on the back or bottom side of the board as shown in '''Figure 59''' below. The microSD card is not supplied with the board.
-
-[[media/image71.jpg|579x438px]]
-
-====== Figure 59. microSD Connector  ======
-
-When plugging in the SD card, the writing on the card should be up. Align the card with the connector and push to insert. Then release. There should be a click and the card will start to eject slightly, but it then should latch into the connector. To eject the card, push the SD card in and then remove your finger. The SD card will be ejected from the connector.
-
-Do not pull the SD card out or you could damage the connector.
 
 === 7.9 JTAG PADs and circuitry  ===
 
