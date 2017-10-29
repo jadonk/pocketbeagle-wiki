@@ -394,9 +394,7 @@ Do not pull the SD card out or you could damage the connector.
 ====== Figure 21. microSD Connector  ======
 
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/usdconnector-sch.png]]
 
-====== Figure 22. microSD Connections  ======
 
 ==== 5.3.2 USB 2.0 Connector  ====
 
@@ -506,7 +504,18 @@ The PocketBeagle has the ability to accept up to xyz # of  expansion boards or c
 For more information on cape support refer to ''Section 9.0''.
 
 = '''6.0 Detailed Hardware Design ''' =
-<blockquote> what sections from 6.0 do we need - working on the list  <blockquote>
+<blockquote> I'd really like the header section to come before this one </blockquote>
+
+The following sections describe the hardware design of the PocketBeagle.
+=== 6.x  MicroSD Connection ===
+
+Some words about the microSD connector design on the board here.
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/usdconnector-sch.png]]
+
+====== Figure 22. microSD Connections  ======
+=== 6.y USB Connector ===
+
 
 = '''7.0 Connectors ''' =
 <blockquote> we will have a chart and pics of the diagrams on the connectors <blockquote>
