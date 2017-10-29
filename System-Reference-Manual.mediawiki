@@ -393,29 +393,13 @@ Do not pull the SD card out or you could damage the connector.
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-microSDphoto.jpg]]
 ====== Figure 21. microSD Connector  ======
 
-
-
-
 ==== 5.3.2 USB 2.0 Connector  ====
 
-The board has a miniUSB connector that connects the USB0 port to the SiP.
-[[media/image71.jpg|593x387px]]
+The board has a miniUSB connector that connects the USB0 port to the SiP.  The port is USB 2.0 HS compatible and can supply up to 500mA of current. The connector is primarily used to connect with a PC.  If more current or ports is needed, then a HUB can be used.
 
-====== Figure 53. USB Host Connector  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-USB-photo.png]]
+====== Figure 22. USB 2.0 Connector  ======
 
-The port is USB 2.0 HS compatible and can supply up to 500mA of current. If more current or ports is needed, then a HUB can be used.
-
-=== 7.3 USB   ===
-
-<blockquote> Here is a paragraph about the USB and the Electrical layout of the circuit. </blockquote> 
-
-[[media/image71.jpg|633x454px]]
-
-This port is a USB Client and host interface and is primarily used for connection to a PC.
-
-====== Figure 53. USB Host Connector  ======
-
-The port is USB 2.0 HS compatible and can supply up to 500mA of current. If more current or ports is needed, then a HUB can be used.
 
 ==== 5.3.5 Boot Modes  ====
 
