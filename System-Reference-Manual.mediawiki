@@ -531,7 +531,7 @@ The expansion interface on the board is comprised of two 46 pin connectors. All 
 === 7.1.1 P1 Header  ===
 Words about the design of the P1 Header
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P1-sch.png]]
-====== Figure 30. P1 Header  ======
+====== Figure x. P1 Header  ======
 
 
 <blockquote> also a more detailed chart of the PINOUT </blockquote>
@@ -541,10 +541,20 @@ Words about the design of the P1 Header
 <blockquote> also a more detailed chart of the PINOUT </blockquote>
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P2-sch.png]]
-====== Figure 31. P2 Header  ======
+====== Figure x. P2 Header  ======
+
+=== 7.2 mikroBUS socket connections ===
+
+The PocketBeagle headers support the mikroBUS™ standard.  Up to two mikro Click Boards can be added to the header pins at the same time.  The mikroBUS standard comprises a pair of 1×8 female headers with a standardized pin configuration. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/mikrobus-socket-pinout.jpg]]
+====== Figure x. mikroBUS  ======
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-both-sch.png]]
+====== Figure x. PocketBeagle Both Headers  ======
 
 === 7.3 USB   ===
-=== 5.7 USB1 Host Port  ===
+=== USB1 Host Port  ===
 
 <blockquote> this is on the header </blockquote>
 Old wording - need new "On the board is a single USB Type A female connector with full LS/FS/HS Host support that connects to USB1 on the processor. The port can provide power on/off control and up to 500mA of current at 5V. Under USB power, the board will not be able to supply the full 500mA, but should be sufficient to supply enough current for a lower power USB device supplying power between 50 to 100mA."
@@ -714,7 +724,7 @@ If you feel your board is defective or has issues, request an RMA by filling out
 
 If you need some up to date troubleshooting techniques, we have a Wiki set up at [https://github.com/beagleboard/pocketbeagle/wiki ''https://github.com/beagleboard/pocketbeagle/wiki'' ]
 
-Notes to cathy - make sure we cover these things:
+== other things to add and Notes to cathy ==
 * System/software sections in SRM regarding usage of:
 - GPIO (LEDs https://gist.github.com/jadonk/d740c45b04bf0298da03075327c38d60, GPIOs pretty good example https://falsinsoft.blogspot.com/2012/11/access-gpio-from-linux-user-space.html, my favorite, but requiring some better background: https://github.com/beagleboard/beaglebone-blue/wiki/One-Liner-Module-Tests#GP0)
 - SPI with special added section on LCDs
