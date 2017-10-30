@@ -491,6 +491,12 @@ For more information on cape support refer to ''Section 9.0''.
 <blockquote> I'd really like the header section to come before this one </blockquote>
 
 The following sections describe the hardware design of the PocketBeagle.
+=== 6.q  OSD3358-SM SiP Design ===
+Here are some words about how to read the schematics of the SiP.
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
+
+====== Figure 10-15. SiP Connections  ======
 === 6.x  MicroSD Connection ===
 
 Some words about the microSD connector design on the board here.
@@ -499,13 +505,31 @@ Some words about the microSD connector design on the board here.
 
 ====== Figure 22. microSD Connections  ======
 === 6.y USB Connector ===
+Some words about the USB connector design on the board here.
 
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/USB-sch.png]]
+
+====== Figure 23. microSD Connections  ======
+
+=== 6.z Power Button Design ===
+Some words about the Power Button design on the board here.
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Power-button-sch.png]]
+
+====== Figure 23. Power Button  ======
+
+=== 6.aa User LEDs ===
+Some words about the User LED design on the board here.
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/User-LEDs-sch.png]]
+
+====== Figure 24. User LEDs  ======
 
 = '''7.0 Connectors ''' =
-<blockquote> we will have a chart and pics of the diagrams on the connectors <blockquote>
+
 This section describes each of the connectors on the board.
 
-
+<blockquote> we will have a chart and pics of the diagrams on the connectors <blockquote>
 
 === 7.1 Expansion Connectors  ===
 
@@ -522,36 +546,36 @@ The expansion interface on the board is comprised of two 46 pin connectors. All 
 ====== Figure 50. Expansion Connector Location  ======
 
 === 7.1.1 P1 Header  ===
-<blockquote> Place the electrical spec of the P1 Header here and also a more detailed chart of the PINOUT </blockquote>
+Words about the design of the P1 Header
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P1-sch.png]]
+====== Figure 30. P1 Header  ======
+
+
+<blockquote> also a more detailed chart of the PINOUT </blockquote>
 
 === 7.1.1 P2 Header  ===
 
-<blockquote> Place the electrical spec of the P1 Header here and also a more detailed chart of the PINOUT </blockquote>
+<blockquote> also a more detailed chart of the PINOUT </blockquote>
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P2-sch.png]]
+====== Figure 31. P2 Header  ======
 
 === 7.3 USB   ===
 === 5.7 USB1 Host Port  ===
 
 <blockquote> this is on the header </blockquote>
-On the board is a single USB Type A female connector with full LS/FS/HS Host support that connects to USB1 on the processor. The port can provide power on/off control and up to 500mA of current at 5V. Under USB power, the board will not be able to supply the full 500mA, but should be sufficient to supply enough current for a lower power USB device supplying power between 50 to 100mA.
-
-You can use a wireless keyboard/mouse configuration or you can add a HUB for standard keyboard and mouse interfacing.
-<blockquote> Here is a paragraph about the USB and the Electrical layout of the circuit. </blockquote> 
-
-[[media/image71.jpg|633x454px]]
-
-This port is a USB Client and host interface and is primarily used for connection to a PC.
+Old wording - need new "On the board is a single USB Type A female connector with full LS/FS/HS Host support that connects to USB1 on the processor. The port can provide power on/off control and up to 500mA of current at 5V. Under USB power, the board will not be able to supply the full 500mA, but should be sufficient to supply enough current for a lower power USB device supplying power between 50 to 100mA."
 
 === 7.4 Setting up an additional USB connection ===
 
 <blockquote> Reference the example already completed on the FAQ for adding a USB connection </blockquote>
 
-
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_microUSB_bb.png]]
 
 === 7.5 Serial connection through the pin on the header  ===
 
 details on how to connect and boot through Serial
 
-[[media/image71.jpg|527x351px]]
 
 ====== Figure 54. Serial Debug through pins on the header ======
 
@@ -611,24 +635,10 @@ A place for an optional 20 pin CTI JTAG header is provided on the board to facil
 
 If you need the JTAG connector you can solder it on yourself. No other components are needed. The connector is made by Samtec and the part number is FTR-110-03-G-D-06. You can purchase it from [http://www.digikey.com/ ''www.digikey.com''.]
 
-= '''8.0 Cape Board and Click Board Support ''' =
-<blockquote> Need a whole section here on Using the Headers for various pins and CLICK Boards also</blockquote>
+= '''8.0 Cape Support ''' =
+<blockquote> Need a separate section for developing new capes </blockquote>
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
-
-=== 9.1 Detailed section of the functions below  ===
-
-
-
-* System/software sections in SRM regarding usage of:
-- GPIO (LEDs https://gist.github.com/jadonk/d740c45b04bf0298da03075327c38d60, GPIOs pretty good example https://falsinsoft.blogspot.com/2012/11/access-gpio-from-linux-user-space.html, my favorite, but requiring some better background: https://github.com/beagleboard/beaglebone-blue/wiki/One-Liner-Module-Tests#GP0)
-- SPI with special added section on LCDs
-- I2C
-- UART including enabling/disabling consoles and mikrobus power impacts
-- PRU with and without RPMsg and mmap
-- pinmux helpers
-- CAN
-- USB host, client and power control
 
 === 8.2 Click Board circuitry and using them  =
 
@@ -701,7 +711,6 @@ It is a good idea to always use the latest software. Instructions for how to upd
 
 Download the latest software files from [https://beagleboard.org/latest-images ''beagleboard.org/latest-images'']
 
-
 === 11.3 RMA Support  ===
 
 If you feel your board is defective or has issues, request an RMA by filling out the form at [http://beagleboard.org/support/rma ''http://beagleboard.org/support/rma''] . You will need the serial number and revision of the board. The serial numbers and revisions keep moving. Different boards can have different locations depending on when they were made. The following figures show the three locations of the serial and revision number.
@@ -721,4 +730,15 @@ If you feel your board is defective or has issues, request an RMA by filling out
 == 11.4.7 Getting Help  ==
 
 If you need some up to date troubleshooting techniques, we have a Wiki set up at [https://github.com/beagleboard/pocketbeagle/wiki ''https://github.com/beagleboard/pocketbeagle/wiki'' ]
+
+Notes to cathy - make sure we cover these things:
+* System/software sections in SRM regarding usage of:
+- GPIO (LEDs https://gist.github.com/jadonk/d740c45b04bf0298da03075327c38d60, GPIOs pretty good example https://falsinsoft.blogspot.com/2012/11/access-gpio-from-linux-user-space.html, my favorite, but requiring some better background: https://github.com/beagleboard/beaglebone-blue/wiki/One-Liner-Module-Tests#GP0)
+- SPI with special added section on LCDs
+- I2C
+- UART including enabling/disabling consoles and mikrobus power impacts
+- PRU with and without RPMsg and mmap
+- pinmux helpers
+- CAN
+- USB host, client and power control
 
