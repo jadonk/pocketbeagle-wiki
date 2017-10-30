@@ -128,7 +128,8 @@ This section will describe how to connect the board for use. Information can als
 The board can be configured in several different ways, but we will discuss the two most common scenarios.
 
 * Tethered to a PC via the USB cable with local development
-** Board is accessed as a storage drive
+** Board is accessed as a storage drive through standard windows/mac folders
+** Board is accessed via ethernet over USB (RNDIS Ethernet) communication
 * Connecting the PocketBeagle to a PC via USB cable and configuring to share access
 ** Board is accessed via the internet
 
@@ -136,7 +137,7 @@ The board can be configured in several different ways, but we will discuss the t
 
 In this configuration, you will need the following additional items: 
 * miniUSB to USB Type A Cable
-* microSD card
+* microSD card (>4GB)
 
 The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
 
