@@ -6,7 +6,7 @@
 
 '''Revision A.x (on-line wiki edition)'''
 
-'''October 19, 2017'''
+'''October 30, 2017'''
 
 '''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
 
@@ -111,14 +111,14 @@ This section provides instructions on how to hook up your board. Two scenarios w
 
 === 3.1 What’s In the Package  ===
 
-In the package you will find two items as shown in '''Figure 1'''.
+In the package you will find two items as shown in '''Figure x'''.
 
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
 
-======  Figure 1. In The Package  ======
+======  Figure x. In The Package  ======
 
 === 3.2 Connecting the board ===
 
@@ -138,11 +138,11 @@ In this configuration, you will need the following additional items:
 * miniUSB to USB Type A Cable
 * microSD card
 
-The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 2''' shows this configuration.
+The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tethered.png]]
 
-======  Figure 2. Tethered Configuration  ======
+======  Figure x. Tethered Configuration  ======
 
 In some instances, such as when additional add-on boards, or capes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
 
@@ -164,27 +164,28 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 
 3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot.  It is important that your microSD card is fully inserted prior to powering the system.
 
-<blockquote>Include hardware photo</blockquote>
+<blockquote>Include hardware photo showing insert of microSD Card</blockquote>
+======  Figure x. USB Connection to the Board  ======
 
 4. Connect the small connector on the USB cable to the board as shown in '''Figure x'''.
 
-<blockquote>photo here similar to the BBB one </blockquote>
+<blockquote>Include hardware photo showing insert of USB to the board</blockquote>
 
-======  Figure 3. USB Connection to the Board  ======
+======  Figure x. USB Connection to the Board  ======
 
-5. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.  The board will power on and the power LED will be on as shown in '''Figure 4''' below.
-<blockquote>photo here similar to the BBB one </blockquote> 
-======  Figure 4. Board Power LED  ======
+5. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.  The board will power on and the power LED will be on as shown in '''Figure x''' below.
 
-6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure 5''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-powerLED-photo.png]]
+======  Figure x. Board Power LED  ======
+
+6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure x''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
 * '''USER0''' is the heartbeat indicator from the Linux kernel.
 * '''USER1''' turns on when the microSD card is being accessed
 * '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
 * '''USER3''' idle
-<blockquote>photo here similar to the BBB one </blockquote> [[media/image11.jpg|541x254px]]
-
-======  Figure 5. Board Boot Status  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-userLED-photo.png]]
+======  Figure x. Board Boot Status  ======
 
 ==== 3.3.2 Accessing the Board as a Storage Drive  ====
 
@@ -195,13 +196,7 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 # The file will be opened by your browser on the PC and you should get a display showing the Quick Start Guide.
 # Your board is now operational! Follow the instructions on your computer screen.
 
-==== 3.3.3  A Booted System ====
-
-<blockquote> Option for the Networked system - what do the users see on the screen? </blockquote>
-
-====== Figure 16. Desktop Screen  ======
-
-==== 3.3.4  Powering Down ====
+==== 3.3.3  Powering Down ====
 
 1. Standard Power Down: Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.  
 
@@ -209,18 +204,22 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 
 3. Remove the USB cable.  Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
 
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-powerbutton.png]]
+======  Figure x. Power Button  ======
+
 === 3.4 Development Over a Network Connection  ===
 
 Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. This can also make it fun and easy to share projects running on one PocketBeagle.  
 
-======  Figure 6. Network Connected PocketBeagle  ======
+<blockquote> What photo can we have for this option, how much of the blog do we pull through </blockquote>
+
+======  Figure x. Network Connected PocketBeagle  ======
 
 ==== 3.4.1 Getting Started with a Networked PocketBeagle  ====
 
 Follow all instructions above in Section 3.3 above.
 
-Useful instructions:
-https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee
+<blockquote> https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee </blockquote>
 
 ==== 3.4.2 Connecting Up the Board  ====
 
@@ -229,20 +228,17 @@ Next, configure your host to utilize tethering then use the virtual serial port 
 [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
 
 See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
-<blockquote>  We will need additional software notes, a picture of the screen, steps for a typical case pc </blockquote>
-check here https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee
-=== 3.5 Other ways to connect your PocketBeagle  ===
 
-Cathy's notes:
-We need to highlight the cloud9 IDE way - equate to how an Arduino user comes at the development relationship.
+=== 3.5 Other ways to connect and get started with your PocketBeagle  ===
 
-Also - notes from Jason - likely these should be handled in a different section - section 5?
+<blockquote> I'd like to include programming via bringing up cloud9 IDE - most similar to Arduino users</blockquote> 
 
-Method 4)The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
+<blockquote> Method 4)The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
 5)Adding the extra USB via the header - look at the pocketbeagle FAQ
 It is possible to add an additional USB port as described above.
 6)You can utilize a mikroBUS Click Ethernet or wireless module.
 7) There are many ways to utilize the expansion interface to create your own networking solution.
+</blockquote> 
 
 = '''4.0 PocketBeagle Overview ''' =
 PocketBeagle is built around Octavo Systems' System-In-Package that integrates a high-performance Texas Instruments AM3358 processor, 512MB of DDR3, power management, nonvolatile serial memory and over 140 passive components into a single package.  This integration saves cost and a small amount of power by eliminating several packages that would otherwise need to be placed on the board, but more notably it saves space of all those packages and simplifies our board design so we can focus on the user experience.   
@@ -255,7 +251,7 @@ PocketBeagle is manufactured and warranted by partners listed at https://beagleb
 
 This section covers the specifications and features of the board in a chart and provides a high level description of the major components and interfaces that make up the board.
 
-'''Table 2.  PocketBeagle Features'''
+'''Table x.  PocketBeagle Features'''
 
 {| {{table}}
 | align="center" style="background:#f0f0f0;"|'''Feature'''
@@ -318,21 +314,16 @@ This section covers the specifications and features of the board in a chart and 
 The Octavo Systems OSD3358-512M-BSM System-In-Package includes:
 
 <blockquote>'''Placeholder for description of OSD3358 etc and links '''</blockquote>
-AM3358, 512MB DDR3L, 4KB EEPROM, 
-TPS65217C, TL5209, xyz quantity of Passives - 
-21mm X 21mm, 256 Ball BGA, 0°C to 85°C
-
-BLOCK DIAGRAM OF THE SIP
 
 === 4.2 Board Component Locations  ===
 
 This section describes the key components on the board, their location and function. 
 
-'''Figure xx''' below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
+'''Figure x''' below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-walkaround.png]]
 
-======= Figure xx. Key Board Component Locations  =======
+======= Figure x. Key Board Component Locations  =======
 
 '''Key Components'''
 
@@ -349,14 +340,6 @@ This section describes the key components on the board, their location and funct
 * There are four blue '''LED'''S that can be used by the user.
 * '''microSD''' slot is where a microSD card can be installed.
 * '''USB Host''' can be connected different USB interfaces such as Wi-Fi, BT, Keyboard, etc.
-
-
-
- === 4.3 BeagleBone Black Compatibility  ===
-
-<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. not sure this should be here, perhaps later in the section about the headers. </blockquote>
-
-<blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  </blockquote>
 
 
 = '''5.0 PocketBeagle High Level Specification ''' =
@@ -424,8 +407,6 @@ A switch is provided to allow switching between the modes. <blockquote> need eng
 
 <blockquote> Editors note: since the BBBlack had an external PMIC, this section existed.  We could incorporate a mention of power management in the specification section above in section 4 or 5 of the SiP and go into more detail of power mgmt in the power section coming up. </blockquote>
 
-
-
 === 5.6 Serial Debug Port  ===
 
 <blockquote> pins 30/32 on the header - is this something to highlight </blockquote> 
@@ -480,6 +461,9 @@ If you need the JTAG connector you can solder it on yourself. No other component
 
 Is there an example done by a competing board on these PADs.
 
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/JTAG-pads-sch.png]]
+====== Figure x. JTAG Pad Connections  ======
+
 === 5.14 Cape Board AND CLICK BOARD Support  ===
 
 The PocketBeagle has the ability to accept up to xyz # of  expansion boards or capes that can be stacked onto the expansion headers. The word cape comes from the add-on board shape of the boards that fit onto the original BeagleBone series. (link to story)
@@ -490,8 +474,8 @@ For more information on cape support refer to ''Section 9.0''.
 <blockquote> I'd really like the header section to come before this one </blockquote>
 
 The following sections describe the hardware design of the PocketBeagle.
-=== 6.q  OSD3358-SM SiP Design ===
-Here are some words about how to read the schematics of the SiP.
+=== 6.x  OSD3358-SM SiP Design ===
+Here are some words about how to read the schematics of the SiP.  how do differentiate the sections
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
 
@@ -741,3 +725,10 @@ Notes to cathy - make sure we cover these things:
 - CAN
 - USB host, client and power control
 
+
+
+ === 4.3 BeagleBone Black Compatibility  ===
+
+<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. not sure this should be here, perhaps later in the section about the headers. </blockquote>
+
+<blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  </blockquote>
