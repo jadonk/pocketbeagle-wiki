@@ -118,7 +118,7 @@ In the package you will find two items as shown in '''Figure 1'''.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
 
-'''Figure 1. In The Package '''
+======  Figure 1. In The Package  ======
 
 === 3.2 Connecting the board ===
 
@@ -136,11 +136,11 @@ The board can be configured in several different ways, but we will discuss the t
 
 In this configuration, you will need the following additional items: 
 * miniUSB to USB Type A Cable
-* microSD card, 4K minimum
+* microSD card
 
-the board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 2''' shows this configuration.
+The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via the browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 2''' shows this configuration.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/tethered bbb placeholder.jpg|299x200px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tethered.png]]
 
 ======  Figure 2. Tethered Configuration  ======
 
@@ -153,14 +153,14 @@ Follow along with the instructions at [https://beagleboard.org/getting-started '
 1. Download the latest image onto your computer at [https://bbb.io/latest ''bbb.io/latest'']
 
 Follow the link to the latest image and click on the Debian image for Stretch IoT (non-GUI) for BeagleBone and PocketBeagle via microSD card.  This will download a .img.xz file into the download folder of your computer.
-<blockquote>Photo of the getting started page</blockquote>
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-gettingstarted-1.png]]
 
 2. Transfer the image to a microSD card
 
 Download and install an SD card programming utility.  We like [https://etcher.io/ ''https://etcher.io/''] 
 Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for burning the image from your computer to the microSD card.  Eject the SD card reader when prompted and remove the card.
-<blockquote> Include a photo of the getting started page about burning</blockquote>
-<blockquote> Include a photo of a microSD in a SD card writer</blockquote>
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-gettingstarted-2.png]]
 
 3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot.  It is important that your microSD card is fully inserted prior to powering the system.
 
@@ -666,11 +666,12 @@ Weight: 1.4 oz
 
 = '''10.0 Pictures ''' =
 
-[[media/image91.jpg|476x768px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_Front_BW.jpg]]
 
 '''Figure 74. Top Side '''
 
-[[media/image92.jpg|486x764px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_Back_BW.jpg]]
+
 
 '''Figure 75. Bottom Side '''
 
@@ -684,11 +685,11 @@ All support for this design is through the BeagleBoard.org community at:
 
 === 11.1 Hardware Design  ===
 
-Design documentation can be found on the wiki. <blockquote> need a URL here </blockquote>
+Design documentation can be found on the wiki. [https://github.com/beagleboard/pocketbeagle ''https://github.com/beagleboard/pocketbeagle'']
 Including:
 
-* Schematic in PDF
-* Schematic in OrCAD (Cadence Design Entry CIS 16.3)
+* Schematic in PDF  [https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_sch.pdf ''https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_sch.pdf'']
+* Schematic in KiCAD [https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD ''https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD'']
 * PCB Gerber
 * PCB Layout (Allegro)
 * Bill of Material
