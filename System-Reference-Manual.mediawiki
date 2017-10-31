@@ -398,14 +398,8 @@ There are three boot modes:  <blockquote> Need to come back and edit this sectio
 
 <blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior is any of this applicable/useful? - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
 
-=== 5.5 Power Management  ===
-
-<blockquote> Editors note: since the BBBlack had an external PMIC, this section existed.  We could incorporate a mention of power management in the specification section above in section 4 or 5 of the SiP and go into more detail of power mgmt in the power section coming up. </blockquote>
-
-
-
-
 === 5.4 Power  ===
+<blockquote>Come back to this section with drawing of power sources</blockquote>
 
 The board can be powered from three different sources:
 
@@ -414,60 +408,23 @@ The board can be powered from three different sources:
 * Expansion connectors - 
 ** include utilizing to hook up a battery.
 
-<blockquote>need to include more information regarding the  use of a battery as this is a key feature.  </blockquote>
+<blockquote>need to include more information in an app note separately regarding the  use of a battery as this is a key feature, but need discussion (EW).  </blockquote>
 
-<blockquote> need engineering review </blockquote> '''This port is limited to 500mA by the Power Management IC. It is possible to change the settings in the '''TPS65217C''' to increase this current, but only after the initial boot. And, at that point the PC most likely will complain, but you can also use a dual connector USB cable to the PC to get to 1A.'''
+=== 5.12 JTAG Pads  ===
 
-Power routed to the board via the expansion header could be provided from power derived on a cape. The DC supply should be well regulated and 5V +/-.25V.
+Pads for an optional connection to a JTAG emulator has been provided on the back of the PocketBeagle. 
+More information about JTAG emulation can be found on the TI website at [www.ti.com/jtag ''www.ti.com/jtag'']
 
-=== 5.10 Power Button  ===
-
-<blockquote> some of this is already covered in section 3 </blockquote>
-
-A power button is provided near the reset button close to the Ethernet connector. This button takes advantage of the input to the PMIC for power down features. While a lot of capes have a button, it was decided to add this feature to the board to ensure everyone had access to some new features. These features include:
-
-* Interrupt is sent to the processor to facilitate an orderly shutdown to save files and to un-mount drives.
-* Provides ability to let processor put board into a sleep mode to save power.
-* Can alert processor to wake up from sleep mode and restore state before sleep was entered.
-
-If you hold the button down longer than 8 seconds, the board will power off if you release the button when the power LED turns off. If you continue to hold it, the board will power back up completing a power cycle.
-
-'''''''We recommend that you use this method to power down the board. It will also help prevent contamination of the SD card '''''''
-
-If you do not remove the power jack, you can press the button again and the board will power up.
-
-=== 5.11 Indicators  ===
-
-There are a total of five blue LEDs on the board.
-
-* One blue power LED indicates that power is applied and the power management IC is up. If this LED flashes when applying power, it means that an excess current flow was detected and the PMIC has shut down.
-* Four blue LEDs that can be controlled via the SW by setting GPIO pins.
-
-
-=== 5.12 CTI JTAG Header  ===
-
-UPDATE THIS DESCRIPTION TO HIGHLIGHT THE PADS: A place for an optional 20 pin CTI JTAG header is provided on the board to facilitate the SW development and debugging of the board by using various JTAG emulators. This header is not supplied standard on the board. To use this, a connector will need to be soldered onto the board.
-
-If you need the JTAG connector you can solder it on yourself. No other components are needed. The connector is made by Samtec and the part number is FTR-110-03-G-D-06. You can purchase it from [http://www.digikey.com/ ''www.digikey.com''.]
-
-Is there an example done by a competing board on these PADs.
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/JTAG-pads-sch.png]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-JTAGpad-photo.png]]
 ====== Figure x. JTAG Pad Connections  ======
-
-=== 5.14 Cape Board AND CLICK BOARD Support  ===
-
-The PocketBeagle has the ability to accept up to xyz # of  expansion boards or capes that can be stacked onto the expansion headers. The word cape comes from the add-on board shape of the boards that fit onto the original BeagleBone series. (link to story)
-
-For more information on cape support refer to ''Section 9.0''.
 
 === 5.4 Serial Debug Port  ===
 <blockquote> Where do we put this section? </blockquote> 
 <blockquote> pins 30/32 on the header - is this something to highlight </blockquote> 
 
-Serial debug is provided via UART0 on the processor via a single 1x6 pin header. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.
+<blockquote>Serial debug is provided via UART0 on the processor via a single 1x6 pin header. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.</blockquote> 
+
 = '''6.0 Detailed Hardware Design ''' =
-<blockquote> I'd really like the header section to come before this one </blockquote>
 
 The following sections describe the hardware design of the PocketBeagle.
 === 6.x  OSD3358-SM SiP Design ===
@@ -502,8 +459,11 @@ Some words about the User LED design on the board here.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/User-LEDs-sch.png]]
 
-====== Figure 24. User LEDs  ======
 
+====== Figure 24. User LEDs  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/JTAG-pads-sch.png]]
+
+====== Figure x. JTAG Pad Connections  ======
 = '''7.0 Connectors ''' =
 
 This section describes each of the connectors on the board.
