@@ -60,6 +60,20 @@ echo 1 > ${ocp}/48304000.epwmss/48304200.pwm/pwm/pwmchip*/pwm1/enable
 
 # CAN
 
+* dcan0_rx: P1_28 or P1_30
+```
+config-pin P1_28 can
+#or
+config-pin P1_30 can
+```
+
+* dcan0_tx: P1_26 or P1_32
+```
+config-pin P1_26 can
+#or
+config-pin P1_32 can
+```
+
 * dcan1_rx: P2_09 or P2_25
 ```
 config-pin P2_09 can
