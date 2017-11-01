@@ -427,12 +427,36 @@ More information about JTAG emulation can be found on the TI website at [www.ti.
 = '''6.0 Detailed Hardware Design ''' =
 
 The following sections describe the hardware design of the PocketBeagle.
-=== 6.x  OSD3358-SM SiP Design ===
+=== 6.1  OSD3358-SM SiP Design ===
 Here are some words about how to read the schematics of the SiP.  how do differentiate the sections
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
+==== 6.1.1 SiP A TitleA ====
 
-====== Figure 10-15. SiP Connections  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
+====== Figure x. SiP Connections  ======
+
+==== 6.1.2 SiP B TitleB ====
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-B-sch.png]]
+====== Figure x. SiP Connections  ======
+
+==== 6.1.3 SiP C TitleC ====
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-C-sch.png]]
+====== Figure x. SiP Connections  ======
+
+==== 6.1.4 SiP D TitleD ====
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-D-sch.png]]
+====== Figure x. SiP Connections  ======
+
+==== 6.1.5 SiP E TitleE ====
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-E-sch.png]]
+====== Figure x. SiP Connections  ======
+
+==== 6.1.6 SiP F TitleF ====
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-F-sch.png]]
+====== Figure x. SiP Connections  ======
+
+
+
 === 6.x  MicroSD Connection ===
 
 Some words about the microSD connector design on the board here.
