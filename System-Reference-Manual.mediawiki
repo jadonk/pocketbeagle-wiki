@@ -130,11 +130,11 @@ The board can be configured in several different ways, but we will discuss the t
 * Connecting the PocketBeagle to a PC via USB cable and configuring to share access
 ** Board is accessed via the internet
 
-=== 3.3 Tethered To A PC  ===
+=== 3.3 Tethered to a PC using Debian Images ===
 
 In this configuration, you will need the following additional items: 
-* miniUSB to USB Type A Cable
-* microSD card (>4GB and <128GB)
+* microUSB to USB Type A Cable
+* microSD card (>=4GB and <128GB)
 
 The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
 
