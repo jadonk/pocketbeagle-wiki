@@ -15,7 +15,7 @@
 '''THIS DOCUMENT '''
 
 '''Terms'''
-These design materials are *NOT SUPPORTED* and *DO NOT* constitute a reference design. Only “community” support is allowed via resources at [BeagleBoard.org/discuss](https://beagleboard.org/discuss).
+These design materials are *NOT SUPPORTED* and *DO NOT* constitute a reference design. Only “community” support is allowed via resources at [https://beagleboard.org/discuss BeagleBoard.org/discuss].
 
 THERE IS NO WARRANTY FOR THE DESIGN MATERIALS, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE DESIGN MATERIALS “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE DESIGN MATERIALS IS WITH YOU. SHOULD THE DESIGN MATERIALS PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
@@ -130,11 +130,11 @@ The board can be configured in several different ways, but we will discuss the t
 * Connecting the PocketBeagle to a PC via USB cable and configuring to share access
 ** Board is accessed via the internet
 
-=== 3.3 Tethered To A PC  ===
+=== 3.3 Tethered to a PC using Debian Images ===
 
 In this configuration, you will need the following additional items: 
-* miniUSB to USB Type A Cable
-* microSD card (>4GB and <128GB)
+* microUSB to USB Type A Cable
+* microSD card (>=4GB and <128GB)
 
 The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
 
@@ -259,7 +259,7 @@ This section covers the specifications and features of the board in a chart and 
 |-
 | System-In-Package||Octavo Systems OSD335x-SM in 256 Ball BGA (21mm x 21mm)
 |-
-| SiP Incorporates : ||
+| colspan="2" | SiP Incorporates : |
 |-
 | Processor||Texas Instruments 1GHz Sitara™ AM3358 ARM® Cortex®-A8 with NEON floating-point accelerator
 |-
