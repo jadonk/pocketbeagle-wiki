@@ -259,7 +259,7 @@ This section covers the specifications and features of the board in a chart and 
 |-
 | System-In-Package||Octavo Systems OSD335x-SM in 256 Ball BGA (21mm x 21mm)
 |-
-| SiP Incorporates : ||
+| colspan="2" | SiP Incorporates : ||
 |-
 | Processor||Texas Instruments 1GHz Sitara™ AM3358 ARM® Cortex®-A8 with NEON floating-point accelerator
 |-
