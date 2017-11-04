@@ -29,7 +29,7 @@ See the [LICENSE](https://github.com/beagleboard/pocketbeagle/blob/master/LICENS
 
 = '''1.0 Introduction ''' =
 
-This document is the '''System Reference Manual''' for the PocketBeagle and covers its use and design. 
+This document is the '''System Reference Manual''' for PocketBeagle and covers its use and design. 
 PocketBeagle is an ultra-tiny-yet-complete Linux-enabled, community-supported, open-source USB-key-fob-computer.  PocketBeagle features an incredible low cost, slick design and simple usage, making it the ideal development board for beginners and professionals alike.  Simply develop directly in a web browser providing you with a playground for programming and electronics.  Exploring is made easy with several available libraries and tutorials with many more coming.  
 
 PocketBeagle will boot directly from a microSD card.  Load a Linux distribution onto your microSD card, plug your board into your computer and get started.  PocketBeagle runs GNU.Linux, so you can leverage many different high-level programming languages and a large body of drivers that that prevent you from needing to write a lot of your own software.  
@@ -102,9 +102,9 @@ this may be in the board revision chart or perhaps there is another way that thi
 
 * '' Changes from A1 to A2 ''
 
-= '''3.0 Connecting Up Your PocketBeagle ''' =
+= '''3.0 Connecting Up PocketBeagle ''' =
 
-This section provides instructions on how to hook up your board. The most common scenario is tethering your PocketBeagle to and using your PC for local development.
+This section provides instructions on how to hook up your board. The most common scenario is tethering PocketBeagle to and using your PC for local development.
 
 === 3.1 What’s In the Package  ===
 
@@ -127,7 +127,7 @@ The board can be configured in several different ways, but we will discuss the t
 * Tethered to a PC via the USB cable with local development
 ** Board is accessed as a storage drive through standard windows/mac folders
 ** Board is accessed via ethernet over USB (RNDIS Ethernet) communication
-* Connecting the PocketBeagle to a PC via USB cable and configuring to share access
+* Connecting PocketBeagle to a PC via USB cable and configuring to share access
 ** Board is accessed via the internet
 
 === 3.3 Tethered to a PC using Debian Images ===
@@ -194,10 +194,10 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 
 # Open the USB Drive folder.
 # Click on the file named '''START.HTM'''
-# The file running on your PocketBeagle will be opened by your browser on the PC and you should get a display showing the Quick Start Guide.
+# The file running on PocketBeagle will be opened by the browser on your PC and you should get a display showing the Quick Start Guide.
 # Your board is now operational! Follow the instructions on your computer screen to try out the BeagleBone 101 examples:
 1.  'Step 1' Power and Boot (you've done this)
-2.  'Step 2' Enable a Network Connection (pointing to the DHCP server that is running on your PocketBeagle)
+2.  'Step 2' Enable a Network Connection (pointing to the DHCP server that is running on PocketBeagle)
 3.  'Step 3' Browse to your Beagle (Brings up a variety of familiar coding examples and tutorials - see figure x.x)
      These examples will run directly on your PocketBeagle from the browser.  You'll find tutorial examples in Bonescript, which uses familiar Arduino function calls (See figure x.x below) as well as using NodeRed and using Cloud 9 IDE.  
 
@@ -230,13 +230,13 @@ Many host computers support tethering.  In this configuration, the board can be 
 
 ==== 3.4.2 Other examples ====
 
-As other examples become documented, we'll update them on the PocketBeagle Wiki
+As other examples become documented, we'll update them on the Wiki for PocketBeagle
 [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
 
 See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
 
 <blockquote> Method 4)The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
-5)Adding the extra USB via the header - look at the pocketbeagle FAQ
+5)Adding the extra USB via the header - look at the FAQ for PocketBeagle
 It is possible to add an additional USB port as described above.
 6)You can utilize a mikroBUS Click Ethernet or wireless module.
 7) There are many ways to utilize the expansion interface to create your own networking solution.
@@ -339,11 +339,11 @@ This section describes the key components on the board, their location and funct
 
 = '''5.0 PocketBeagle High Level Specification ''' =
 
-This section provides the high level specification of the PocketBeagle.
+This section provides the high level specification of PocketBeagle.
 
 === 5.1 Block Diagram  ===
 
-'''Figure 19''' below is the high level block diagram of the PocketBeagle.
+'''Figure 19''' below is the high level block diagram of PocketBeagle.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-block-diag3.png]]
 
@@ -394,7 +394,7 @@ There are three boot modes:  <blockquote> Need to come back and edit this sectio
 * '''Serial Boot…'''This mode will use the serial port to allow downloading of the software direct. A separate USB to serial cable is required to use this port.
 * '''USB Boot…'''This mode supports booting over the USB port.
 
-'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''  <blockquote> where on the TI website (TI Linux SDK?) should we send them and is it supported for the PocketBeagle </blockquote>
+'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''  <blockquote> where on the TI website (TI Linux SDK?) should we send them and is it supported for PocketBeagle </blockquote>
 
 <blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior is any of this applicable/useful? - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
 
@@ -412,7 +412,7 @@ The board can be powered from three different sources:
 
 === 5.12 JTAG Pads  ===
 
-Pads for an optional connection to a JTAG emulator has been provided on the back of the PocketBeagle. 
+Pads for an optional connection to a JTAG emulator has been provided on the back of PocketBeagle. 
 More information about JTAG emulation can be found on the TI website at [www.ti.com/jtag ''www.ti.com/jtag'']
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-JTAGpad-photo.png]]
@@ -426,7 +426,7 @@ More information about JTAG emulation can be found on the TI website at [www.ti.
 
 = '''6.0 Detailed Hardware Design ''' =
 
-The following sections describe the hardware design of the PocketBeagle.
+The following sections describe the hardware design of PocketBeagle.
 === 6.1  OSD3358-SM SiP Design ===
 Here are some words about how to read the schematics of the SiP.  how do differentiate the sections
 
@@ -524,8 +524,7 @@ Words about the design of the P1 Header
 ====== Figure x. P2 Header  ======
 
 === 7.2 mikroBUS socket connections ===
-
-The PocketBeagle headers support the mikroBUS™ standard.  Up to two mikro Click Boards can be added to the header pins at the same time.  The mikroBUS standard comprises a pair of 1×8 female headers with a standardized pin configuration. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
+The headers on PocketBeagle support the mikroBUS™ standard.  Up to two mikro Click Boards can be added to the header pins at the same time.  The mikroBUS standard comprises a pair of 1×8 female headers with a standardized pin configuration. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/mikrobus-socket-pinout.jpg]]
 ====== Figure x. mikroBUS  ======
@@ -719,6 +718,6 @@ If you need some up to date troubleshooting techniques, we have a Wiki set up at
 
  === 4.3 BeagleBone Black Compatibility  ===
 
-<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on the PocketBeagle.  Include a full pin list. not sure this should be here, perhaps later in the section about the headers. </blockquote>
+<blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on PocketBeagle.  Include a full pin list. not sure this should be here, perhaps later in the section about the headers. </blockquote>
 
 <blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  </blockquote>
