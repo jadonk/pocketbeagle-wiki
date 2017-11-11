@@ -275,7 +275,7 @@ This section covers the specifications and features of the board in a chart and 
 |-
 | Power Management||TPS65217C PMIC along with TL5209 LDO to provide power to the system with integrated 1-cell LiPo battery support
 |-
-| Connectivity :||
+| colspan="2" | Connectivity : |
 |-
 | SD/MMC||Bootable microSD card slot
 |-
@@ -287,7 +287,7 @@ This section covers the specifications and features of the board in a chart and 
 |-
 | User I/O||Power Button with press detection interrupt via TPS65217C PMIC
 |-
-| Expansion Header : ||
+| colspan="2" | Expansion Header : |
 |-
 | USB||High speed USB 2.0 OTG (host/client) control signals
 |-
