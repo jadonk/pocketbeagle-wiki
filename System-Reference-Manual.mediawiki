@@ -726,7 +726,7 @@ Words about the design of the P1 Header
 | -
 |-
 | P1.14
-| """+3.3V"""
+| +3.3V
 | P1.14 (VOUT-3.3V)
 | 
 | F6 & F7 & G6 & G7
