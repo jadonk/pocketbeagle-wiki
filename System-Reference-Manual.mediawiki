@@ -32,9 +32,9 @@ See the [https://github.com/beagleboard/pocketbeagle/blob/master/LICENSE ''LICEN
 This document is the '''System Reference Manual''' for PocketBeagle and covers its use and design. 
 PocketBeagle is an ultra-tiny-yet-complete Linux-enabled, community-supported, open-source USB-key-fob-computer.  PocketBeagle features an incredible low cost, slick design and simple usage, making it the ideal development board for beginners and professionals alike.  Simply develop directly in a web browser providing you with a playground for programming and electronics.  Exploring is made easy with several available libraries and tutorials with many more coming.  
 
-PocketBeagle will boot directly from a microSD card.  Load a Linux distribution onto your microSD card, plug your board into your computer and get started.  PocketBeagle runs GNU.Linux, so you can leverage many different high-level programming languages and a large body of drivers that that prevent you from needing to write a lot of your own software.  
+PocketBeagle will boot directly from a microSD card.  Load a Linux distribution onto your card, plug your board into your computer and get started.  PocketBeagle runs GNU.Linux, so you can leverage many different high-level programming languages and a large body of drivers that prevent you from needing to write a lot of your own software.  
 
-This design will keep improving as the product matures based on feedback and experience. Software updates will be frequent and will be independent of the hardware revisions and as such not result in a change in the revision number.
+This design will keep improving as the product matures based on feedback and experience. Software updates will be frequent and will be independent of the hardware revisions and as such not result in a change in the revision number of the board.
 
 Make sure you check the support Wiki frequently for the most up to date information.
 
@@ -44,10 +44,33 @@ Make sure you check the support Wiki frequently for the most up to date informat
 
 This section describes the change history of this document and board. Document changes are not always a result of a board change. A board change will always result in a document change.
 
-=== 2.1 Document Change History  ===
+=== '''2.1 Document Change History'''  ===
 
-'''Table 1. Change History '''
+===='''Table 1. Change History '''====
 
+{|
+!
+'''Rev '''
+!
+'''Changes '''
+!
+'''Date '''
+!
+'''By '''
+|-
+|
+A.x
+|
+Production Document
+|
+''November 15, 2017''
+|
+JK
+|-
+
+=== '''2.2 Board Changes'''  ===
+
+===='''Table 2. Board History '''====
 {|
 !
 '''Rev '''
@@ -81,48 +104,45 @@ A2
 |
 Production
 |
-''September 11 2017''
+''September 22, 2017''
 |
 JK
 |-
+==== '''2.2.1 PocketBone'''  ====
 
-=== 2.2 Board Changes  ===
+The [https://oshpark.com/shared_projects/GWqtFu43 ''PocketBone''] project by Michael Welling was one of the inspirations for PocketBeagle, fitting into a mini-mint tin.
 
-==== 2.2.1 PocketBone  ====
+==== '''2.2.2 Rev A1'''  ====
 
-<blockquote> JDK will provide what we want to say about the PocketBone and Rev A1 of the PocketBeagle 
-* ''Information and credit the reference design from GSoC project https://oshpark.com/shared_projects/GWqtFu43''
-this may be in the board revision chart or perhaps there is another way that this project should be referenced in the SRM as a preliminary write up paragraph and link to more details. - encourages community members regarding creativity. </blockquote>
+The Rev A1 of PocketBeagle was a prototype not released to production.
 
-==== 2.2.2 Rev A1  ====
+==== '''2.2.3 Rev A2'''  ====
 
-* '' Changes from PocketBone to PocketBeagle ''
-
-==== 2.2.3 Rev A2  ====
-
-* '' Changes from A1 to A2 ''
+The Rev A2 of PocketBeagle was released to production and [https://www.prnewswire.com/news-releases/small-in-size--cost-meet-pocketbeagle-the-25-development-board-for-hobbyists-educators-and-professionals-300519950.html''launched at World MakerFaire 2017''].
 
 = '''3.0 Connecting Up PocketBeagle ''' =
 
-This section provides instructions on how to hook up your board. The most common scenario is tethering PocketBeagle to and using your PC for local development.
+This section provides instructions on how to hook up your board. The most common scenario is tethering PocketBeagle to your PC for local development.
 
-=== 3.1 What’s In the Package  ===
+=== '''3.1 What’s In the Package'''  ===
 
-In the package you will find two items as shown in '''Figure x'''.
+In the package you will find two items as shown in '''Figures 1 and 2'''.
 
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] 
+======  Figure 1. PocketBeagle Package  ======
 
-======  Figure x. In The Package  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
+======  Figure 2. PocketBeagle Package Insert  ======
 
 === 3.2 Connecting the board ===
 
 This section will describe how to connect to the board. Information can also be found on the Quick Start Guide that came in the box. Detailed information is also available at
 [https://beagleboard.org/getting-started ''beagleboard.org/getting-started'' ]
 
-The board can be configured in several different ways, but we will discuss the two most common scenarios.
+The board can be configured in several different ways, but we will discuss the most common scenario.
 
 * Tethered to a PC via the USB cable with local development
 ** Board is accessed as a storage drive through standard windows/mac folders
@@ -137,8 +157,6 @@ In this configuration, you will need the following additional items:
 * microSD card (>=4GB and <128GB)
 
 The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
-
-<blockquote>will MS edge work if IE does not?</blockquote>
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tethered.png]]
 
