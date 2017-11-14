@@ -527,7 +527,7 @@ Two independent programmable real-time (PRU) cores:
 * Includes Interrupt Controller for system event handling
 * Fast I/O interface
 
-– 16 input pins and 16 output pins per PRU core. (Not all of these are accessible on the BeagleBone Black).
+– 16 input pins and 16 output pins per PRU core. (Not all of these are accessible on the PocketBeagle.  Please check the Pin Table below for PRU-ICSS features available through the P1 and P2 headers.)
 
 ==== 6.12.2 PRU-ICSS Block Diagram  ====
 
@@ -539,24 +539,333 @@ Two independent programmable real-time (PRU) cores:
 
 ==== 6.12.3 PRU-ICSS Pin Access  ====
 
-Both PRU 0 and PRU1 are accessible from the expansion headers.  Listed below is what ports can be accessed on each PRU.
-
-PRU0
-
-* 8 outputs or 9 inputs
-
-PRU1
-
-* 13 outputs or 14 inputs
-* UART0_TXD, UART0_RXD, UART0_CTS, UART0_RTS
+Both PRU 0 and PRU1 are accessible from the expansion headers.  Listed below are the ports that can be accessed on each PRU.
 
 '''Table 11''' below shows which PRU-ICSS signals can be accessed on PocketBeagle and on which connector and pins on which they are accessible.  Some signals are accessible on the same pins.
 
 =======  Table xx. PRU0 and PRU1 Access  =======
+Use scroll bar at bottom of chart to see additional features in columns to the right
+{| class="wikitable" style="white-space:nowrap;"
+| Header.Pin
+| Silkscreen
+| Processor Ball
+| SiP Ball
+| Mode3
+| Mode4
+| Mode5
+| Mode6
+| Note
+|-
+| P1.02
+| A6/87
+| R5
+| F2
+| 
+| 
+| pr1_pru1_pru_r30_9 (Output)
+| pr1_pru1_pru_r31_9 (Input)
+| 
+|-
+| P1.04
+| 89
+| R6
+| E1
+| 
+| 
+| pr1_pru1_pru_r30_11 (Output)
+| pr1_pru1_pru_r31_11 (Input)
+| 
+|-
+| P1.06
+| SPI0_CS
+| A16
+| A14
+| 
+| pr1_uart0_txd (Output)
+| 
+| 
+| UART Transmit Data
+|-
+| P1.08
+| SPI0_CLK
+| A17
+| A13
+| 
+| pr1_uart0_cts_n (Input)
+| 
+| 
+| UART Clear to Send
+|-
+| P1.10
+| SPI0_MISO
+| B17
+| B13
+| 
+| pr1_uart0_rts_n (Output)
+| 
+| 
+| UART Request to Send
+|-
+| P1.12
+| SPI0_MOSI
+| B16
+| B14
+| 
+| pr1_uart0_rxd (Input)
+| 
+| 
+| UART Receive Data
+|-
+| P1.20
+| 20
+| D14
+| B4
+| 
+| 
+| pr1_pru0_pru_r31_16 (Input)
+| 
+|
+|-
+| P1.26
+| I2C2_SDA
+| D18
+| B10
+| 
+| 
+| pr1_uart0_cts_n (Input)
+| 
+| UART Clear to Send
+|-
+| P1.28
+| I2C2_SCL
+| D17
+| A10
+| 
+| 
+| pr1_uart0_rts_n (Output)
+| 
+| UART Request to Send
+|-
+| P1.29
+| PRU0_7
+| A14
+| C4
+| 
+| 
+| pr1_pru0_pru_r30_7 (Output)
+| pr1_pru0_pru_r31_7 (Input)
+| 
+|-
+| P1.30
+| U0_TX
+| E16
+| B12
+| 
+| 
+| pr1_pru1_pru_r30_15 (Output)
+| pr1_pru1_pru_r31_15 (Input)
+| 
+|-
+| P1.31
+| PRU0_4
+| B12
+| A3
+| 
+| 
+| pr1_pru0_pru_r30_4 (Output)
+| pr1_pru0_pru_r31_4 (Input)
+|
+|- 
+| P1.32
+| U0_RX
+| E15
+| A12
+| 
+| 
+| pr1_pru1_pru_r30_14 (Output)
+| pr1_pru1_pru_r31_14 (Input)
+| 
+|-
+| P1.33
+| PRU0_1
+| B13
+| A2
+| 
+| 
+| pr1_pru0_pru_r30_1 (Output)
+| pr1_pru0_pru_r31_1 (Input)
+| 
+|-
+| P1.35
+| P1.10
+| V5
+| F1
+| 
+| 
+| pr1_pru1_pru_r30_10 (Output)
+| pr1_pru1_pru_r31_10 (Input)
+| 
+|-
+| P1.36
+| PWM0A
+| A13
+| A1
+| 
+| 
+| pr1_pru0_pru_r30_0 (Output)
+| pr1_pru0_pru_r31_0 (Input)
+| 
+|-
+| P2.09
+| I2C1_SCL
+| D15
+| B11
+| 
+| 
+| pr1_uart0_txd (Output)
+| pr1_pru0_pru_r31_16 (Input)
+| UART Transmit Data
+|-
+| P2.11
+| I2C1_SDA
+| D16
+| A11
+| 
+| 
+| pr1_uart0_rxd (Input)
+| pr1_pru1_pru_r31_16 (Input)
+| UART Receive Data
+|-
+| P2.17
+| 65
+| V12
+| T7
+| 
+| 
+| pr1_mdio_mdclk
+| 
+| MDIO Clk
+|-
+| P2.18
+| 47
+| U13
+| P7
+| 
+| 
+| pr1_ecap0_ecap_capin_apwm_o
+| pr1_pru0_pru_r31_15 (Input)
+| Enhanced capture input or Auxiliary PWM out
+|-
+| P2.20
+| 64
+| T13
+| R7
+| 
+| 
+| pr1_mdio_data
+| 
+| MDIO Data
+|-
+| P2.22
+| 46
+| V13
+| T6
+| 
+| 
+| 
+| pr1_pru0_pru_r31_14 (Input)
+| 
+|-
+| P2.24
+| 48
+| T12
+| P6
+| 
+| 
+| 
+| pr1_pru0_pru_r30_14 (Output)
+| 
+|-
+| P2.28
+| PRU0_6
+| D13
+| C3
+| 
+| 
+| pr1_pru0_pru_r30_6 Output)
+| pr1_pru0_pru_r31_6 (Input)
+| 
+|-
+| P2.29
+| SPI1_CLK
+| C18
+| C5
+| pr1_ecap0_ecap_capin_apwm_o
+| 
+| 
+| 
+| Enhanced capture input or Auxiliary PWM out
+|-
+| P2.30
+| PRU0_3
+| C12
+| B1
+| 
+| 
+| pr1_pru0_pru_r30_3 (Output)
+| pr1_pru0_pru_r31_3 (Input)
+| 
+|-
+| P2.31
+| SPI1_CS
+| A15
+| A4
+| 
+| 
+| pr1_pru1_pru_r31_16 (Input)
+| 
+| 
+|-
+| P2.32
+| PRU0_2
+| D12
+| B2
+| 
+| 
+| pr1_pru0_pru_r30_2 (Output)
+| pr1_pru0_pru_r31_2 (Input)
+| 
+|-
+| P2.33
+| 45
+| R12
+| R6
+| 
+| 
+| 
+| pr1_pru0_pru_r30_15 (Output)
+| 
+|-
+| P2.34
+| PRU0_5
+| C13
+| B3
+| 
+| 
+| pr1_pru0_pru_r30_5 (Output)
+| pr1_pru0_pru_r31_5 (Input)
+| 
+|-
+| P2.35
+| A5/86
+| U5
+| F3
+| 
+| 
+| pr1_pru1_pru_r30_8 (Output)
+| pr1_pru1_pru_r31_8 (Input)
+|}
 
-
-
-====== Figure x. JTAG Pad Connections  ======
 = '''7.0 Connectors ''' =
 
 This section describes each of the connectors on the board.
@@ -583,6 +892,7 @@ Words about the design of the P1 Header
 ====== Figure x. P1 Header  ======
 
 ====== Table 7.1.1 P1 Header Pinout ======
+Use scroll bar at bottom of chart to see additional features in columns to the right
 {| class="wikitable" style="white-space:nowrap;"
 | Header.Pin
 | Silkscreen
@@ -1124,7 +1434,7 @@ Words about the design of the P1 Header
 ====== Figure x. P2 Header  ======
 
 ====== Table 7.1.2 P2 Header Pinout ======
-
+Use scroll bar at bottom of chart to see additional features in columns to the right
 {| class="wikitable" style="white-space:nowrap;"
 | Header.Pin
 | Silkscreen
