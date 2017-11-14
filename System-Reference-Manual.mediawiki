@@ -1,5 +1,8 @@
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
+[[images/PocketBeagle-size-compare-small.jpg|598x400px]]
 
+[[images/PocketBeagle_Front_BW.jpg]]
+
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
 '''PocketBeagle'''
 
 '''System Reference Manual '''
