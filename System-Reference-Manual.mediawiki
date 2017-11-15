@@ -160,11 +160,11 @@ The board is powered by the PC via the USB cable--no other cables are required. 
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tethered.png]]
 okay
-[[images/PB-fullPC-1.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-1.jpg]]
 okay
-[[images/PB-fullPC-2.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-2.jpg]]
 okay
-[[images/PB-fullPC-3.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-3.jpg]]
 okay 
 
 ======  Figure x. Tethered Configuration  ======
