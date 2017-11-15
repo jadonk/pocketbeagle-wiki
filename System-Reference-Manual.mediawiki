@@ -209,7 +209,7 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 * '''USER1''' turns on when the microSD card is being accessed
 * '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
 * '''USER3''' idle
-======  Figure 14. Board Boot Status  ======
+======  Figure 14. Use LEDs  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/14fig-PB-UserLEDs1.png]]
 
 ==== 3.3.2 Accessing the Board as a Storage Drive  ====
