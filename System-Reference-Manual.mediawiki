@@ -6,7 +6,7 @@
 
 '''Revision A.x (on-line wiki edition)'''
 
-'''November 10, 2017'''
+'''November 15, 2017'''
 
 '''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
 
@@ -35,9 +35,12 @@ PocketBeagle is an ultra-tiny-yet-complete Linux-enabled, community-supported, o
 PocketBeagle will boot directly from a microSD card.  Load a Linux distribution onto your card, plug your board into your computer and get started.  PocketBeagle runs GNU.Linux, so you can leverage many different high-level programming languages and a large body of drivers that prevent you from needing to write a lot of your own software.  
 
 This design will keep improving as the product matures based on feedback and experience. Software updates will be frequent and will be independent of the hardware revisions and as such not result in a change in the revision number of the board.
+A great place to find out the latest news and projects for PocketBeagle is on the home page
+[https://beagleboard.org/pocket ''www.beagleboard.org/pocket'' ]
+======  Figure 1. PocketBeagle Home Page  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/1fig-PB-homepage.png]]
 
 Make sure you check the support Wiki frequently for the most up to date information.
-
 [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
 
 = '''2.0 Change History ''' =
@@ -126,29 +129,23 @@ This section provides instructions on how to hook up your board. The most common
 
 === '''3.1 What’s In the Package'''  ===
 
-In the package you will find two items as shown in '''Figures 1 and 2'''.
+In the package you will find two items as shown in '''Figures 2 and 3'''.
 
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] 
-======  Figure 1. PocketBeagle Package  ======
+======  Figure 2. PocketBeagle Package  ======
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
-======  Figure 2. PocketBeagle Package Insert  ======
+======  Figure 3. PocketBeagle Package Insert  ======
 
 === 3.2 Connecting the board ===
 
 This section will describe how to connect to the board. Information can also be found on the Quick Start Guide that came in the box. Detailed information is also available at
 [https://beagleboard.org/getting-started ''beagleboard.org/getting-started'' ]
 
-The board can be configured in several different ways, but we will discuss the most common scenario.
-
-* Tethered to a PC via the USB cable with local development
-** Board is accessed as a storage drive through standard windows/mac folders
-** Board is accessed via ethernet over USB (RNDIS Ethernet) communication
-* Connecting PocketBeagle to a PC via USB cable and configuring to share access
-** Board is accessed via the internet
+The board can be configured in several different ways, but we will discuss the most common scenario.  Future revisions of this document may include additional configurations.
 
 === 3.3 Tethered to a PC using Debian Images ===
 
@@ -156,20 +153,12 @@ In this configuration, you will need the following additional items:
 * microUSB to USB Type A Cable
 * microSD card (>=4GB and <128GB)
 
-The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
+The board is powered by the PC via the USB cable, no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 3''' shows this configuration.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tethered.png]]
-okay
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-1.jpg]]
-okay
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-2.jpg]]
-okay
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-3.jpg]]
-okay 
+======  Figure 3. Tethered Configuration  ======
 
-======  Figure x. Tethered Configuration  ======
-
-In some instances, such as when additional add-on boards, or capes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
+In some instances, such as when additional add-on boards, or PocketCapes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
 
 ==== 3.3.1 Getting Started  ====
 
@@ -2161,4 +2150,11 @@ If you need some up to date troubleshooting techniques, we have a Wiki set up at
 <blockquote> important to have a chart and section telling users which header pins on BeagleBone Black are available and where on PocketBeagle.  Include a full pin list. not sure this should be here, perhaps later in the section about the headers. </blockquote>
 
 <blockquote>'''This is a section about any hardware/software board compatibility between PocketBeagle and BeagleBone Black.  Is this an opportunity to highlight that projects previously developed for BeagleBone Black can be easily ported to PocketBeagle for xyz ...'''  </blockquote>
+The board can be configured in several different ways, but we will discuss the most common scenario.
+
+* Tethered to a PC via the USB cable with local development
+** Board is accessed as a storage drive through standard windows/mac folders
+** Board is accessed via ethernet over USB (RNDIS Ethernet) communication
+* Connecting PocketBeagle to a PC via USB cable and configuring to share access
+** Board is accessed via the internet
 
