@@ -399,8 +399,9 @@ When plugging in the SD card, the writing on the card should be up. Align the ca
 
 Do not pull the SD card out or you could damage the connector.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-microSDphoto.jpg]]
-====== Figure 21. microSD Connector  ======
+====== Figure 29?. microSD Connector  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/fig-PB-SDcardslot.png]]
+
 
 ==== 5.3.3 USB 2.0 Connector  ====
 
