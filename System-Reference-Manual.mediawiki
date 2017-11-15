@@ -218,24 +218,30 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 
 1. Open the USB Drive folder to view the files on your PocketBeagle.
 
-2. Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays the interactive Quick Start Guide.
+2. Launch Interactive Quick Start Guide
+Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays the interactive Quick Start Guide.
 
 ======  Figure 15. Interactive Quick Start Guide Launch  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/15fig-PB-starthtmpage.png]]
 
-3.  Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle). See Figure 16 below.   It is very useful to connect PocketBeagle itself to the internet to use online cloud resources directly with it.  Copy and paste the appropriate IP Address from the chart (according to your PC operating system type) and add a ''':3000''' to the end of it.  See example in Figure 17.  This will launch one of PocketBeagle's favorite Web Based Development Environment, Cloud9, so that you can teach your beagle new tricks!
+3.  Enable a Network Connection
+Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle). It is very useful to connect PocketBeagle itself to the internet to use online cloud resources directly with it.  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch one of PocketBeagle's favorite Web Based Development Environments, Cloud9, (Figure 17) so that you can teach your beagle new tricks!
 
 ======  Figure 16. Enable a Network Connection  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/16fig-PB-enablenetwork.png]]
 
-3.  'Step 3' Browse to your Beagle (Brings up a variety of familiar coding examples and tutorials - see figure x.x)
-     These examples will run directly on your PocketBeagle from the browser.  You'll find tutorial examples in Bonescript, which uses familiar Arduino function calls (See figure x.x below) as well as using NodeRed and using Cloud 9 IDE.  
+======  Figure 17. Launch Cloud9 IDE  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/17fig-PB-cloud9.png]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tutorials.png]]
-======  Figure x. Beagle Tutorials  ======
+4.  Get Started Coding with Cloud 9 - Blinky example
+Cloud 9 has pre-loaded examples for Beagle in the directory.  Click on the example folder (Figure 18) to expand the selections and see familiar coding examples.  Choose the '''Blink.ino''' example for the traditional Blinky in the familiar Arduino-like coding style. (Figure 19)  The example uses pin 14 as the USR0 LED.  This LED is already blinking as a 'heartbeat' on PocketBeagle.  When you click Run on this example it will alter the LED display on PocketBeagle.  
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Bonescript-ex.png]]
-======  Figure x. Bonescript Examples  ======
+======  Figure 18. Examples are Pre-Loaded into Cloud 9 IDE  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/18fig-PB-cloud9exs.png]]
+
+======  Figure 19. Run Blink on PocketBeagle  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/19fig-PB-cloud9blink.png]]
+
 
 ==== 3.3.3  Powering Down ====
 
