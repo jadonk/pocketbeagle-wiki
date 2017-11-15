@@ -193,15 +193,16 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 5. Connect the micro USB connector on your cable to the board as shown in Figure 11.  The microUSB connector is fairly robust, but we suggest that you not use the cable as a leash for your PocketBeagle.  Take proper care not to put too much stress on the connector or cable.
 
 ======  Figure 11. Insert the micro USB Connector into PocketBeagle  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/11fig-PB-microUSBattach.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/11fig-PB-microUSBattach1.jpg]]
 
 6. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port as shown in Figure 12. The board will power on and the power LED will be on as shown in Figure 13 below.
 
 ======  Figure 12. Insert the USB connector into PC  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/12fig-PB-USBtoPC.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/12fig-PB-USBtoPC1.jpg]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/13fig-PB-PowerLED.png]]
 ======  Figure 13. Board Power LED  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/13fig-PB-PowerLED.png]]
+
 
 6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure x''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
