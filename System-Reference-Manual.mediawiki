@@ -212,12 +212,16 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 ======  Figure 14. Use LEDs  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/14fig-PB-UserLEDs1.png]]
 
-==== 3.3.2 Accessing the Board as a Storage Drive  ====
+==== 3.3.2 Accessing the Board and Getting Started with Coding  ====
 
 The board will appear as a USB Storage drive on your PC after the kernel has booted, which will take approximately 10 seconds. The kernel on the board needs to boot before the port gets enumerated. Once the board appears as a storage drive, do the following:
 
-# Open the USB Drive folder.
-# Click on the file named '''START.HTM'''
+1. Open the USB Drive folder to view the files on your PocketBeagle.
+
+2. Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  This action displays the interactive Quick Start Guide.
+
+
+
 # The file running on PocketBeagle will be opened by the browser on your PC and you should get a display showing the Quick Start Guide.
 # Your board is now operational! Follow the instructions on your computer screen to try out the BeagleBone 101 examples:
 1.  'Step 1' Power and Boot (you've done this)
