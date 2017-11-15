@@ -203,7 +203,7 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 ======  Figure 13. Board Power LED  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/13fig-PB-PowerLED1.png]]
 
-6. As soon as you apply power, the board will begin the booting process and the userLEDs '''Figure 14 ''' will come on in sequence as shown below. It will take a few seconds for the status LEDs to come on, so please be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
+7. As soon as you apply power, the board will begin the booting process and the userLEDs '''Figure 14 ''' will come on in sequence as shown below. It will take a few seconds for the status LEDs to come on, so please be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
 * '''USER0''' is the heartbeat indicator from the Linux kernel.
 * '''USER1''' turns on when the microSD card is being accessed
@@ -218,13 +218,11 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 
 1. Open the USB Drive folder to view the files on your PocketBeagle.
 
-2. Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  This action displays the interactive Quick Start Guide.
+2. Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays the interactive Quick Start Guide.
 
+======  Figure 15. Interactive Quick Start Guide Launch  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/15fig-PB-starthtmpage.png]]
 
-
-# The file running on PocketBeagle will be opened by the browser on your PC and you should get a display showing the Quick Start Guide.
-# Your board is now operational! Follow the instructions on your computer screen to try out the BeagleBone 101 examples:
-1.  'Step 1' Power and Boot (you've done this)
 2.  'Step 2' Enable a Network Connection (pointing to the DHCP server that is running on PocketBeagle)
 3.  'Step 3' Browse to your Beagle (Brings up a variety of familiar coding examples and tutorials - see figure x.x)
      These examples will run directly on your PocketBeagle from the browser.  You'll find tutorial examples in Bonescript, which uses familiar Arduino function calls (See figure x.x below) as well as using NodeRed and using Cloud 9 IDE.  
