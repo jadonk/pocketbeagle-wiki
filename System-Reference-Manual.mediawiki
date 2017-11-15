@@ -1,8 +1,5 @@
 [[images/PocketBeagle-size-compare-small.jpg|598x400px]]
 
-[[images/PocketBeagle_Front_BW.jpg]]
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle-size-compare-small.jpg|598x400px]]
 '''PocketBeagle'''
 
 '''System Reference Manual '''
@@ -162,6 +159,13 @@ In this configuration, you will need the following additional items:
 The board is powered by the PC via the USB cable--no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure x''' shows this configuration.
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-tethered.png]]
+okay
+[[images/PB-fullPC-1.jpg]]
+okay
+[[images/PB-fullPC-2.jpg]]
+okay
+[[images/PB-fullPC-3.jpg]]
+okay 
 
 ======  Figure x. Tethered Configuration  ======
 
