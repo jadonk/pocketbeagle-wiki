@@ -203,15 +203,14 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 ======  Figure 13. Board Power LED  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/13fig-PB-PowerLED.png]]
 
-
-6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure x''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
+6. As soon as you apply power, the board will begin the booting process and the userLEDs '''Figure 14 ''' will come on in sequence as shown below. It will take a few seconds for the status LEDs to come on, so please be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
 * '''USER0''' is the heartbeat indicator from the Linux kernel.
 * '''USER1''' turns on when the microSD card is being accessed
 * '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
 * '''USER3''' idle
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-userLED-photo.png]]
-======  Figure x. Board Boot Status  ======
+======  Figure 14. Board Boot Status  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/14fig-PB-UserLEDs1.png]]
 
 ==== 3.3.2 Accessing the Board as a Storage Drive  ====
 
