@@ -133,12 +133,10 @@ In the package you will find two items as shown in '''Figures 2 and 3'''.
 
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] 
 ======  Figure 2. PocketBeagle Package  ======
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] 
 ======  Figure 3. PocketBeagle Package Insert  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
 
 === 3.2 Connecting the board ===
 
@@ -153,45 +151,57 @@ In this configuration, you will need the following additional items:
 * microUSB to USB Type A Cable
 * microSD card (>=4GB and <128GB)
 
-The board is powered by the PC via the USB cable, no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 3''' shows this configuration.
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images//PB1-fullPC-3.jpg]]
-======  Figure 3. Tethered Configuration  ======
+The board is powered by the PC via the USB cable, no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 4''' shows this configuration.
+======  Figure 4. Tethered Configuration  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB1-fullPC-3.jpg]]
 
 In some instances, such as when additional add-on boards, or PocketCapes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
 
 ==== 3.3.1 Getting Started  ====
+The following steps will guide you to quickly download a PocketBeagle software image onto your microSD card and get started writing code.  
 
-Follow along with the instructions at [https://beagleboard.org/getting-started ''beagleboard.org/getting-started'']
+1.  Navigate to the Getting Started Page  [https://beagleboard.org/getting-started ''beagleboard.org/getting-started''] 
+Follow along with the instructions and click on the link noted in Figure 5 below [https://beagleboard.org/latest-images ''beagleboard.org/latest-images'']. You can also get to this page directly by going to [https://bbb.io/latest ''bbb.io/latest'']
+======  Figure 5. Getting Started Page  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/5fig-PB-GetStarted.png]]
 
-1. Download the latest image onto your computer at [https://bbb.io/latest ''bbb.io/latest'']
+2.  Download the latest image onto your computer by following the link to the latest image and click on the Debian image for Stretch IoT (non-GUI) for BeagleBone and PocketBeagle via microSD card. See Figure 6 below. This will download a .img.xz file into the downloads folder of your computer.
 
-Follow the link to the latest image and click on the Debian image for Stretch IoT (non-GUI) for BeagleBone and PocketBeagle via microSD card.  This will download a .img.xz file into the download folder of your computer.
+======  Figure 6. Download Latest Software Image  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/6fig-PB-DownloadSW.png]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-gettingstarted-1.png]]
+3. Transfer the image to a microSD card.  
 
-2. Transfer the image to a microSD card
+Download and install an SD card programming utility if you do not already have one.  We like [https://etcher.io/ ''https://etcher.io/''] for new users and so we show that one in the steps below.  Go to your downloads folder and doubleclick on the .exe file and follow the on-screen prompts.  See figure 7.  
 
-Download and install an SD card programming utility.  We like [https://etcher.io/ ''https://etcher.io/''] 
+======  Figure 7. Download Etcher SD Card Utility  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/7fig-PB-Etcherdownload.png]]
+ 
+Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for selecting the .img file and burning the image from your computer to the microSD card.  Eject the SD card reader when prompted and remove the card.  See Figures 8 and 9.
 
-Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for burning the image from your computer to the microSD card.  Eject the SD card reader when prompted and remove the card.
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-gettingstarted-2.png]]
+======  Figure 8. Select the PocketBeagle Image  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/8fig-PB-Etcherselectimage.png]]
 
-3. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot.  It is important that your microSD card is fully inserted prior to powering the system.
+======  Figure 9. Burn the Image to the SD Card  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/9fig-PB-Etcherfinish.png]]
 
-<blockquote>Include hardware photo showing insert of microSD Card</blockquote>
-======  Figure x. USB Connection to the Board  ======
+4. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot.  It is important that your microSD card is fully inserted prior to powering the system.
 
-4. Connect the small connector on the USB cable to the board as shown in '''Figure x'''.
+======  Figure 10. Insert the microSD Card into PocketBeagle  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/10fig-PB-SDcardinsert.jpg]]
 
-<blockquote>Include hardware photo showing insert of USB to the board</blockquote>
+5. Connect the micro USB connector on your cable to the board as shown in Figure 11.  The microUSB connector is fairly robust, but we suggest that you not use the cable as a leash for your PocketBeagle.  Take proper care not to put too much stress on the connector or cable.
 
-======  Figure x. USB Connection to the Board  ======
+======  Figure 11. Insert the microSD Card into PocketBeagle  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/11fig-PB-microUSBattach.jpg]]
 
-5. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port.  The board will power on and the power LED will be on as shown in '''Figure x''' below.
+6. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port as shown in Figure 12. The board will power on and the power LED will be on as shown in Figure 13 below.
+
+======  Figure 12. Insert the USB connector into PC  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/12fig-PB-USBtoPC.jpg]]
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-powerLED-photo.png]]
-======  Figure x. Board Power LED  ======
+======  Figure 13. Board Power LED  ======
 
 6. As soon as you apply power, the board will begin the booting process and the LEDs will come on in sequence as shown in '''Figure x''' below. It will take a few seconds for the status LEDs to come on, so be patient. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
