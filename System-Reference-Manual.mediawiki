@@ -111,19 +111,19 @@ Production
 |
 JK
 |-
-==== '''2.2.1 PocketBone'''  ====
+====  2.2.1 PocketBone   ====
 
 The [https://oshpark.com/shared_projects/GWqtFu43 ''PocketBone''] project by Michael Welling was one of the inspirations for PocketBeagle, fitting into a mini-mint tin.
 
-==== '''2.2.2 Rev A1'''  ====
+====  2.2.2 Rev A1   ====
 
 The Rev A1 of PocketBeagle was a prototype not released to production.
 
-==== '''2.2.3 Rev A2'''  ====
+====  2.2.3 Rev A2   ====
 
 The Rev A2 of PocketBeagle was released to production and [https://www.prnewswire.com/news-releases/small-in-size--cost-meet-pocketbeagle-the-25-development-board-for-hobbyists-educators-and-professionals-300519950.html''launched at World MakerFaire 2017''].
 
-= '''3.0 Connecting Up PocketBeagle ''' =
+=  '''3.0 Connecting Up PocketBeagle ''' =
 
 This section provides instructions on how to hook up your board. The most common scenario is tethering PocketBeagle to your PC for local development.
 
@@ -264,28 +264,18 @@ If you'd like to power up again without removing the USB cable follow these inst
 
 === 3.4 Other ways to Connect up to your PocketBeagle  ===
 
-==== 3.4.1 Development over a Network Connection  ====
-
-Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. Details are available at https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee
-
-==== 3.4.2 Other examples ====
+The board can be configured in several different ways. Future revisions of this document may include additional configurations.
 
 As other examples become documented, we'll update them on the Wiki for PocketBeagle
 [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
 
 See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
 
-<blockquote> Method 4)The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
-5)Adding the extra USB via the header - look at the FAQ for PocketBeagle
-It is possible to add an additional USB port as described above.
-6)You can utilize a mikroBUS Click Ethernet or wireless module.
-7) There are many ways to utilize the expansion interface to create your own networking solution.
-</blockquote> 
 
 = '''4.0 PocketBeagle Overview ''' =
 PocketBeagle is built around Octavo Systems' OSD335x-SM System-In-Package that integrates a high-performance Texas Instruments AM3358 processor, 512MB of DDR3, power management, nonvolatile serial memory and over 100 passive components into a single package.  This integration saves board space by eliminating several packages that would otherwise need to be placed on the board, but more notably simplifies our board design so we can focus on the user experience.   
 
-The compact PocketBeagle design also offers access through the expansion headers to many of the interfaces and allows for the use of add-on boards called capes and click boards from microElectronica, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
+The compact PocketBeagle design also offers access through the expansion headers to many of the interfaces and allows for the use of add-on boards called PocketCapes and Click Boards from MikroElektronika, to add many different combinations of features. A user may also develop their own board or add their own circuitry.
 
 === 4.1 PocketBeagle Features and Specification  ===
 
@@ -2067,6 +2057,9 @@ If you need the JTAG connector you can solder it on yourself. No other component
 <blockquote> Need a separate section for developing new capes </blockquote>
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
+
+advice on headers and recommendations for making your own PocketCapes
+https://groups.google.com/forum/#!category-topic/beagleboard/pocketbeagle/Uxx_9ce2YHM
 
 === 8.2 Click Board circuitry and using them  =
 
