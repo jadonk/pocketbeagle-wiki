@@ -403,21 +403,20 @@ When plugging in the SD card, the writing on the card should be up. Align the ca
 
 The board has a microUSB connector that is USB 2.0 HS compatible that connects the USB0 port to the SiP.  Generally this port is used as a client USB port connected to a power source, such as your PC, to power the board. If you would like to use this port in host mode you will need to supply power for peripherals via Header P1 pin 7 (USB1.VIN) or through a powered USB Hub. Additionally, in the USB host configuration, you will need to power the board through Header P1 pin 1 (VIN) or Header P1 pin 7 (USB1.VIN) or Header P2 pin 14 (BAT.VIN)
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-USB-photo.png]]
-====== Figure 22. USB 2.0 Connector  ======
-
+====== Figure 26. USB 2.0 Connector  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/26fig-PB-USB.png]]
 
 ==== 5.3.5 Boot Modes  ====
 
 There are three boot modes:  <blockquote> Need to come back and edit this section </blockquote>
 
 * '''SD Boot…''' microSD connector to act as the primary boot source for the board.
-* '''Serial Boot…'''This mode will use the serial port to allow downloading of the software direct. A separate USB to serial cable is required to use this port.
-* '''USB Boot…'''This mode supports booting over the USB port.
+* '''Serial Boot'''This mode will use the serial port to allow downloading of the software direct. A separate USB to serial cable is required to use this port.
+* '''USB Boot'''This mode supports booting over the USB port.
 
 '''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''  <blockquote> where on the TI website (TI Linux SDK?) should we send them and is it supported for PocketBeagle </blockquote>
 
-<blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior is any of this applicable/useful? - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
+
 
 === 5.4 Power  ===
 <blockquote>Come back to this section with drawing of power sources</blockquote>
@@ -426,7 +425,7 @@ The board can be powered from three different sources:
 
 * A USB port on a PC
 * A power supply with a USB connector.
-* Expansion connectors - 
+* Expansion connectors
 ** include utilizing to hook up a battery.
 
 <blockquote>need to include more information in an app note separately regarding the  use of a battery as this is a key feature, but need discussion (EW).  </blockquote>
@@ -2186,3 +2185,6 @@ It is possible to add an additional USB port as described above.
 6)You can utilize a mikroBUS Click Ethernet or wireless module.
 7) There are many ways to utilize the expansion interface to create your own networking solution.
 </blockquote> 
+
+
+<blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior is any of this applicable/useful? - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
