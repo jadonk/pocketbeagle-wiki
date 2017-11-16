@@ -407,13 +407,46 @@ The board has a microUSB connector that is USB 2.0 HS compatible that connects t
 ====== Figure 26. USB 2.0 Connector  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/26fig-PB-USB.png]]
 
-==== 5.3.5 Boot Modes  ====
+==== 5.3.4 Boot Modes  ====
 
-There are three boot modes:  <blockquote> Need to come back and edit this section </blockquote>
+There are three boot modes:  
 
-* '''SD Boot…''' microSD connector to act as the primary boot source for the board.
-* '''Serial Boot'''This mode will use the serial port to allow downloading of the software direct. A separate USB to serial cable is required to use this port.
-* '''USB Boot'''This mode supports booting over the USB port.
+* '''SD Boot''' .
+microSD connector acts as the primary boot source for the board.  This is described in Section 3.
+
+* '''USB Boot'''.
+This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [[https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page'']].
+
+* '''Serial Boot'''.
+This mode will use the serial port to allow downloading of the software. A separate [[https://elinux.org/Beagleboard:BeagleBone_Black_Accessories#Serial_Debug_Cables  ''USB to serial cable'']] is required to use this method.  The SPI pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
+
+{|
+!
+'''Header.Pin'''
+!
+'''Silkscreen '''
+!
+'''Proc Ball '''
+!
+'''SiP Ball '''
+|-
+|
+P1.06
+|
+SPI0_CS
+|
+A16
+|
+A14
+|-
+
+The tool works as:
+
+
+some notes from Jason's post online:
+Yes, the UART0 pins are active logging during SPL/u-boot and the same port will also send boot requests (triggered by on-board ROM) if other boot sources are not identified (you can even boot over USB).
+
+To see the console output, I recommend connecting one of these: https://shop.mikroe.com/ftdi-click (available from several distributors).
 
 '''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''  <blockquote> where on the TI website (TI Linux SDK?) should we send them and is it supported for PocketBeagle </blockquote>
 
@@ -2189,3 +2222,5 @@ It is possible to add an additional USB port as described above.
 
 
 <blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior is any of this applicable/useful? - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
+
+is this useful for alternate boot documentation https://eewiki.net/display/linuxonarm/PocketBeagle ?
