@@ -71,9 +71,9 @@ Production Document
 JK
 |-
 
-=== '''2.2 Board Changes'''  ===
+=== 2.2 Board Changes   ===
 
-===='''Table 2. Board History '''====
+==== Table 2. Board History  ====
 {|
 !
 '''Rev '''
