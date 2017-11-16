@@ -411,14 +411,16 @@ The board has a microUSB connector that is USB 2.0 HS compatible that connects t
 
 There are three boot modes:  
 
-* '''SD Boot''' .
-microSD connector acts as the primary boot source for the board.  This is described in Section 3.
+* '''SD Boot'''.
+
+MicroSD connector acts as the primary boot source for the board.  This is described in Section 3.
 
 * '''USB Boot'''.
-This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [[https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page'']].
+
+This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page''].
 
 * '''Serial Boot'''.
-This mode will use the serial port to allow downloading of the software. A separate [[https://elinux.org/Beagleboard:BeagleBone_Black_Accessories#Serial_Debug_Cables  ''USB to serial cable'']] is required to use this method.  The SPI pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
+This mode will use the serial port to allow downloading of the software. A separate [https://elinux.org/Beagleboard:BeagleBone_Black_Accessories#Serial_Debug_Cables ''USB to serial cable''] is required to use this method.  The SPI pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
 
 {|
 !
@@ -439,18 +441,76 @@ A16
 |
 A14
 |-
+|
+P1.08
+|
+SPI0_CLK
+|
+A17
+|
+A13
+|-
+|
+P1.10
+|
+SPI0_MISO
+|
+B17
+|
+B13
+|-
+|
+P1.12
+|
+SPI0_MOSI
+|
+B16
+|
+B14
+|-
+|
+P2.25
+|
+SPI1_MOSI
+|
+E17
+|
+C13
+|-
+|
+P2.27
+|
+SPI1_MISO
+|
+E18
+|
+C12
+|-
+|
+P2.29
+|
+SPI1_CLK
+|
+C18
+|
+C5
+|-
+|
+P2.31
+|
+SPI1_CS
+|
+A15
+|
+A4
+|-
+|}
 
-The tool works as:
+The UART0 pins are active logging during SPL/u-boot and the same port will also send boot requests (triggered by on-board ROM) if other boot sources are not identified.
 
+To see the console output, we recommend connecting one of the Mikroelectronica [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards'']
 
-some notes from Jason's post online:
-Yes, the UART0 pins are active logging during SPL/u-boot and the same port will also send boot requests (triggered by on-board ROM) if other boot sources are not identified (you can even boot over USB).
-
-To see the console output, I recommend connecting one of these: https://shop.mikroe.com/ftdi-click (available from several distributors).
-
-'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' '''  <blockquote> where on the TI website (TI Linux SDK?) should we send them and is it supported for PocketBeagle </blockquote>
-
-
+'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' 
 
 === 5.4 Power  ===
 <blockquote>Come back to this section with drawing of power sources</blockquote>
