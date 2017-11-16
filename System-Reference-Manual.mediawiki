@@ -369,7 +369,7 @@ This section provides the high level specification of PocketBeagle.
 Figure 22 below is the high level block diagram of PocketBeagle.
 
 ======  Figure 22. PocketBeagle Key Components ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-block-diag3.png]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/22fig-PB-blockdiagram1.png]]
 
 === 5.2 System in Package (SiP)  ===
 
