@@ -209,7 +209,7 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 * '''USER1''' turns on when the microSD card is being accessed
 * '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
 * '''USER3''' idle
-======  Figure 14. Use LEDs  ======
+======  Figure 14. User LEDs  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/14fig-PB-UserLEDs1.png]]
 
 ==== 3.3.2 Accessing the Board and Getting Started with Coding  ====
@@ -245,18 +245,22 @@ Cloud 9 has pre-loaded examples for Beagle in the directory.  Click on the examp
 
 ==== 3.3.3  Powering Down ====
 
-1. Standard Power Down: Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.  
+1. Standard Power Down.
+Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.  
 
-2. Hard Power Down:  Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
+2. Hard Power Down
+Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
 
-3. Remove the USB cable.  Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
+3. Remove the USB cable
+Remember to hold your board firmly at the USB connection while you remove the cable to prevent damage to the USB connector.
 
-4. If you'd like to power up again without removing the USB cable follow these instructions:
+4. Powering up again.
+If you'd like to power up again without removing the USB cable follow these instructions:
 # If you used Step 1 above to power down, to power back up, hold the power button for 10 seconds, release then tap it once and the system will boot normally.
 # If you used Step 2 above to power down, to power back up, simply tap the power button and the system will boot normally.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-powerbutton.png]]
-======  Figure x. Power Button  ======
+======  Figure 20. Power Button  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/20fig-PB-powerbutton.png]]
 
 === 3.4 Other ways to Connect up to your PocketBeagle  ===
 
@@ -2180,4 +2184,22 @@ The board can be configured in several different ways, but we will discuss the m
 ** Board is accessed via ethernet over USB (RNDIS Ethernet) communication
 * Connecting PocketBeagle to a PC via USB cable and configuring to share access
 ** Board is accessed via the internet
+=== 3.4 Other ways to Connect up to your PocketBeagle  ===
 
+==== 3.4.1 Development over a Network Connection  ====
+
+Many host computers support tethering.  In this configuration, the board can be accessed via a shared connection to the internet with any computer. It allows you to create your code remotely and to make the board do whatever you need it to do from a remote location. Details are available at https://www.digikey.com/en/maker/blogs/cdf66181b3a5436e9ad730e4ed4cf9ee
+
+==== 3.4.2 Other examples ====
+
+As other examples become documented, we'll update them on the Wiki for PocketBeagle
+[https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
+
+See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
+
+<blockquote> Method 4)The microUSB connector will act as a USB host. If using a USB-WiFi adapter, you'll need to configure connman to connect to your network initially, then reboot using the USB as a host rather than a client. You'll need to provide power to your board, but microUSB Host/OTG cables sometimes include the power input.
+5)Adding the extra USB via the header - look at the FAQ for PocketBeagle
+It is possible to add an additional USB port as described above.
+6)You can utilize a mikroBUS Click Ethernet or wireless module.
+7) There are many ways to utilize the expansion interface to create your own networking solution.
+</blockquote> 
