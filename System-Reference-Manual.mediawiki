@@ -212,14 +212,14 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 
 2. Launch Interactive Quick Start Guide.
 
-Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays an interactive Quick Start Guide.
+Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays an interactive Quick Start Guide from PocketBeagle.
 
 ======  Figure 15. Interactive Quick Start Guide Launch  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/15fig-PB-starthtmpage.png]]
 
 3.  Enable a Network Connection.
 
-Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle). It is very useful to connect PocketBeagle itself to the internet to use online cloud resources directly with it.  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch one of PocketBeagle's favorite Web Based Development Environments, Cloud9, (Figure 17) so that you can teach your beagle new tricks!
+Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle).  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch from PocketBeagle one of it's favorite Web Based Development Environments, Cloud9,  (Figure 17) so that you can teach your beagle new tricks!
 
 ======  Figure 16. Enable a Network Connection  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/16fig-PB-enablenetwork.png]]
@@ -416,99 +416,42 @@ There are three boot modes:
 
 * '''USB Boot''':  This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page''].
 
-* '''Serial Boot''':  This mode will use the serial port to allow downloading of the software. A separate [https://elinux.org/Beagleboard:BeagleBone_Black_Accessories#Serial_Debug_Cables ''USB to serial cable''] is required to use this method.  The SPI pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
+* '''Serial Boot''':  This mode will use the serial port to allow downloading of the software. A separate USB to TTL level  [http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf ''serial UART converter cable''] is required to use this method.  The UART pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
 
 
-==== Table 4. Serial Pins Available on Expansion Headers  ====
-{|
-!
-'''Header.Pin'''
-!
-'''Silkscreen '''
-!
-'''Proc Ball '''
-!
-'''SiP Ball '''
+==== Table 4. UART Pins on Expansion Headers for Serial Boot  ====
+{| class="wikitable" style="white-space:nowrap;"
+| '''Header.Pin'''
+| '''Silkscreen'''
+| '''Proc Ball'''
+| '''SiP Ball'''
+| '''Pin Name (Mode 0)'''
 |-
-|
-P1.06
-|
-SPI0_CS
-|
-A16
-|
-A14
+| P1.22
+| GND
+| 
+| 
+| GND
 |-
-|
-P1.08
-|
-SPI0_CLK
-|
-A17
-|
-A13
+| P1.30
+| U0_TX
+| E16
+| B12
+| uart0_txd
 |-
-|
-P1.10
-|
-SPI0_MISO
-|
-B17
-|
-B13
-|-
-|
-P1.12
-|
-SPI0_MOSI
-|
-B16
-|
-B14
-|-
-|
-P2.25
-|
-SPI1_MOSI
-|
-E17
-|
-C13
-|-
-|
-P2.27
-|
-SPI1_MISO
-|
-E18
-|
-C12
-|-
-|
-P2.29
-|
-SPI1_CLK
-|
-C18
-|
-C5
-|-
-|
-P2.31
-|
-SPI1_CS
-|
-A15
-|
-A4
+| P1.32
+| U0_RX
+| E15
+| A12
+| uart0_rxd
 |-
 |}
 
-The UART0 pins are active logging during SPL/u-boot and the same port will also send boot requests (triggered by on-board ROM) if other boot sources are not identified.
+The UART0 pins are displaying all of the boot messages / debug information and the same port will also send boot requests (triggered by on-board ROM) if other boot sources are not identified.
 
-To see the console output, we recommend connecting one of the Mikroelectronica [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards'']
+To see the console output, we recommend connecting one of the Mikroelektronika [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards'']
 
-'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.'' 
+'''''Software to support USB and serial boot modes is not provided by beagleboard.org.'' ''Please contact TI for support of this feature.''
 
 === 5.4 Power  ===
 
@@ -637,18 +580,16 @@ The board can be powered from three different sources:
 
 '''Note''':  A comprehensive tutorial for Power Inputs and Outputs for the OSD335x System in Package is available in the [https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-input-ouput/ 'Tutorial Series'] on the Octavo Systems website.
 
-
-
 === 5.5 JTAG Pads  ===
 
 Pads for an optional connection to a JTAG emulator has been provided on the back of PocketBeagle. 
-More information about JTAG emulation can be found on the TI website at [www.ti.com/jtag 'www.ti.com/jtag']
+More information about JTAG emulation can be found on the TI website at [https://www.ti.com/jtag 'www.ti.com/jtag']
 ====== Figure 27. JTAG Pad Connections  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/27fig-PB-JTAGpads.png]]
 
 === 5.6 Serial Debug Port  ===
 
-Serial debug is provided via UART0 on the processor. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.  You can also use the FTDI Click from MikroElectronica mentioned in Section 5.3.4
+Serial debug is provided via UART0 on the processor.  See Section 5.3.4 for the Header Pin table.  Signals supported are TX and RX. None of the handshake signals (CTS/RTS) are supported.  A separate USB to TTL level  [http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf ''serial UART converter cable''] is required.  You can also use the FTDI Click from MikroElectronica mentioned in Section 5.3.4.
 
 ====== Figure 28. Serial Debug Connections  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/28fig-PB-serialdebug.png]]
@@ -2410,3 +2351,90 @@ It is possible to add an additional USB port as described above.
 <blockquote>Editors note - we have a good section on the Octavo Systems website in the Tutorials that discusses the power button behavior is any of this applicable/useful? - go to https://octavosystems.com/app_notes/osd335x-design-tutorial/bare-minimum-boot/power-management/ and scroll down to "Power Button"</blockquote>
 
 is this useful for alternate boot documentation https://eewiki.net/display/linuxonarm/PocketBeagle ?
+
+this table may be useful later for discussion about including an SPI boot mode into the Boot section 5.3.4
+
+==== Table 4. Serial Pins Available on Expansion Headers  ====
+{|
+!
+'''Header.Pin'''
+!
+'''Silkscreen '''
+!
+'''Proc Ball '''
+!
+'''SiP Ball '''
+|-
+|
+P1.06
+|
+SPI0_CS
+|
+A16
+|
+A14
+|-
+|
+P1.08
+|
+SPI0_CLK
+|
+A17
+|
+A13
+|-
+|
+P1.10
+|
+SPI0_MISO
+|
+B17
+|
+B13
+|-
+|
+P1.12
+|
+SPI0_MOSI
+|
+B16
+|
+B14
+|-
+|
+P2.25
+|
+SPI1_MOSI
+|
+E17
+|
+C13
+|-
+|
+P2.27
+|
+SPI1_MISO
+|
+E18
+|
+C12
+|-
+|
+P2.29
+|
+SPI1_CLK
+|
+C18
+|
+C5
+|-
+|
+P2.31
+|
+SPI1_CS
+|
+A15
+|
+A4
+|-
+|}
