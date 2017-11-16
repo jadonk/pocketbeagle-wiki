@@ -642,16 +642,16 @@ The board can be powered from three different sources:
 === 5.5 JTAG Pads  ===
 
 Pads for an optional connection to a JTAG emulator has been provided on the back of PocketBeagle. 
-More information about JTAG emulation can be found on the TI website at [www.ti.com/jtag ''www.ti.com/jtag'']
+More information about JTAG emulation can be found on the TI website at [www.ti.com/jtag 'www.ti.com/jtag']
+====== Figure 27. JTAG Pad Connections  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/27fig-PB-JTAGpads.png]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-JTAGpad-photo.png]]
-====== Figure x. JTAG Pad Connections  ======
+=== 5.6 Serial Debug Port  ===
 
-=== 5.4 Serial Debug Port  ===
-<blockquote> Where do we put this section? </blockquote> 
-<blockquote> pins 30/32 on the header - is this something to highlight </blockquote> 
+Serial debug is provided via UART0 on the processor. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.  You can also use the FTDI Click from MikroElectronica mentioned in Section 5.3.4
 
-<blockquote>Serial debug is provided via UART0 on the processor via a single 1x6 pin header. In order to use the interface a USB to TTL adapter will be required. The header is compatible with the one provided by FTDI and can be purchased for about $12 to $20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.</blockquote> 
+====== Figure 28. Serial Debug Connections  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/28fig-PB-serialdebug.png]]
 
 = '''6.0 Detailed Hardware Design ''' =
 
