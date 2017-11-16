@@ -6,7 +6,7 @@
 
 '''Revision A.x (on-line wiki edition)'''
 
-'''November 15, 2017'''
+'''November 16, 2017'''
 
 '''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
 
@@ -66,7 +66,7 @@ A.x
 |
 Production Document
 |
-''November 15, 2017''
+''November 16, 2017''
 |
 JK
 |-
@@ -83,15 +83,6 @@ JK
 '''Date '''
 !
 '''By '''
-|-
-|
-PocketBone
-|
-OSH Park Project
-|
-April 18, 2016
-|
-MW
 |-
 |
 A1
@@ -268,8 +259,7 @@ The board can be configured in several different ways. Future revisions of this 
 
 As other examples become documented, we'll update them on the Wiki for PocketBeagle
 [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
-
-See the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
+See also the [https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/beagleboard/JtOGZb-FH2A/9GVu7I6kAQAJ ''on-line discussion.'']
 
 
 = '''4.0 PocketBeagle Overview ''' =
