@@ -47,9 +47,9 @@ Make sure you check the support Wiki frequently for the most up to date informat
 
 This section describes the change history of this document and board. Document changes are not always a result of a board change. A board change will always result in a document change.
 
-=== '''2.1 Document Change History'''  ===
+=== 2.1 Document Change History  ===
 
-===='''Table 1. Change History '''====
+==== Table 1. Change History  ====
 
 {|
 !
@@ -127,7 +127,7 @@ The Rev A2 of PocketBeagle was released to production and [https://www.prnewswir
 
 This section provides instructions on how to hook up your board. The most common scenario is tethering PocketBeagle to your PC for local development.
 
-=== '''3.1 What’s In the Package'''  ===
+===  3.1 What’s In the Package   ===
 
 In the package you will find two items as shown in '''Figures 2 and 3'''.
 
