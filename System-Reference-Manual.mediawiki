@@ -635,10 +635,7 @@ Schematics for the OSD3358-SM SiP are divided into several diagrams.
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-F-sch.png]]
 
 
-
-
-
-=== 6.x  MicroSD Connection ===
+=== 6.2  MicroSD Connection ===
 
 Some words about the microSD connector design on the board here.
 
