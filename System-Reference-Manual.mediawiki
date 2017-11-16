@@ -374,7 +374,8 @@ Figure 22 below is the high level block diagram of PocketBeagle.
 
 === 5.2 System in Package (SiP)  ===
 
-Details here for SiP specification - The ODS335x-SM Block Diagram and links to appropriate details on the website
+The OSD335x-SM Block Diagram is detailed in Figure 23 below.  More information, including design resources are available on the [https://octavosystems.com/octavo_products/osd335x-sm 'Octavo Systems Website']
+
 ======  Figure 23. OSD335x SIP Block Diagram ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/OSD335x-color-block.jpg]]
 
@@ -411,17 +412,14 @@ The board has a microUSB connector that is USB 2.0 HS compatible that connects t
 
 There are three boot modes:  
 
-* '''SD Boot'''.
+* '''SD Boot''':  MicroSD connector acts as the primary boot source for the board.  This is described in Section 3.
 
-MicroSD connector acts as the primary boot source for the board.  This is described in Section 3.
+* '''USB Boot''':  This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page''].
 
-* '''USB Boot'''.
+* '''Serial Boot''':  This mode will use the serial port to allow downloading of the software. A separate [https://elinux.org/Beagleboard:BeagleBone_Black_Accessories#Serial_Debug_Cables ''USB to serial cable''] is required to use this method.  The SPI pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
 
-This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page''].
 
-* '''Serial Boot'''.
-This mode will use the serial port to allow downloading of the software. A separate [https://elinux.org/Beagleboard:BeagleBone_Black_Accessories#Serial_Debug_Cables ''USB to serial cable''] is required to use this method.  The SPI pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
-
+==== Table 4. Serial Pins Available on Expansion Headers  ====
 {|
 !
 '''Header.Pin'''
