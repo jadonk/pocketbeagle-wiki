@@ -209,13 +209,15 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 
 1. Open the USB Drive folder to view the files on your PocketBeagle.
 
-2. Launch Interactive Quick Start Guide
-Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays the interactive Quick Start Guide.
+2. Launch Interactive Quick Start Guide.
+
+Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays an interactive Quick Start Guide.
 
 ======  Figure 15. Interactive Quick Start Guide Launch  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/15fig-PB-starthtmpage.png]]
 
-3.  Enable a Network Connection
+3.  Enable a Network Connection.
+
 Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle). It is very useful to connect PocketBeagle itself to the internet to use online cloud resources directly with it.  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch one of PocketBeagle's favorite Web Based Development Environments, Cloud9, (Figure 17) so that you can teach your beagle new tricks!
 
 ======  Figure 16. Enable a Network Connection  ======
@@ -224,7 +226,8 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 ======  Figure 17. Launch Cloud9 IDE  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/17fig-PB-cloud9.png]]
 
-4.  Get Started Coding with Cloud 9 - Blinky example
+4.  Get Started Coding with Cloud 9 - Blinky example.
+
 Cloud 9 has pre-loaded examples for Beagle in the directory.  Click on the example folder (Figure 18) to expand the selections and see familiar coding examples.  Choose the '''Blink.ino''' example for the traditional Blinky in the familiar Arduino-like coding style. (Figure 19)  The example uses pin 14 as the USR0 LED.  This LED is already blinking as a 'heartbeat' on PocketBeagle.  When you click Run on this example it will alter the LED display on PocketBeagle.  
 
 ======  Figure 18. Examples are Pre-Loaded into Cloud 9 IDE  ======
@@ -271,7 +274,7 @@ The compact PocketBeagle design also offers access through the expansion headers
 
 This section covers the specifications and features of the board in a chart and provides a high level description of the major components and interfaces that make up the board.
 
-'''Table x.  PocketBeagle Features'''
+==== Table 3. PocketBeagle Features  ====
 
 {| {{table}}
 | align="center" style="background:#f0f0f0;"|'''Feature'''
@@ -331,6 +334,7 @@ This section covers the specifications and features of the board in a chart and 
 |}
 
 ==== 4.1.1 OSD3358-512M-BSM System in Package ====
+
 The Octavo Systems OSD3358-512M-BSM System-In-Package (SiP) is part of a family of products that are building blocks designed to allow easy and cost-effective implementation of systems based in Texas Instruments powerful Sitara AM335x line of processors.  The OSD335x-SM integrates the AM335x along with the TI TPS65217C PMIC, the TI TL5209 LDO, up to 1 GB of DDR3 Memory, a 4 KB EEPROM for non-volatile configuration storage and resistors, capacitors and inductors into a single 21mm x 21mm design-in-ready package.
 
 With this level of integration, the OSD335x-SM family of SiPs allows designers to focus on the key aspects of their system without spending time on the complicated high-speed design of the processor/DDR3 interface or the PMIC power distribution.  It reduces size and complexity of design.  
@@ -341,18 +345,17 @@ Full Datasheet and more information is available at [https://octavosystems.com/o
 
 This section describes the key components on the board, their location and function. 
 
-'''Figure x''' below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
+Figure 21 below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
+
 ====== Figure 21. Key Board Component Locations  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/21fig-PB-walkaround.png]]
 
-
-
 '''Key Components'''
 
-* '''The Octavo Systems OSD3358-512M-BSM System-In-Package''' is the processor for the board
+* '''The Octavo Systems OSD3358-512M-BSM System-In-Package''' is the processor system for the board
 * '''P1 and P2 Headers''' come unpopulated so a user may choose their orientation
-* '''User LEDs'''provides 4 programmable blue LEDs
-* '''Power BUTTON''' can we used to power up or power down the board (see section 3 for details)
+* '''User LEDs''' provides 4 programmable blue LEDs
+* '''Power BUTTON''' can we used to power up or power down the board (see section 3.3.3 for details)
 * '''USB 2.0 OTG''' is a microUSB connection to a PC that can also power the board
 * '''Power LED''' provides communication regarding the power to the board
 * '''microSD''' slot is where a microSD card can be installed.
@@ -363,40 +366,37 @@ This section provides the high level specification of PocketBeagle.
 
 === 5.1 Block Diagram  ===
 
-'''Figure 19''' below is the high level block diagram of PocketBeagle.
+Figure 22 below is the high level block diagram of PocketBeagle.
 
+======  Figure 22. PocketBeagle Key Components ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-block-diag3.png]]
-
-'''Figure 19. PocketBeagle Key Components '''
 
 === 5.2 System in Package (SiP)  ===
 
 Details here for SiP specification - The ODS335x-SM Block Diagram and links to appropriate details on the website
-
+======  Figure 23. OSD335x SIP Block Diagram ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/OSD335x-color-block.jpg]]
 
-'''Figure 20. OSD335x SIP Block Diagram '''
+Note: PocketBeagle utilizes the 512MB DDR3 memory size version of the OSD335x-SM
+A few of the features of the OSD335x-SM SiP may not be available on PocketBeagle headers.  Please check Section 7 for the P1 and P2 header pin tables. 
 
-
-<blockquote> There needs to be a list of the SiP features that are not accessible by the PB board pinout.  What do we want the block diagram to say regarding DDR3 memory size?</blockquote>
 === 5.3 Connectivity  ===
 
 ==== 5.3.1 Expansion Headers  ====
 
-PocketBeagle gives access to a large number of peripheral functions and GPIO via 2 dual rail expansion headers.  With 36 pins each, the headers have been left unpopulated to enable users to choose the header connector orientation or add-on board / cape connector style.  Pins are clearly marked on the bottom of the board with additional pin configurations available through software settings.  Detailed information is available in Section 6.x and Section 7.    
+PocketBeagle gives access to a large number of peripheral functions and GPIO via 2 dual rail expansion headers.  With 36 pins each, the headers have been left unpopulated to enable users to choose the header connector orientation or add-on board / cape connector style.  Pins are clearly marked on the bottom of the board with additional pin configurations available through software settings.  Detailed information is available in Section 7.   
+ 
+======  Figure 24. PocketBeagle Expansion Headers ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/24fig-PB-Headerphoto.png]]
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/fig-PB-Headerphoto.png]]
 ==== 5.3.2 microSD Connector  ====
 
-The board is equipped with a single microSD connector to act as the primary boot source for the board.  Just about any microSD card you have will work, the install takes less than 2.0G of the memory.
-<blockquote> Jason - what is the upper limit size on the microSD card</blockquote>
+The board is equipped with a single microSD connector to act as the primary boot source for the board.  Just about any microSD card you have will work, we commonly find 4G to be suitable.
 
-When plugging in the SD card, the writing on the card should be up. Align the card with the connector and push to insert. Then release. There should be a click and the card will start to eject slightly, but it then should latch into the connector. To eject the card, push the SD card in and then remove your finger. The SD card will be ejected from the connector.
+When plugging in the SD card, the writing on the card should be up. Align the card with the connector and push to insert. Then release. There should be a click and the card will start to eject slightly, but it then should latch into the connector. To eject the card, push the SD card in and then remove your finger. The SD card will be ejected from the connector. Do not pull the SD card out or you could damage the connector.
 
-Do not pull the SD card out or you could damage the connector.
-
-====== Figure 29?. microSD Connector  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/fig-PB-SDcardslot.png]]
+====== Figure 25. microSD Connector  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/25fig-PB-SDcard.png]]
 
 
 ==== 5.3.3 USB 2.0 Connector  ====
