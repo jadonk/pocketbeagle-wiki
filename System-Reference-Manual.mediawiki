@@ -655,34 +655,45 @@ Serial debug is provided via UART0 on the processor. In order to use the interfa
 
 = '''6.0 Detailed Hardware Design ''' =
 
-The following sections describe the hardware design of PocketBeagle.
+The following sections contain schematic references for PocketBeagle.  Full schematics in both PDF and Eagle are available on the [https://github.com/jadonk/pocketbeagle-wiki 'PocketBeagle Wiki']
+
 === 6.1  OSD3358-SM SiP Design ===
-Here are some words about how to read the schematics of the SiP.  how do differentiate the sections
+Schematics for the OSD3358-SM SiP are divided into several diagrams.
 
-==== 6.1.1 SiP A TitleA ====
+==== 6.1.1 SiP A OSD3358 SiP System and Power Signals ====
 
+====== Figure 29. SiP A OSD3358 SiP System and Power Signals  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
-====== Figure x. SiP Connections  ======
 
-==== 6.1.2 SiP B TitleB ====
+==== 6.1.2 SiP B OSD3358 SiP JTAG, USB & Analog Signals ====
+
+====== Figure 30. SiP B OSD3358 SiP JTAG, USB & Analog Signals  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-B-sch.png]]
-====== Figure x. SiP Connections  ======
 
-==== 6.1.3 SiP C TitleC ====
+
+==== 6.1.3 SiP C OSD3358 SiP Peripheral Signals ====
+
+====== Figure 31. SiP C OSD3358 SiP Peripheral Signals  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-C-sch.png]]
-====== Figure x. SiP Connections  ======
 
-==== 6.1.4 SiP D TitleD ====
+==== 6.1.4 SiP D OSD3358 SiP System Boot Configuration  ====
+
+====== Figure 32. SiP D OSD3358 SiP System Boot Configuration  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-D-sch.png]]
-====== Figure x. SiP Connections  ======
 
-==== 6.1.5 SiP E TitleE ====
+
+==== 6.1.5 SiP E OSD3358 SiP Power Signals  ====
+
+====== Figure 33. SiP E OSD3358 SiP Power Signals  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-E-sch.png]]
-====== Figure x. SiP Connections  ======
 
-==== 6.1.6 SiP F TitleF ====
+
+==== 6.1.6 SiP F OSD3358 SiP Power Signals ====
+
+====== Figure 34. SiP F OSD3358 SiP Power Signals  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-F-sch.png]]
-====== Figure x. SiP Connections  ======
+
+
 
 
 
