@@ -671,17 +671,21 @@ Table 6 Provides the LED control signals and pins.  A logic level of "1" will ca
 | P14
 |}
 
+=== 6.6 JTAG Pads ===
+There are 7 pads on the bottom of PocketBeagle to connect JTAG for debugging.  The design is highlighted in Figure 39. 
+More information regarding JTAG debugging can be found at [https://www.ti.com/jtag 'www.ti.com/jtag']
 
+====== Figure 39. JTAG Pads Design  ======
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/JTAG-pads-sch.png]]
 
-=== 6.12 PRU-ICSS  ===
+=== 6.7 PRU-ICSS  ===
 
 The Programmable Real-Time Unit Subsystem and Industrial Communication SubSystem (PRU-ICSS) module is located inside the AM3358 processor, which is inside the Octavo Systems SiP. Commonly referred to as just the "PRU", this little subsystem will unleash a lot of performance for you to use in your application.  Consisting of dual 32-bit RISC cores (Programmable Real-Time Units, or PRUs), data and instruction memories, internal peripheral modules, and an interrupt controller (INTC). The programmable nature of the PRU-ICSS, along with their access to pins, events and all SoC resources, provides flexibility in implementing fast real-time responses, specialized data handling operations, custom peripheral interfaces, and in offloading tasks from the other processor cores of the system-on-chip (SoC). Access to these pins is provided by PocketBeagle's expansion headers and is multiplexed with other functions on the board. Access is not provided to all of the available pins.
 
 Additional documentation is located on the Texas Instruments website at [http://processors.wiki.ti.com/index.php/PRU-ICSS ''http://processors.wiki.ti.com/index.php/PRU-ICSS''] and also located at [http://github.com/beagleboard/am335x_pru_package ''http://github.com/beagleboard/am335x_pru_package''.] 
 
-==== 6.12.1 PRU-ICSS Features  ====
+==== 6.7.1 PRU-ICSS Features  ====
 
 The features of the PRU-ICSS include:
 
@@ -699,22 +703,24 @@ Two independent programmable real-time (PRU) cores:
 
 – 16 input pins and 16 output pins per PRU core. (Not all of these are accessible on the PocketBeagle.  Please check the Pin Table below for PRU-ICSS features available through the P1 and P2 headers.)
 
-==== 6.12.2 PRU-ICSS Block Diagram  ====
+==== 6.7.2 PRU-ICSS Block Diagram  ====
 
-'''Figure 49''' is a high level block diagram of the PRU-ICSS.
+Figure 40 is a high level block diagram of the PRU-ICSS.
 
-[[media/image67.png|427x275px]]
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/40fig-PB-PRU-block.png]]
 
-======= Figure 49. PRU-ICSS Block Diagram  =======
+======= Figure 40. PRU-ICSS Block Diagram  =======
 
 ==== 6.12.3 PRU-ICSS Pin Access  ====
 
 Both PRU 0 and PRU1 are accessible from the expansion headers.  Listed below are the ports that can be accessed on each PRU.
 
-'''Table 11''' below shows which PRU-ICSS signals can be accessed on PocketBeagle and on which connector and pins on which they are accessible.  Some signals are accessible on the same pins.
+Table 6. below shows which PRU-ICSS signals can be accessed on PocketBeagle and on which connector and pins on which they are accessible.  Some signals are accessible on the same pins.
 
-=======  Table xx. PRU0 and PRU1 Access  =======
-Use scroll bar at bottom of chart to see additional features in columns to the right
+=======  Table 6. PRU0 and PRU1 Access  =======
+Use scroll bar at bottom of chart to see additional features in columns to the right.
+When printing this document, you will need to print this chart separately.
+
 {| class="wikitable" style="white-space:nowrap;"
 | Header.Pin
 | Silkscreen
