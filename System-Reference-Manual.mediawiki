@@ -666,7 +666,7 @@ Table 6 Provides the LED control signals and pins.  A logic level of "1" will ca
 | R14
 |-
 | USR3
-| GPIO_24
+| GPIO1_24
 | V16
 | P14
 |}
@@ -1048,10 +1048,10 @@ This section describes each of the connectors on the board.
 
 === 7.1 Expansion Header Connectors  ===
 
-The expansion interface on the board is comprised of two 36 pin connectors. The two Expansion Header Connectors on PocketBeagle are labeled P1 and P2.  The connections are a standard 100 mil distance so that they can be compatible with many standard expansion items.
+The expansion interface on the board is comprised of two 36 pin connectors. The two Expansion Header Connectors on PocketBeagle are labeled P1 and P2.  The connections are a standard 100 mil distance so that they can be compatible with many standard expansion items.  The silkscreen for the headers on the bottom of the board provides the easiest way to identify them.  See Figure 41.
 
-
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-header-photo.png]]
+======= Figure 41. Expansion Headers for PocketBeagle  =======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/41fig-PB-Headerback.png]]
 
 All signals on the expansion headers are '''''3.3V''''' unless otherwise indicated.
 
@@ -1061,17 +1061,23 @@ All signals on the expansion headers are '''''3.3V''''' unless otherwise indicat
 
 '''NO PINS ARE TO BE DRIVEN UNTIL AFTER THE SYS_RESET LINE GOES HIGH. '''
 
-'''Figure 50''' shows the location of the expansion connectors.
+Figure 42 shows a color coded chart with an overview of the most popular functions of PocketBeagle's Expansion Header pins.
+The Header Pin tables in Sections 7.1.1 and 7.1.2 show the full pin assignments for each header.
+
+====== Figure 42. Expansion Header Popular Functions - Color Coded  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
-====== Figure 50. Expansion Connector Location  ======
+
 
 === 7.1.1 P1 Header  ===
-Words about the design of the P1 Header
+Figure 43 shows the schematic diagram for the P1 Header.
+====== Figure 43 P1 Header  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P1-sch.png]]
-====== Figure x. P1 Header  ======
 
-====== Table 7.1.1 P1 Header Pinout ======
-Use scroll bar at bottom of chart to see additional features in columns to the right
+
+====== Table 7. P1 Header Pinout ======
+Use scroll bar at bottom of chart to see additional features in columns to the right.
+When printing this document you will need to print this chart separately.
+
 {| class="wikitable" style="white-space:nowrap;"
 | Header.Pin
 | Silkscreen
@@ -1608,12 +1614,13 @@ Use scroll bar at bottom of chart to see additional features in columns to the r
 
 
 === 7.1.2 P2 Header  ===
-
+Figure 44 shows the schematic diagram for the P2 Header.
+====== Figure 44 P2 Header  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P2-sch.png]]
-====== Figure x. P2 Header  ======
 
-====== Table 7.1.2 P2 Header Pinout ======
-Use scroll bar at bottom of chart to see additional features in columns to the right
+====== Table 8 P2 Header Pinout ======
+Use scroll bar at bottom of chart to see additional features in columns to the right.
+When printing this document you will need to print this chart separately.
 {| class="wikitable" style="white-space:nowrap;"
 | Header.Pin
 | Silkscreen
@@ -1801,7 +1808,7 @@ Use scroll bar at bottom of chart to see additional features in columns to the r
 | VOUT
 | P2.13 (VOUT-5V)
 | 
-| K6 & K7 & L6 & L7
+| K6, K7, L6, L7
 | VOUT-5V
 | 
 | 
@@ -1815,7 +1822,7 @@ Use scroll bar at bottom of chart to see additional features in columns to the r
 | BAT +
 | P2.14 (VIN-BAT)
 | 
-| P8 & R8 & T8
+| P8, R8, T8
 | VIN-BAT
 | 
 | 
@@ -2136,13 +2143,20 @@ Use scroll bar at bottom of chart to see additional features in columns to the r
 
 
 === 7.2 mikroBUS socket connections ===
-The headers on PocketBeagle support the mikroBUS™ standard.  Up to two mikro Click Boards can be added to the header pins at the same time.  The mikroBUS standard comprises a pair of 1×8 female headers with a standardized pin configuration. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
+mikroBUS and, by extension "mikroBUS Click boards", are trademarks of MikroElektronika. We do not make any claims of compatibility nor adherence to their specification. We've just seen that many of the Click boards "just work".
 
+The Expansion Headers on PocketBeagle have been designed to accept up to two Click Boards added to the header pins at the same time.  This provides an exciting opportunity to add functionality easily to PocketBeagle from [https://shop.mikroe.com/click 'hundreds of existing add-on Click Boards']. 
+
+The mikroBUS standard comprises a pair of 1×8 female headers with a standardized pin configuration. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
+
+====== Figure 45. mikroBUS  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/mikrobus-socket-pinout.jpg]]
-====== Figure x. mikroBUS  ======
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-both-sch.png]]
-====== Figure x. PocketBeagle Both Headers  ======
+The Expansion Header pin alignment enables 2 Click Boards on the top side of PocketBeagle using the inside rails of the headers. This leaves the outside rails open to be accessed from either the top or the bottom of PocketBeagle.    Place each Click Board into the position shown in Figure 46, with one Click Board facing each direction.  When choosing Click boards, make sure you are checking that they meet the 3.3V requirements for PocketBeagle.  A growing number of community members are trying out various Click Boards and posting results on the [https://github.com/jadonk/pocketbeagle-wiki/blob/master/mikroBus%E2%84%A2-Click-Boards.md 'PocketBeagle Wiki']. 
+
+====== Figure 46. PocketBeagle Both Headers  ======
+[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/46fig-PB-Mikro.png]]
+
 
 === 7.3 USB   ===
 === USB1 Host Port  ===
