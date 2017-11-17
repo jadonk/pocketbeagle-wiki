@@ -651,22 +651,22 @@ Table 6 Provides the LED control signals and pins.  A logic level of "1" will ca
 | '''SiP Ball'''
 |-
 | USR0
-| GPMC_A5
+| GPIO1_21
 | V15
 | P13
 |-
 | USR1
-| GPMC_A6
-| V15
-| R14
+| GPIO1_22
+| U15
+| T14
 |-
 | USR2
-| GPMC_A7
+| GPIO1_23
 | T15
 | R14
 |-
 | USR3
-| GPMC_A8
+| GPIO_24
 | V16
 | P14
 |}
