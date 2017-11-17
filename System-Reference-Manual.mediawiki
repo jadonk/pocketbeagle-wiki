@@ -503,7 +503,7 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 | K6, K7, L6, L7
 | VOUT-5V
 |-
-P2.13
+| P2.13
 | VOUT
 | 
 | K6, K7, L6, L7
@@ -1046,11 +1046,14 @@ When printing this document, you will need to print this chart separately.
 
 This section describes each of the connectors on the board.
 
-=== 7.1 Expansion Connectors  ===
+=== 7.1 Expansion Header Connectors  ===
+
+The expansion interface on the board is comprised of two 36 pin connectors. The two Expansion Header Connectors on PocketBeagle are labeled P1 and P2.  The connections are a standard 100 mil distance so that they can be compatible with many standard expansion items.
+
 
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-header-photo.png]]
 
-The expansion interface on the board is comprised of two 46 pin connectors. All signals on the expansion headers are '''''3.3V''''' unless otherwise indicated.
+All signals on the expansion headers are '''''3.3V''''' unless otherwise indicated.
 
 '''''NOTE: Do not connect 5V logic level signals to these pins or the board will be'' ''damaged.'' '''
 
