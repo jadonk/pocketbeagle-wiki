@@ -386,8 +386,8 @@ A few of the features of the OSD335x-SM SiP may not be available on PocketBeagle
 
 ==== 5.3.1 Expansion Headers  ====
 
-PocketBeagle gives access to a large number of peripheral functions and GPIO via 2 dual rail expansion headers.  With 36 pins each, the headers have been left unpopulated to enable users to choose the header connector orientation or add-on board / cape connector style.  Pins are clearly marked on the bottom of the board with additional pin configurations available through software settings.  Detailed information is available in Section 7.   
- 
+PocketBeagle gives access to a large number of peripheral functions and GPIO via 2 dual rail expansion headers.  With 36 pins each, the headers have been left unpopulated to enable users to choose the header connector orientation or add-on board / cape connector style.  Pins are clearly marked on the bottom of the board with additional pin configurations available through software settings.  Detailed information is available in Section 7.
+
 ======  Figure 24. PocketBeagle Expansion Headers ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/24fig-PB-Headerphoto.png]]
 
