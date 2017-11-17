@@ -472,13 +472,13 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 | P1.01
 | VIN
 | 
-| P10&R10&T10
+| P10, R10, T10
 | VIN
 |-
 | P1.07
 | USB1_VI
 | 
-| P9&R9&T9
+| P9, R9, T9
 | VIN-USB
 |}
 
