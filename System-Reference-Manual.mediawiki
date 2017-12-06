@@ -248,7 +248,7 @@ Cloud 9 has pre-loaded examples for Beagle in the directory.  Click on the examp
 ==== 3.3.3  Powering Down ====
 
 1. Standard Power Down
-Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.<br><br>The Standard Power Down can also be invoked from the Linux command shell via "sudo shutdown -h now".<br><br>
+Press the power button momentarily with a tap. The system will power down automatically. This will shut down your software with grace.  Software routines will run to completion.<br><br>The Standard Power Down can also be invoked from the Linux command shell via "sudo shutdown -h now".<br>
 
 2. Hard Power Down
 Press the power button for 10 seconds.  This will force an immediate shut down of the software.  For example you may lose any items you have written to the memory.  Holding the button longer than 10 seconds will perform a power reset and the system will power back on.
