@@ -2221,11 +2221,10 @@ Design documentation can be found on the wiki. [https://github.com/beagleboard/p
 Including:
 
 * Schematic in PDF  [https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_sch.pdf ''https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_sch.pdf'']
-* Schematic in KiCAD [https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD ''https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD'']
-* PCB Gerber
-* PCB Layout (Allegro)
-* Bill of Material
-* System Reference Manual (This document).
+* Schematic and layout in EAGLE  [https://github.com/beagleboard/pocketbeagle/tree/master/EAGLE ''https://github.com/beagleboard/pocketbeagle/tree/master/EAGLE'']
+* Schematic and layout in KiCAD [https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD ''https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD'']
+* Bill of Materials [https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_BOM.csv ''https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_BOM.csv'']
+* System Reference Manual [https://github.com/beagleboard/pocketbeagle-wiki ''https://github.com/beagleboard/pocketbeagle-wiki''].
 
 === 11.2 Software Updates  ===
 
