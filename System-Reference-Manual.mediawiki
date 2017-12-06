@@ -39,7 +39,7 @@ A great place to find out the latest news and projects for PocketBeagle is on th
 [https://beagleboard.org/pocket ''beagleboard.org/pocket'' ]
 
 ======  Figure 1. PocketBeagle Home Page  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/1fig-PB-homepage.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/1fig-PB-homepage.png]]
 
 Make sure you check the support Wiki frequently for the most up to date information.
 [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki'' ]
@@ -133,9 +133,9 @@ In the package you will find two items as shown in '''Figures 2 and 3'''.
 * PocketBeagle
 * Getting Started instruction card with link to the support URL.
 ======  Figure 2. PocketBeagle Package  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] 
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/pocketbeagle_package_small_size.jpg]] 
 ======  Figure 3. PocketBeagle Package Insert  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PB-card-front-1.jpg]][[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PB-card-back-1.jpg]]
 
 === 3.2 Connecting the board ===
 
@@ -152,7 +152,7 @@ In this configuration, you will need the following additional items:
 
 The board is powered by the PC via the USB cable, no other cables are required. The board is accessed either as a USB storage drive or via a web browser on the PC. You need to use either Firefox or Chrome on the PC, IE will not work properly. '''Figure 4''' shows this configuration.
 ======  Figure 4. Tethered Configuration  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PB1-fullPC-3.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PB1-fullPC-3.jpg]]
 
 In some instances, such as when additional add-on boards, or PocketCapes are connected, the PC may not be able to supply sufficient power for the full system. In that case, review the power requirements for the add-on board/cape; additional power may need to be supplied via the 5v input, but rarely is this the case.
 
@@ -162,45 +162,45 @@ The following steps will guide you to quickly download a PocketBeagle software i
 1.  Navigate to the Getting Started Page  [https://beagleboard.org/getting-started ''beagleboard.org/getting-started''] 
 Follow along with the instructions and click on the link noted in Figure 5 below [https://beagleboard.org/latest-images ''beagleboard.org/latest-images'']. You can also get to this page directly by going to [https://bbb.io/latest ''bbb.io/latest'']
 ======  Figure 5. Getting Started Page  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/5fig-PB-GetStarted.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/5fig-PB-GetStarted.png]]
 
 2.  Download the latest image onto your computer by following the link to the latest image and click on the Debian image for Stretch IoT (non-GUI) for BeagleBone and PocketBeagle via microSD card. See Figure 6 below. This will download a .img.xz file into the downloads folder of your computer.
 
 ======  Figure 6. Download Latest Software Image  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/6fig-PB-DownloadSW.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/6fig-PB-DownloadSW.png]]
 
 3. Transfer the image to a microSD card.  
 
 Download and install an SD card programming utility if you do not already have one.  We like [https://etcher.io/ ''https://etcher.io/''] for new users and so we show that one in the steps below.  Go to your downloads folder and doubleclick on the .exe file and follow the on-screen prompts.  See figure 7.  
 
 ======  Figure 7. Download Etcher SD Card Utility  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/7fig-PB-Etcherdownload.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/7fig-PB-Etcherdownload.png]]
  
 Insert a new microSD card into a card reader/writer and attach it via the USB connection to your computer.  Follow the instructions on the screen for selecting the .img file and burning the image from your computer to the microSD card.  Eject the SD card reader when prompted and remove the card.  See Figures 8 and 9.
 
 ======  Figure 8. Select the PocketBeagle Image  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/8fig-PB-Etcherselectimage.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/8fig-PB-Etcherselectimage.png]]
 
 ======  Figure 9. Burn the Image to the SD Card  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/9fig-PB-Etcherfinish.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/9fig-PB-Etcherfinish.png]]
 
 4. Insert the microSD card into the board - you'll hear a satisfying click when it seats properly into the slot.  It is important that your microSD card is fully inserted prior to powering the system.
 
 ======  Figure 10. Insert the microSD Card into PocketBeagle  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/10fig-PB-SDcardinsert2.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/10fig-PB-SDcardinsert2.jpg]]
 
 5. Connect the micro USB connector on your cable to the board as shown in Figure 11.  The microUSB connector is fairly robust, but we suggest that you not use the cable as a leash for your PocketBeagle.  Take proper care not to put too much stress on the connector or cable.
 
 ======  Figure 11. Insert the micro USB Connector into PocketBeagle  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/11fig-PB-microUSBattach1.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/11fig-PB-microUSBattach1.jpg]]
 
 6. Connect the large connector of the USB cable to your Linux, Mac or Windows PC USB port as shown in Figure 12. The board will power on and the power LED will be on as shown in Figure 13 below.
 
 ======  Figure 12. Insert the USB connector into PC  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/12fig-PB-USBtoPC1.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/12fig-PB-USBtoPC1.jpg]]
 
 ======  Figure 13. Board Power LED  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/13fig-PB-PowerLED1.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/13fig-PB-PowerLED1.png]]
 
 7. As soon as you apply power, the board will begin the booting process and the userLEDs '''Figure 14 ''' will come on in sequence as shown below. It will take a few seconds for the status LEDs to come on, like teaching PocketBeagle to 'stay'. The LEDs will be flashing as it begins to boot the Linux kernel.  While the four user LEDS can be over written and used as desired, they do have specific meanings in the image that you've initially placed on your microSD card once the Linux kernel has booted. 
 
@@ -209,7 +209,7 @@ Insert a new microSD card into a card reader/writer and attach it via the USB co
 * '''USER2''' is an activity indicator. It turns on when the kernel is not in the idle loop.
 * '''USER3''' idle
 ======  Figure 14. User LEDs  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/14fig-PB-UserLEDs1.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/14fig-PB-UserLEDs1.png]]
 
 ==== 3.3.2 Accessing the Board and Getting Started with Coding  ====
 
@@ -222,27 +222,27 @@ The board will appear as a USB Storage drive on your PC after the kernel has boo
 Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox.  This will use your browser to open a file running on PocketBeagle via the microSD card.  You will see '''file:///Volumes/BEAGLEBONE/START.htm''' in the url bar of the browser.  See Figure 15 below.  This action displays an interactive Quick Start Guide from PocketBeagle.
 
 ======  Figure 15. Interactive Quick Start Guide Launch  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/15fig-PB-starthtmpage.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/15fig-PB-starthtmpage.png]]
 
 3.  Enable a Network Connection.
 
 Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle).  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch from PocketBeagle one of it's favorite Web Based Development Environments, Cloud9,  (Figure 17) so that you can teach your beagle new tricks!
 
 ======  Figure 16. Enable a Network Connection  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/16fig-PB-enablenetwork.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/16fig-PB-enablenetwork.png]]
 
 ======  Figure 17. Launch Cloud9 IDE  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/17fig-PB-cloud9.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/17fig-PB-cloud9.png]]
 
 4.  Get Started Coding with Cloud 9 - Blinky example.
 
 Cloud 9 has pre-loaded examples for Beagle in the directory.  Click on the example folder (Figure 18) to expand the selections and see familiar coding examples.  Choose the '''Blink.ino''' example for the traditional Blinky in the familiar Arduino-like coding style. (Figure 19)  The example uses pin 14 as the USR0 LED.  This LED is already blinking as a 'heartbeat' on PocketBeagle.  When you click Run on this example it will alter the LED display on PocketBeagle.  
 
 ======  Figure 18. Examples are Pre-Loaded into Cloud 9 IDE  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/18fig-PB-cloud9exs.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/18fig-PB-cloud9exs.png]]
 
 ======  Figure 19. Run Blink on PocketBeagle  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/19fig-PB-cloud9blink.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/19fig-PB-cloud9blink.png]]
 
 
 ==== 3.3.3  Powering Down ====
@@ -262,7 +262,7 @@ If you'd like to power up again without removing the USB cable follow these inst
 # If you used Step 2 above to power down, to power back up, simply tap the power button and the system will boot normally.
 
 ======  Figure 20. Power Button  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/20fig-PB-powerbutton.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/20fig-PB-powerbutton.png]]
 
 === 3.4 Other ways to Connect up to your PocketBeagle  ===
 
@@ -354,7 +354,7 @@ This section describes the key components on the board, their location and funct
 Figure 21 below shows the locations of the devices, connectors, LEDs, and switches on the PCB layout of the board.
 
 ====== Figure 21. Key Board Component Locations  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/21fig-PB-walkaround.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/21fig-PB-walkaround.png]]
 
 '''Key Components'''
 
@@ -375,14 +375,14 @@ This section provides the high level specification of PocketBeagle.
 Figure 22 below is the high level block diagram of PocketBeagle.
 
 ======  Figure 22. PocketBeagle Key Components ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/22fig-PB-blockdiagram.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/22fig-PB-blockdiagram.png]]
 
 === 5.2 System in Package (SiP)  ===
 
 The OSD335x-SM Block Diagram is detailed in Figure 23 below.  More information, including design resources are available on the [https://octavosystems.com/octavo_products/osd335x-sm 'Octavo Systems Website']
 
 ======  Figure 23. OSD335x SIP Block Diagram ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/OSD335x-color-block.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/OSD335x-color-block.jpg]]
 
 Note: PocketBeagle utilizes the 512MB DDR3 memory size version of the OSD335x-SM
 A few of the features of the OSD335x-SM SiP may not be available on PocketBeagle headers.  Please check Section 7 for the P1 and P2 header pin tables. 
@@ -394,7 +394,7 @@ A few of the features of the OSD335x-SM SiP may not be available on PocketBeagle
 PocketBeagle gives access to a large number of peripheral functions and GPIO via 2 dual rail expansion headers.  With 36 pins each, the headers have been left unpopulated to enable users to choose the header connector orientation or add-on board / cape connector style.  Pins are clearly marked on the bottom of the board with additional pin configurations available through software settings.  Detailed information is available in Section 7.
 
 ======  Figure 24. PocketBeagle Expansion Headers ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/24fig-PB-Headerphoto.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/24fig-PB-Headerphoto.png]]
 
 ==== 5.3.2 microSD Connector  ====
 
@@ -403,7 +403,7 @@ The board is equipped with a single microSD connector to act as the primary boot
 When plugging in the SD card, the writing on the card should be up. Align the card with the connector and push to insert. Then release. There should be a click and the card will start to eject slightly, but it then should latch into the connector. To eject the card, push the SD card in and then remove your finger. The SD card will be ejected from the connector. Do not pull the SD card out or you could damage the connector.
 
 ====== Figure 25. microSD Connector  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/25fig-PB-SDcard.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/25fig-PB-SDcard.png]]
 
 
 ==== 5.3.3 USB 2.0 Connector  ====
@@ -411,7 +411,7 @@ When plugging in the SD card, the writing on the card should be up. Align the ca
 The board has a microUSB connector that is USB 2.0 HS compatible that connects the USB0 port to the SiP.  Generally this port is used as a client USB port connected to a power source, such as your PC, to power the board. If you would like to use this port in host mode you will need to supply power for peripherals via Header P1 pin 7 (USB1.VIN) or through a powered USB Hub. Additionally, in the USB host configuration, you will need to power the board through Header P1 pin 1 (VIN) or Header P1 pin 7 (USB1.VIN) or Header P2 pin 14 (BAT.VIN)
 
 ====== Figure 26. USB 2.0 Connector  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/26fig-PB-USB.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/26fig-PB-USB.png]]
 
 ==== 5.3.4 Boot Modes  ====
 
@@ -573,20 +573,20 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 Pads for an optional connection to a JTAG emulator has been provided on the back of PocketBeagle. 
 More information about JTAG emulation can be found on the TI website at [https://www.ti.com/jtag 'www.ti.com/jtag']
 ====== Figure 27. JTAG Pad Connections  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/27fig-PB-JTAGpads.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/27fig-PB-JTAGpads.png]]
 
 === 5.6 Serial Debug Port  ===
 
 Serial debug is provided via UART0 on the processor.  See Section 5.3.4 for the Header Pin table.  Signals supported are TX and RX. None of the handshake signals (CTS/RTS) are supported.  A separate USB to TTL level  [http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf ''serial UART converter cable''] is required or you can connect one of the Mikroelektronika [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards'']to use this method.  
 
 ====== Figure 28. Serial Debug Connections  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/28fig-PB-serialdebug.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/28fig-PB-serialdebug.png]]
 
 If serial boot is not used, the UART0 can be used to view boot messages during startup and can provide access to a console using a terminal access program like [http://www.putty.org/ ''Putty''].  To view the boot messages or use the console the UART should be set to a baud rate of 115200 and use 8 bits for data, no stop bit and 1 parity bit (8N1).
 
 = '''6.0 Detailed Hardware Design ''' =
 
-The following sections contain schematic references for PocketBeagle.  Full schematics in both PDF and Eagle are available on the [https://github.com/jadonk/pocketbeagle-wiki 'PocketBeagle Wiki']
+The following sections contain schematic references for PocketBeagle.  Full schematics in both PDF and Eagle are available on the [https://github.com/beagleboard/pocketbeagle-wiki 'PocketBeagle Wiki']
 
 === 6.1  OSD3358-SM SiP Design ===
 Schematics for the OSD3358-SM SiP are divided into several diagrams.
@@ -594,35 +594,35 @@ Schematics for the OSD3358-SM SiP are divided into several diagrams.
 ==== 6.1.1 SiP A OSD3358 SiP System and Power Signals ====
 
 ====== Figure 29. SiP A OSD3358 SiP System and Power Signals  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/SiP-A-sch.png]]
 
 ==== 6.1.2 SiP B OSD3358 SiP JTAG, USB & Analog Signals ====
 
 ====== Figure 30. SiP B OSD3358 SiP JTAG, USB & Analog Signals  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-B-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/SiP-B-sch.png]]
 
 
 ==== 6.1.3 SiP C OSD3358 SiP Peripheral Signals ====
 
 ====== Figure 31. SiP C OSD3358 SiP Peripheral Signals  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-C-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/SiP-C-sch.png]]
 
 ==== 6.1.4 SiP D OSD3358 SiP System Boot Configuration  ====
 
 ====== Figure 32. SiP D OSD3358 SiP System Boot Configuration  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-D-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/SiP-D-sch.png]]
 
 
 ==== 6.1.5 SiP E OSD3358 SiP Power Signals  ====
 
 ====== Figure 33. SiP E OSD3358 SiP Power Signals  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-E-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/SiP-E-sch.png]]
 
 
 ==== 6.1.6 SiP F OSD3358 SiP Power Signals ====
 
 ====== Figure 34. SiP F OSD3358 SiP Power Signals  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/SiP-F-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/SiP-F-sch.png]]
 
 
 === 6.2  MicroSD Connection ===
@@ -630,7 +630,7 @@ Schematics for the OSD3358-SM SiP are divided into several diagrams.
 The Micro Secure Digital (microSD) connector design is highlighted in Figure 35.
 
 ====== Figure 35. microSD Connections  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/usdconnector-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/usdconnector-sch.png]]
 
 
 === 6.3 USB Connector ===
@@ -640,21 +640,21 @@ The USB connector design is highlighted in Figure 36.
 Note that there is an ID pin for dual-role (host/client) functionality. The hardware fully supports it, but care should be taken to ensure the kernel in use is either statically or dynamically configured to recognize and utilize the proper mode.
 
 ====== Figure 36. USB Connection  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/USB-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/USB-sch.png]]
 
 === 6.4 Power Button Design ===
 
 The power button design is highlighted in Figure 37.
 
 ====== Figure 37. Power Button  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Power-button-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/Power-button-sch.png]]
 
 === 6.5 User LEDs ===
 There are four user programmable LEDs on PocketBeagle.  The design is highlighted in Figure 38. 
 Table 6 Provides the LED control signals and pins.  A logic level of "1" will cause the LEDs to turn on. 
 
 ====== Figure 38. User LEDs  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/User-LEDs-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/User-LEDs-sch.png]]
 
 ==== Table 6. User LED Control Signals/Pins  ====
 {| class="wikitable" style="white-space:nowrap;"
@@ -690,7 +690,7 @@ More information regarding JTAG debugging can be found at [https://www.ti.com/jt
 
 ====== Figure 39. JTAG Pads Design  ======
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/JTAG-pads-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/JTAG-pads-sch.png]]
 
 === 6.7 PRU-ICSS  ===
 
@@ -720,7 +720,7 @@ Two independent programmable real-time (PRU) cores:
 
 Figure 40 is a high level block diagram of the PRU-ICSS.
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/40fig-PB-PRU-block.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/40fig-PB-PRU-block.png]]
 
 ======= Figure 40. PRU-ICSS Block Diagram  =======
 
@@ -1064,7 +1064,7 @@ This section describes each of the connectors on the board.
 The expansion interface on the board is comprised of two 36 pin connectors. The two Expansion Header Connectors on PocketBeagle are labeled P1 and P2.  The connections are a standard 100 mil distance so that they can be compatible with many standard expansion items.  The silkscreen for the headers on the bottom of the board provides the easiest way to identify them.  See Figure 41.
 
 ====== Figure 41. Expansion Headers for PocketBeagle  =======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/41fig-PB-Headerback.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/41fig-PB-Headerback.png]]
 
 All signals on the expansion headers are '''''3.3V''''' unless otherwise indicated.
 
@@ -1078,13 +1078,13 @@ Figure 42 shows a color coded chart with an overview of the most popular functio
 The Header Pin tables in Sections 7.1.1 and 7.1.2 show the full pin assignments for each header.
 
 ====== Figure 42. Expansion Header Popular Functions - Color Coded  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PocketBeagle_pinout.png]]
 
 
 === 7.1.1 P1 Header  ===
 Figure 43 shows the schematic diagram for the P1 Header.
 ====== Figure 43 P1 Header  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P1-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/Header-P1-sch.png]]
 
 
 ====== Table 7. P1 Header Pinout ======
@@ -1629,7 +1629,7 @@ When printing this document you will need to print this chart separately.
 === 7.1.2 P2 Header  ===
 Figure 44 shows the schematic diagram for the P2 Header.
 ====== Figure 44 P2 Header  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/Header-P2-sch.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/Header-P2-sch.png]]
 
 ====== Table 8 P2 Header Pinout ======
 Use scroll bar at bottom of chart to see additional features in columns to the right.
@@ -2163,18 +2163,18 @@ The Expansion Headers on PocketBeagle have been designed to accept up to two Cli
 The mikroBUS standard comprises a pair of 1×8 female headers with a standardized pin configuration. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
 
 ====== Figure 45. mikroBUS  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/mikrobus-socket-pinout.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/mikrobus-socket-pinout.jpg]]
 
-The Expansion Header pin alignment enables 2 Click Boards on the top side of PocketBeagle using the inside rails of the headers. This leaves the outside rails open to be accessed from either the top or the bottom of PocketBeagle.    Place each Click Board into the position shown in Figure 46, with one Click Board facing each direction.  When choosing Click boards, make sure you are checking that they meet the 3.3V requirements for PocketBeagle.  A growing number of community members are trying out various Click Boards and posting results on the [https://github.com/jadonk/pocketbeagle-wiki/blob/master/mikroBus%E2%84%A2-Click-Boards.md 'PocketBeagle Wiki']. 
+The Expansion Header pin alignment enables 2 Click Boards on the top side of PocketBeagle using the inside rails of the headers. This leaves the outside rails open to be accessed from either the top or the bottom of PocketBeagle.    Place each Click Board into the position shown in Figure 46, with one Click Board facing each direction.  When choosing Click boards, make sure you are checking that they meet the 3.3V requirements for PocketBeagle.  A growing number of community members are trying out various Click Boards and posting results on the [https://github.com/beagleboard/pocketbeagle-wiki/blob/master/mikroBus%E2%84%A2-Click-Boards.md 'PocketBeagle Wiki']. 
 
 ====== Figure 46. PocketBeagle Both Headers  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/46fig-PB-Mikro.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/46fig-PB-Mikro.png]]
 
 === 7.3 Setting up an additional USB Connection ===
 
-You can add an additional USB connection to PocketBeagle easily by connecting a microUSB breakout. By default in the current software, the system should be configured to use this port as a host. Keep up to date on this project [https://github.com/jadonk/pocketbeagle-wiki/blob/master/FAQ.mediawiki#How_do_I_get_additional_USB_connections 'on the PocketBeagle Wiki FAQ'].
+You can add an additional USB connection to PocketBeagle easily by connecting a microUSB breakout. By default in the current software, the system should be configured to use this port as a host. Keep up to date on this project [https://github.com/beagleboard/pocketbeagle-wiki/blob/master/FAQ.mediawiki#How_do_I_get_additional_USB_connections 'on the PocketBeagle Wiki FAQ'].
 
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_microUSB_bb1.png]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PocketBeagle_microUSB_bb1.png]]
 
 
 = '''8.0 PocketCape Support ''' =
@@ -2202,10 +2202,10 @@ Weight: 1.4 oz
 = '''10.0 Additional Pictures ''' =
 
 ====== Figure 47. PocketBeagle Front BW  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_Front_BW.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PocketBeagle_Front_BW.jpg]]
 
 ====== Figure 48. PocketBeagle Back BW  ======
-[[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/PocketBeagle_Back_BW.jpg]]
+[[https://github.com/beagleboard/pocketbeagle-wiki/blob/master/images/PocketBeagle_Back_BW.jpg]]
 
 = '''11.0 Support Information ''' =
 
