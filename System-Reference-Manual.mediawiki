@@ -105,7 +105,7 @@ JK
 |-
 ====  2.2.1 PocketBone   ====
 
-The [https://oshpark.com/shared_projects/GWqtFu43 ''PocketBone''] project by Michael Welling was one of the inspirations for PocketBeagle, fitting into a mini-mint tin.
+Upon the creation of the first, 27mm-by-27mm, Octavo Systems OSD3358 SIP, Jason did a hack two-layer board in EAGLE called “PocketBone” to drop the Beagle name as this was a totally unofficial effort not geared at being a BeagleBoard.org Foundation project. The board never worked because the 32kHz and 24MHz crystals were backwards and Michael Welling decided to pick it up and redo the design in KiCad as a four-layer board. Jason paid for some prototypes and this resulted in the first successful “PocketBone”, a fully-open-source 1-GHz Linux computer in a fitting into a mini-mint tin.
 
 ====  2.2.2 Rev A1   ====
 
