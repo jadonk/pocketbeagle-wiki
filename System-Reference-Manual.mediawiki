@@ -36,7 +36,7 @@ PocketBeagle will boot directly from a microSD card.  Load a Linux distribution 
 
 This design will keep improving as the product matures based on feedback and experience. Software updates will be frequent and will be independent of the hardware revisions and as such not result in a change in the revision number of the board.
 A great place to find out the latest news and projects for PocketBeagle is on the home page
-[https://beagleboard.org/pocket ''www.beagleboard.org/pocket'' ]
+[https://beagleboard.org/pocket ''beagleboard.org/pocket'' ]
 
 ======  Figure 1. PocketBeagle Home Page  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/1fig-PB-homepage.png]]
