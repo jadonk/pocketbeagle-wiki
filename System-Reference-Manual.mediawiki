@@ -337,8 +337,6 @@ This section covers the specifications and features of the board in a chart and 
 | QEP||2 Quadrature encoder inputs accessible
 |-
 | CAN||2 CAN bus controllers accessible
-|-
-| 
 |}
 
 ==== 4.1.1 OSD3358-512M-BSM System in Package ====
