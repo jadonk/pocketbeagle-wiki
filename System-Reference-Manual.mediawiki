@@ -480,6 +480,12 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 | 
 | P9, R9, T9
 | VIN-USB
+|-
+| P2.14
+| BAT_+
+| 
+| P8, R8, T8
+| VIN-BAT
 |}
 
 ==== Table 6. Power Outputs Available on Expansion Headers  ====
