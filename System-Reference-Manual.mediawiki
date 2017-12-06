@@ -637,6 +637,8 @@ The Micro Secure Digital (microSD) connector design is highlighted in Figure 35.
 
 The USB connector design is highlighted in Figure 36.
 
+Note that there is an ID pin for dual-role (host/client) functionality. The hardware fully supports it, but care should be taken to ensure the kernel in use is either statically or dynamically configured to recognize and utilize the proper mode.
+
 ====== Figure 36. USB Connection  ======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/USB-sch.png]]
 
