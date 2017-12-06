@@ -97,7 +97,7 @@ JK
 |
 A2
 |
-Production
+Production. Fixed mikroBUS Click reset pins (made GPIO).
 |
 ''September 22, 2017''
 |
@@ -109,11 +109,18 @@ The [https://oshpark.com/shared_projects/GWqtFu43 ''PocketBone''] project by Mic
 
 ====  2.2.2 Rev A1   ====
 
-The Rev A1 of PocketBeagle was a prototype not released to production.
+The Rev A1 of PocketBeagle was a prototype not released to production. A few lines were wrong to be able to control mikroBUS Click add-on board reset lines and they were adjusted.
 
 ====  2.2.3 Rev A2   ====
 
 The Rev A2 of PocketBeagle was released to production and [https://www.prnewswire.com/news-releases/small-in-size--cost-meet-pocketbeagle-the-25-development-board-for-hobbyists-educators-and-professionals-300519950.html''launched at World MakerFaire 2017''].
+
+Known issues in rev A2:
+{|
+! '''Description/link '''
+|-
+| [https://github.com/beagleboard/pocketbeagle/issues/4 GPIO44 is incorrectly labelled as GPIO48]
+|}
 
 =  '''3.0 Connecting Up PocketBeagle ''' =
 
