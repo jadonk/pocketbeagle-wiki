@@ -1063,7 +1063,7 @@ This section describes each of the connectors on the board.
 
 The expansion interface on the board is comprised of two 36 pin connectors. The two Expansion Header Connectors on PocketBeagle are labeled P1 and P2.  The connections are a standard 100 mil distance so that they can be compatible with many standard expansion items.  The silkscreen for the headers on the bottom of the board provides the easiest way to identify them.  See Figure 41.
 
-======= Figure 41. Expansion Headers for PocketBeagle  =======
+====== Figure 41. Expansion Headers for PocketBeagle  =======
 [[https://github.com/jadonk/pocketbeagle-wiki/blob/master/images/41fig-PB-Headerback.png]]
 
 All signals on the expansion headers are '''''3.3V''''' unless otherwise indicated.
