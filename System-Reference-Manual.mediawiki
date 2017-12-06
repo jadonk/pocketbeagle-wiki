@@ -6,7 +6,7 @@
 
 '''Revision A.x (on-line wiki edition)'''
 
-'''November 16, 2017'''
+'''December 6, 2017'''
 
 '''Maintaining author: Jason Kridner ''jkridner@beagleboard.org'''''
 
