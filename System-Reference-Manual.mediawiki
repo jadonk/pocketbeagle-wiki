@@ -2239,7 +2239,7 @@ Download the latest software files from [https://beagleboard.org/latest-images '
 
 === 11.3 RMA Support  ===
 
-If you feel your board is defective or has issues and before returning merchandise, please seek approval from the manufacturer  by filling out the form at [https://beagleboard.org/support/rma ''//beagleboard.org/support/rma''] . You will need the serial number and revision of the board. 
+If you feel your board is defective or has issues and before returning merchandise, please seek approval from the manufacturer  by filling out the form at [https://beagleboard.org/support/rma ''beagleboard.org/support/rma''] . You will need the serial number and revision of the board. 
 
 === 11.4 Getting Help  ===
 
