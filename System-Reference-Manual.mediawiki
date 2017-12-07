@@ -230,7 +230,7 @@ Right Click on the file named '''START.HTM''' and open it in Chrome or Firefox. 
 
 3.  Enable a Network Connection.
 
-Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle).  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch from PocketBeagle one of it's favorite Web Based Development Environments, Cloud9,  (Figure 17) so that you can teach your beagle new tricks!
+Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructions to "Enable a Network Connection" (pointing to the DHCP server that is running on PocketBeagle).  Copy the appropriate IP Address from the chart (according to your PC operating system type) and paste into your browser then add a ''':3000''' to the end of it.  See example in Figure 16 below. This will launch from PocketBeagle one of it's favorite Web Based Development Environments, Cloud9 IDE,  (Figure 17) so that you can teach your beagle new tricks!
 
 ======  Figure 16. Enable a Network Connection  ======
 [[images/16fig-PB-enablenetwork.png]]
@@ -238,7 +238,7 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 ======  Figure 17. Launch Cloud9 IDE  ======
 [[images/17fig-PB-cloud9.png]]
 
-4.  Get Started Coding with Cloud 9 - blinking USR3 LED in JavaScript using the BoneScript library example
+4.  Get Started Coding with Cloud9 IDE - blinking USR3 LED in JavaScript using the BoneScript library example
 
 <ol>
 <li>Create a new text file</li>
