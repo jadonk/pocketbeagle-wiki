@@ -117,9 +117,13 @@ The Rev A2 of PocketBeagle was released to production and [https://www.prnewswir
 
 Known issues in rev A2:
 {|
-! '''Description/link '''
+! '''Issue '''
 |-
-| [https://github.com/beagleboard/pocketbeagle/issues/4 GPIO44 is incorrectly labelled as GPIO48]
+! '''Link '''
+|-
+| GPIO44 is incorrectly labelled as GPIO48
+|-
+| [https://github.com/beagleboard/pocketbeagle/issues/4 'github.com/beagleboard/pocketbeagle/issues/4']
 |}
 
 =  '''3.0 Connecting Up PocketBeagle ''' =
@@ -346,7 +350,7 @@ The Octavo Systems OSD3358-512M-BSM System-In-Package (SiP) is part of a family 
 
 With this level of integration, the OSD335x-SM family of SiPs allows designers to focus on the key aspects of their system without spending time on the complicated high-speed design of the processor/DDR3 interface or the PMIC power distribution.  It reduces size and complexity of design.  
 
-Full Datasheet and more information is available at [https://octavosystems.com/octavo_products/osd335x-sm/ ''https://octavosystems.com/octavo_products/osd335x-sm/'']
+Full Datasheet and more information is available at [https://octavosystems.com/octavo_products/osd335x-sm/ ''octavosystems.com/octavo_products/osd335x-sm/'']
 
 === 4.2 Board Component Locations  ===
 
@@ -422,7 +426,7 @@ There are three boot modes:
 
 * '''USB Boot''':  This mode supports booting over the USB port.  More information can be found in the project called "BeagleBoot"  This project ported the BeagleBone bootloader server BBBlfs(currently written in c) to JavaScript(node.js) and make a cross platform GUI (using electron framework) flashing tool utilizing the etcher.io project. This will allow a single code base for a cross platform tool.  For more information on BeagleBoot, see the [https://medium.com/@ravikp7/gsoc-2017-final-report-beagleboot-a20d28c8d632 ''BeagleBoot Project Page''].
 
-* '''Serial Boot''':  This mode will use the serial port to allow downloading of the software. A separate USB to TTL level  [http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf ''serial UART converter cable''] is required or you can connect one of the Mikroelektronika [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards'']to use this method.  The UART pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
+* '''Serial Boot''':  This mode will use the serial port to allow downloading of the software. A separate USB to TTL level  [http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf ''serial UART converter cable''] is required or you can connect one of the Mikroelektronika [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards''] to use this method.  The UART pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
 
 
 ==== Table 4. UART Pins on Expansion Headers for Serial Boot  ====
@@ -697,7 +701,9 @@ More information regarding JTAG debugging can be found at [https://www.ti.com/jt
 
 The Programmable Real-Time Unit Subsystem and Industrial Communication SubSystem (PRU-ICSS) module is located inside the AM3358 processor, which is inside the Octavo Systems SiP. Commonly referred to as just the "PRU", this little subsystem will unleash a lot of performance for you to use in your application.  Consisting of dual 32-bit RISC cores (Programmable Real-Time Units, or PRUs), data and instruction memories, internal peripheral modules, and an interrupt controller (INTC). The programmable nature of the PRU-ICSS, along with their access to pins, events and all SoC resources, provides flexibility in implementing fast real-time responses, specialized data handling operations, custom peripheral interfaces, and in offloading tasks from the other processor cores of the system-on-chip (SoC). Access to these pins is provided by PocketBeagle's expansion headers and is multiplexed with other functions on the board. Access is not provided to all of the available pins.
 
-Additional documentation is located on the Texas Instruments website at [http://processors.wiki.ti.com/index.php/PRU-ICSS ''http://processors.wiki.ti.com/index.php/PRU-ICSS''] and also located at [http://github.com/beagleboard/am335x_pru_package ''http://github.com/beagleboard/am335x_pru_package''.] 
+Additional documentation is located on the Texas Instruments website at [http://processors.wiki.ti.com/index.php/PRU-ICSS ''processors.wiki.ti.com/index.php/PRU-ICSS''] and also located at [http://github.com/beagleboard/am335x_pru_package ''http://github.com/beagleboard/am335x_pru_package''.] 
+
+Example projects using the PRU-ICSS can be found at [http://processors.wiki.ti.com/index.php/PRU_Projects ''processors.wiki.ti.com/index.php/PRU_Projects''].
 
 ==== 6.7.1 PRU-ICSS Features  ====
 
@@ -2166,14 +2172,14 @@ The mikroBUS standard comprises a pair of 1×8 female headers with a standardize
 ====== Figure 45. mikroBUS  ======
 [[images/mikrobus-socket-pinout.jpg]]
 
-The Expansion Header pin alignment enables 2 Click Boards on the top side of PocketBeagle using the inside rails of the headers. This leaves the outside rails open to be accessed from either the top or the bottom of PocketBeagle.    Place each Click Board into the position shown in Figure 46, with one Click Board facing each direction.  When choosing Click boards, make sure you are checking that they meet the 3.3V requirements for PocketBeagle.  A growing number of community members are trying out various Click Boards and posting results on the [https://github.com/beagleboard/pocketbeagle/blob/master/mikroBus%E2%84%A2-Click-Boards.md 'PocketBeagle Wiki']. 
+The Expansion Header pin alignment enables 2 Click Boards on the top side of PocketBeagle using the inside rails of the headers. This leaves the outside rails open to be accessed from either the top or the bottom of PocketBeagle.    Place each Click Board into the position shown in Figure 46, with one Click Board facing each direction.  When choosing Click boards, make sure you are checking that they meet the 3.3V requirements for PocketBeagle.  A growing number of community members are trying out various Click Boards and posting results on the [https://github.com/beagleboard/pocketbeagle/wiki/mikroBus%E2%84%A2-Click-Boards 'PocketBeagle Wiki mikroBus Click Boards page']. 
 
 ====== Figure 46. PocketBeagle Both Headers  ======
 [[images/46fig-PB-Mikro.png]]
 
 === 7.3 Setting up an additional USB Connection ===
 
-You can add an additional USB connection to PocketBeagle easily by connecting a microUSB breakout. By default in the current software, the system should be configured to use this port as a host. Keep up to date on this project [https://github.com/beagleboard/pocketbeagle/blob/master/FAQ.mediawiki#How_do_I_get_additional_USB_connections 'on the PocketBeagle Wiki FAQ'].
+You can add an additional USB connection to PocketBeagle easily by connecting a microUSB breakout. By default in the current software, the system should be configured to use this port as a host. Keep up to date on this project on the [https://github.com/beagleboard/pocketbeagle/wiki/FAQ 'PocketBeagle Wiki FAQ'].
 
 [[images/PocketBeagle_microUSB_bb1.png]]
 
@@ -2212,9 +2218,9 @@ Weight: 1.4 oz
 
 All support for this design is through the BeagleBoard.org community at:
 
-''beagleboard@googlegroups.com'' or
+[https://beagleboard.org/chat ''beagleboard@googlegroups.com'' or
 
-[http://beagleboard.org/discuss ''http://beagleboard.org/discuss''] .
+[https://beagleboard.org/discuss ''beagleboard.org/discuss''] .
 
 === 11.1 Hardware Design  ===
 
@@ -2235,7 +2241,7 @@ Download the latest software files from [https://beagleboard.org/latest-images '
 
 === 11.3 RMA Support  ===
 
-If you feel your board is defective or has issues and before returning merchandise, please seek approval from the manufacturer  by filling out the form at [http://beagleboard.org/support/rma ''http://beagleboard.org/support/rma''] . You will need the serial number and revision of the board. 
+If you feel your board is defective or has issues and before returning merchandise, please seek approval from the manufacturer  by filling out the form at [https://beagleboard.org/support/rma ''//beagleboard.org/support/rma''] . You will need the serial number and revision of the board. 
 
 === 11.4 Getting Help  ===
 
