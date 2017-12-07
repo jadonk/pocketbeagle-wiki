@@ -238,15 +238,27 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 ======  Figure 17. Launch Cloud9 IDE  ======
 [[images/17fig-PB-cloud9.png]]
 
-4.  Get Started Coding with Cloud 9 - Blinky example.
+4.  Get Started Coding with Cloud 9 - blinking USR3 LED in JavaScript using the BoneScript library example
 
-Cloud 9 has pre-loaded examples for Beagle in the directory.  Click on the example folder (Figure 18) to expand the selections and see familiar coding examples.  Choose the '''Blink.ino''' example for the traditional Blinky in the familiar Arduino-like coding style. (Figure 19)  The example uses pin 14 as the USR0 LED.  This LED is already blinking as a 'heartbeat' on PocketBeagle.  When you click Run on this example it will alter the LED display on PocketBeagle.  
-
-======  Figure 18. Examples are Pre-Loaded into Cloud 9 IDE  ======
-[[images/18fig-PB-cloud9exs.png]]
-
-======  Figure 19. Run Blink on PocketBeagle  ======
-[[images/19fig-PB-cloud9blink.png]]
+<ol>
+<li>Create a new text file</li>
+<li>Copy and paste the below code into the editor<br />
+<pre>
+var b = require('bonescript');
+var state = b.LOW;
+b.pinMode("USR3", b.OUTPUT);
+setInterval(toggle, 250);  // toggle 4 times a second, every 250ms
+function toggle() {
+    if(state == b.LOW) state = b.HIGH;
+    else state = b.LOW;
+    b.digitalWrite("USR3", state);
+}
+</pre>
+</li>
+<li>Save the new text file as ''blinkusr3.js'' within the default directory</li>
+<li>Execute <pre>node blinkusr3.js</pre> within the default (/var/lib/cloud9) directory</li>
+<li>Type CTRL+C to stop the program running</li>
+</ol>
 
 
 ==== 3.3.3  Powering Down ====
