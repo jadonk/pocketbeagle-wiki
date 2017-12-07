@@ -2262,5 +2262,6 @@ If you feel your board is defective or has issues and before returning merchandi
 
 === 11.5 Getting Help  ===
 
-If you need some up to date troubleshooting techniques, the Wiki is a great place to start [https://github.com/beagleboard/pocketbeagle/wiki ''https://github.com/beagleboard/pocketbeagle/wiki'' ]
+If you need some up to date troubleshooting techniques, the Wiki is a great place to start [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki''].
 
+If you need professional support, check out [https://beagleboard.org/resources ''beagleboard.org/resources''].
