@@ -118,11 +118,9 @@ The Rev A2 of PocketBeagle was released to production and [https://www.prnewswir
 Known issues in rev A2:
 {|
 ! '''Issue '''
-|-
 ! '''Link '''
 |-
 | GPIO44 is incorrectly labelled as GPIO48
-|-
 | [https://github.com/beagleboard/pocketbeagle/issues/4 'github.com/beagleboard/pocketbeagle/issues/4']
 |}
 
