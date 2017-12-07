@@ -333,7 +333,7 @@ This section covers the specifications and features of the board in a chart and 
 |-
 | I2C||2 I2C busses enabled by default
 |-
-| SPI||2 SPI busseswith single chip selects enabled by default
+| SPI||2 SPI busses with single chip selects enabled by default
 |-
 | PWM||4 Pulse Width Modulation outputs accessible with 2 enabled by default
 |-
