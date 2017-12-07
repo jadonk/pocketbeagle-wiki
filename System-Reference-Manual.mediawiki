@@ -2230,10 +2230,8 @@ Rough model can be found at [https://github.com/beagleboard/pocketbeagle/tree/ma
 = '''11.0 Support Information ''' =
 
 All support for this design is through the BeagleBoard.org community at:
-
-[https://beagleboard.org/chat ''beagleboard@googlegroups.com'' or
-
-[https://beagleboard.org/discuss ''beagleboard.org/discuss''] .
+* [https://beagleboard.org/chat ''beagleboard@googlegroups.com''] or
+* [https://beagleboard.org/discuss ''beagleboard.org/discuss''].
 
 === 11.1 Hardware Design  ===
 
