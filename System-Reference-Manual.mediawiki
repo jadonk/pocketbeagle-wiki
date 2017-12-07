@@ -67,10 +67,10 @@ A.x
 |
 Production Document
 |
-''November 16, 2017''
+''December 7, 2017''
 |
 JK
-|-
+|}
 
 === 2.2 Board Changes   ===
 
@@ -102,7 +102,8 @@ Production. Fixed mikroBUS Click reset pins (made GPIO).
 ''September 22, 2017''
 |
 JK
-|-
+|}
+
 ====  2.2.1 PocketBone   ====
 
 Upon the creation of the first, 27mm-by-27mm, Octavo Systems OSD3358 SIP, Jason did a hack two-layer board in EAGLE called “PocketBone” to drop the Beagle name as this was a totally unofficial effort not geared at being a BeagleBoard.org Foundation project. The board never worked because the 32kHz and 24MHz crystals were backwards and Michael Welling decided to pick it up and redo the design in KiCad as a four-layer board. Jason paid for some prototypes and this resulted in the first successful “PocketBone”, a fully-open-source 1-GHz Linux computer in a fitting into a mini-mint tin.
@@ -289,9 +290,9 @@ This section covers the specifications and features of the board in a chart and 
 
 ==== Table 3. PocketBeagle Features  ====
 
-{| {{table}}
-| align="center" style="background:#f0f0f0;"|'''Feature'''
-| align="center" style="background:#f0f0f0;"|''''''
+{| class="wikitable"
+! align="center" style="background:#f0f0f0;"|'''Feature'''
+! align="center" style="background:#f0f0f0;"|''''''
 |-
 | System-In-Package||Octavo Systems OSD335x-SM in 256 Ball BGA (21mm x 21mm)
 |-
