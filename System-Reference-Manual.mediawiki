@@ -121,7 +121,7 @@ Known issues in rev A2:
 ! '''Link '''
 |-
 | GPIO44 is incorrectly labelled as GPIO48
-| [https://github.com/beagleboard/pocketbeagle/issues/4 'github.com/beagleboard/pocketbeagle/issues/4']
+| [https://github.com/beagleboard/pocketbeagle/issues/4 ''github.com/beagleboard/pocketbeagle/issues/4'']
 |}
 
 =  '''3.0 Connecting Up PocketBeagle ''' =
