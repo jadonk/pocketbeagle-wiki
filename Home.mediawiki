@@ -1,6 +1,9 @@
 Welcome to the PocketBeagle wiki!
 
+Get started with [https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual ''the User Guide!'']
+
 https://beagleboard.org/pocket
+
 
 PocketBeagle® is an ultra-tiny-yet-complete Linux-enabled, community-supported, open-source USB-key-fob computer. PocketBeagle features an incredible low cost, slick design and simple usage, making PocketBeagle® the ideal development board for beginners and professionals alike. You develop directly in a web browser and PocketBeagle® can easily be set back to factory conditions, leaving you free to experiment.
 
