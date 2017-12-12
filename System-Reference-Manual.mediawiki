@@ -2202,11 +2202,9 @@ This is a placeholder for recommendations for those building their own PocketCap
 
 === 9.1 Dimensions and Weight  ===
 
-Editors note : this is only a placeholder
+Size: 2.21” x 1.38” (56mm x 35mm)
 
-Size: 3.5” x 2.15” (86.36mm x 53.34mm)
-
-Max height: .187” (4.76mm)
+Max height: .197” (5mm)
 
 PCB Layers: 4
 
