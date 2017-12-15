@@ -239,9 +239,10 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 [[images/17fig-PB-cloud9.png]]
 
 4.  Get Started Coding with Cloud9 IDE - blinking USR3 LED in JavaScript using the BoneScript library example
-[[pocketbeagle-wiki/images/SRM1_cloud9blinkPB.png]]
+
 <ol>
 <li>Create a new text file</li>
+[[pocketbeagle-wiki/images/SRM1_cloud9blinkPB.png]]
 <li>Copy and paste the below code into the editor<br />
 <pre>
 var b = require('bonescript');
@@ -255,8 +256,11 @@ function toggle() {
 }
 </pre>
 </li>
+[[pocketbeagle-wiki/images/SRM2_cloud9blinkPB.png]]
+[[pocketbeagle-wiki/images/SRM3_cloud9blinkPB.png]]
 <li>Save the new text file as ''blinkusr3.js'' within the default directory</li>
 <li>Execute <pre>node blinkusr3.js</pre> within the default (/var/lib/cloud9) directory</li>
+[[pocketbeagle-wiki/images/SRM4_cloud9blinkPB.png]]
 <li>Type CTRL+C to stop the program running</li>
 </ol>
 
