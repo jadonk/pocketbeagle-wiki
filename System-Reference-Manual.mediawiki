@@ -239,7 +239,7 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 [[images/17fig-PB-cloud9.png]]
 
 4.  Get Started Coding with Cloud9 IDE - blinking USR3 LED in JavaScript using the BoneScript library example
-
+[[images/SRM1_cloud9blinkPB.png]]
 <ol>
 <li>Create a new text file</li>
 <li>Copy and paste the below code into the editor<br />
