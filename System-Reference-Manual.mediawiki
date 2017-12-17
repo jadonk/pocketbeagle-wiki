@@ -242,6 +242,7 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 
 <ol>
 <li>Create a new text file</li>
+[[images/SRM1_cloud9blinkPB.png]]
 <li>Copy and paste the below code into the editor<br />
 <pre>
 var b = require('bonescript');
@@ -255,8 +256,11 @@ function toggle() {
 }
 </pre>
 </li>
+[[images/SRM2_cloud9blinkPB.png]]
+[[images/SRM3_cloud9blinkPB.png]]
 <li>Save the new text file as ''blinkusr3.js'' within the default directory</li>
 <li>Execute <pre>node blinkusr3.js</pre> within the default (/var/lib/cloud9) directory</li>
+[[images/SRM4_cloud9blinkPB.png]]
 <li>Type CTRL+C to stop the program running</li>
 </ol>
 
@@ -2202,11 +2206,9 @@ This is a placeholder for recommendations for those building their own PocketCap
 
 === 9.1 Dimensions and Weight  ===
 
-Editors note : this is only a placeholder
+Size: 2.21” x 1.38” (56mm x 35mm)
 
-Size: 3.5” x 2.15” (86.36mm x 53.34mm)
-
-Max height: .187” (4.76mm)
+Max height: .197” (5mm)
 
 PCB Layers: 4
 
