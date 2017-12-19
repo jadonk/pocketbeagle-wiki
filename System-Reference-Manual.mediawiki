@@ -239,7 +239,6 @@ Click on 'Step 2' of the Interactive Quick Start Guide page to follow instructio
 [[images/17fig-PB-cloud9.png]]
 
 4.  Get Started Coding with Cloud9 IDE - blinking USR3 LED in JavaScript using the BoneScript library example
-
 <ol>
 <li>Create a new text file</li>
 [[images/SRM1_cloud9blinkPB.png]]
@@ -2210,13 +2209,17 @@ Size: 2.21” x 1.38” (56mm x 35mm)
 
 Max height: .197” (5mm)
 
+PCB size: 55mm x 35mm
+
 PCB Layers: 4
 
-PCB thickness: .062” 
+PCB thickness: 1.6mm
 
 RoHS Compliant: Yes
 
-Weight: 1.4 oz
+Weight: 10g
+
+Rough model can be found at [https://github.com/beagleboard/pocketbeagle/tree/master/models ''github.com/beagleboard/pocketbeagle/tree/master/models'']
 
 
 = '''10.0 Additional Pictures ''' =
@@ -2230,10 +2233,8 @@ Weight: 1.4 oz
 = '''11.0 Support Information ''' =
 
 All support for this design is through the BeagleBoard.org community at:
-
-[https://beagleboard.org/chat ''beagleboard@googlegroups.com'' or
-
-[https://beagleboard.org/discuss ''beagleboard.org/discuss''] .
+* [https://beagleboard.org/chat ''beagleboard@googlegroups.com''] or
+* [https://beagleboard.org/discuss ''beagleboard.org/discuss''].
 
 === 11.1 Hardware Design  ===
 
@@ -2252,11 +2253,18 @@ It is a good idea to always use the latest software. Instructions for how to upd
 
 Download the latest software files from [https://beagleboard.org/latest-images ''beagleboard.org/latest-images'']
 
-=== 11.3 RMA Support  ===
+=== 11.5 Export Information ===
 
-If you feel your board is defective or has issues and before returning merchandise, please seek approval from the manufacturer  by filling out the form at [https://beagleboard.org/support/rma ''beagleboard.org/support/rma''] . You will need the serial number and revision of the board. 
+* ECCN: EAR99
+* CCATS: G173833
+* Documentation: [https://github.com/beagleboard/pocketbeagle/blob/master/regulatory/PocketBeagle_Export_Classification.pdf ''github.com/beagleboard/pocketbeagle/blob/master/regulatory/PocketBeagle_Export_Classification.pdf'']
 
-=== 11.4 Getting Help  ===
+=== 11.4 RMA Support  ===
 
-If you need some up to date troubleshooting techniques, the Wiki is a great place to start [https://github.com/beagleboard/pocketbeagle/wiki ''https://github.com/beagleboard/pocketbeagle/wiki'' ]
+If you feel your board is defective or has issues and before returning merchandise, please seek approval from the manufacturer using [https://beagleboard.org/support/rma ''beagleboard.org/support/rma'']. You will need the manufacturer, model, revision and serial number of the board. 
 
+=== 11.5 Getting Help  ===
+
+If you need some up to date troubleshooting techniques, the Wiki is a great place to start [https://github.com/beagleboard/pocketbeagle/wiki ''github.com/beagleboard/pocketbeagle/wiki''].
+
+If you need professional support, check out [https://beagleboard.org/resources ''beagleboard.org/resources''].
