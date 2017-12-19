@@ -743,7 +743,7 @@ Figure 40 is a high level block diagram of the PRU-ICSS.
 
 [[images/40fig-PB-PRU-block.png]]
 
-======= Figure 40. PRU-ICSS Block Diagram  =======
+====== Figure 40. PRU-ICSS Block Diagram  ======
 
 ==== 6.12.3 PRU-ICSS Pin Access  ====
 
@@ -751,7 +751,7 @@ Both PRU 0 and PRU1 are accessible from the expansion headers.  Listed below are
 
 Table 6. below shows which PRU-ICSS signals can be accessed on PocketBeagle and on which connector and pins on which they are accessible.  Some signals are accessible on the same pins.
 
-=======  Table 6. PRU0 and PRU1 Access  =======
+======  Table 6. PRU0 and PRU1 Access  ======
 Use scroll bar at bottom of chart to see additional features in columns to the right.
 When printing this document, you will need to print this chart separately.
 
