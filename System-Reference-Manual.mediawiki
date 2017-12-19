@@ -50,7 +50,7 @@ This section describes the change history of this document and board. Document c
 
 === 2.1 Document Change History  ===
 
-==== Table 1. Change History  ====
+====== Table 1. Change History  ======
 
 {|
 !
@@ -74,7 +74,7 @@ JK
 
 === 2.2 Board Changes   ===
 
-==== Table 2. Board History  ====
+====== Table 2. Board History  ======
 {|
 !
 '''Rev '''
@@ -301,7 +301,7 @@ The compact PocketBeagle design also offers access through the expansion headers
 
 This section covers the specifications and features of the board in a chart and provides a high level description of the major components and interfaces that make up the board.
 
-==== Table 3. PocketBeagle Features  ====
+====== Table 3. PocketBeagle Features  ======
 
 {| class="wikitable"
 ! align="center" style="background:#f0f0f0;"|'''Feature'''
@@ -412,7 +412,7 @@ A few of the features of the OSD335x-SM SiP may not be available on PocketBeagle
 
 PocketBeagle gives access to a large number of peripheral functions and GPIO via 2 dual rail expansion headers.  With 36 pins each, the headers have been left unpopulated to enable users to choose the header connector orientation or add-on board / cape connector style.  Pins are clearly marked on the bottom of the board with additional pin configurations available through software settings.  Detailed information is available in Section 7.
 
-======  Figure 24. PocketBeagle Expansion Headers ======
+====== Figure 24. PocketBeagle Expansion Headers ======
 [[images/24fig-PB-Headerphoto.png]]
 
 ==== 5.3.2 microSD Connector  ====
@@ -421,7 +421,7 @@ The board is equipped with a single microSD connector to act as the primary boot
 
 When plugging in the SD card, the writing on the card should be up. Align the card with the connector and push to insert. Then release. There should be a click and the card will start to eject slightly, but it then should latch into the connector. To eject the card, push the SD card in and then remove your finger. The SD card will be ejected from the connector. Do not pull the SD card out or you could damage the connector.
 
-====== Figure 25. microSD Connector  ======
+====== Figure 25. microSD Connector ======
 [[images/25fig-PB-SDcard.png]]
 
 
@@ -442,8 +442,7 @@ There are three boot modes:
 
 * '''Serial Boot''':  This mode will use the serial port to allow downloading of the software. A separate USB to TTL level  [http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf ''serial UART converter cable''] is required or you can connect one of the Mikroelektronika [https://shop.mikroe.com/ftdi-click ''FTDI Click Boards''] to use this method.  The UART pins on PocketBeagle's expansion headers support the interface.  For more information regarding the pins on the expansion headers and various modes, see Section 7.  
 
-
-==== Table 4. UART Pins on Expansion Headers for Serial Boot  ====
+====== Table 4. UART Pins on Expansion Headers for Serial Boot  ======
 {| class="wikitable" style="white-space:nowrap;"
 | '''Header.Pin'''
 | '''Silkscreen'''
@@ -485,7 +484,7 @@ The board can be powered from three different sources:
 
 The tables below show the power related pins available on PocketBeagle's Expansion Headers.
 
-==== Table 5. Power Inputs Available on Expansion Headers  ====
+====== Table 5. Power Inputs Available on Expansion Headers  ======
 {| class="wikitable" style="white-space:nowrap;"
 | '''Header.Pin'''
 | '''Silkscreen'''
@@ -512,7 +511,7 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 | VIN-BAT
 |}
 
-==== Table 6. Power Outputs Available on Expansion Headers  ====
+====== Table 6. Power Outputs Available on Expansion Headers  ======
 
 {| class="wikitable" style="white-space:nowrap;"
 | '''Header.Pin'''
@@ -546,7 +545,7 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 | VOUT-3.3V
 |}
 
-==== Table 5. Ground Pins Available on Expansion Headers  ====
+====== Table 5. Ground Pins Available on Expansion Headers  ======
 {| class="wikitable" style="white-space:nowrap;"
 | '''Header.Pin'''
 | '''Silkscreen'''
@@ -675,7 +674,7 @@ Table 6 Provides the LED control signals and pins.  A logic level of "1" will ca
 ====== Figure 38. User LEDs  ======
 [[images/User-LEDs-sch.png]]
 
-==== Table 6. User LED Control Signals/Pins  ====
+====== Table 6. User LED Control Signals/Pins  ======
 {| class="wikitable" style="white-space:nowrap;"
 | '''LED'''
 | '''Signal Name'''
@@ -1649,7 +1648,7 @@ When printing this document you will need to print this chart separately.
 
 === 7.1.2 P2 Header  ===
 Figure 44 shows the schematic diagram for the P2 Header.
-===== Figure 44. P2 Header  =====
+====== Figure 44. P2 Header  ======
 [[images/Header-P2-sch.png]]
 
 ====== Table 8. P2 Header Pinout ======
