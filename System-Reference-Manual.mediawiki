@@ -1649,10 +1649,10 @@ When printing this document you will need to print this chart separately.
 
 === 7.1.2 P2 Header  ===
 Figure 44 shows the schematic diagram for the P2 Header.
-====== Figure 44 P2 Header  ======
+===== Figure 44. P2 Header  =====
 [[images/Header-P2-sch.png]]
 
-====== Table 8 P2 Header Pinout ======
+====== Table 8. P2 Header Pinout ======
 Use scroll bar at bottom of chart to see additional features in columns to the right.
 When printing this document you will need to print this chart separately.
 {| class="wikitable" style="white-space:nowrap;"
