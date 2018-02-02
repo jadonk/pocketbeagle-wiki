@@ -744,7 +744,7 @@ Figure 40 is a high level block diagram of the PRU-ICSS.
 
 ====== Figure 40. PRU-ICSS Block Diagram  ======
 
-==== 6.12.3 PRU-ICSS Pin Access  ====
+==== 6.7.3 PRU-ICSS Pin Access  ====
 
 Both PRU 0 and PRU1 are accessible from the expansion headers.  Listed below are the ports that can be accessed on each PRU.
 
