@@ -117,7 +117,7 @@ PB-I2C1-WEATHER-CLICK.dtbo
 PB-I2C2-WEATHER-CLICK.dtbo
 ```
 
-## (Thunder click](https://shop.mikroe.com/thunder-click)
+## [Thunder click](https://shop.mikroe.com/thunder-click)
 
 * bb-cape-overlays: (minimum version: 4.4.20171004.2-0rcnee1)
 * Kernel: (minimum version: 4.4/4.9/4.14)
