@@ -17,7 +17,7 @@ U-Boot can currently load up to 4 overlays thru /boot/uEnv.txt
 #uboot_overlay_addr3=/lib/firmware/<file3>.dtbo
 ```
 
-To load an overlay, remove the # and replace the <fileX> with the matching name.
+To load an overlay, remove the # and replace the \<fileX\> with the matching name.
 
 # UART:
 
