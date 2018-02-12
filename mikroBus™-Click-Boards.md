@@ -63,6 +63,10 @@ PB-SPI1-OLEDB-CLICK.dts
 
 * bb-cape-overlays: (minimum version: 4.4.20180126.0-0rcnee0)
 * Kernel: (minimum version: 4.9.80-ti-r98)
+```
+PB-SPI0-MICROSD-CLICK.dts
+PB-SPI1-MICROSD-CLICK.dts
+```
 
 # RTC:
 
