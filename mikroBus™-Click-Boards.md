@@ -88,7 +88,7 @@ PB-SPI0-RTC-5-CLICK.dtbo
 PB-SPI1-RTC-5-CLICK.dtbo
 ```
 
-## [RTC6 click](https://shop.mikroe.com/rtc6-click)
+## [RTC 6 click](https://shop.mikroe.com/rtc6-click)
 
 * bb-cape-overlays: (minimum version: 4.4.20170927.0-0rcnee1)
 * Kernel: (minimum version: 4.4/4.9/4.14)
