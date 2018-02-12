@@ -46,6 +46,17 @@ PB-SPI0-ETH-WIZ-CLICK.dtbo
 PB-SPI1-ETH-WIZ-CLICK.dtbo
 ```
 
+# Display:
+
+https://www.mikroe.com/oled-b-click
+
+* bb-cape-overlays: (minimum version: 4.4.20180125.0-0rcnee0)
+* Kernel: (minimum version: 4.4.113-ti-r145/4.9.78-ti-r94/4.14.16-ti-r30)
+```
+PB-SPI0-OLEDB-CLICK.dts
+PB-SPI1-OLEDB-CLICK.dts
+```
+
 # RTC:
 
 https://shop.mikroe.com/rtc-click
