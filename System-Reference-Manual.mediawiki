@@ -589,7 +589,8 @@ The tables below show the power related pins available on PocketBeagle's Expansi
 === 5.5 JTAG Pads  ===
 
 Pads for an optional connection to a JTAG emulator has been provided on the back of PocketBeagle. 
-More information about JTAG emulation can be found on the TI website at [https://www.ti.com/jtag 'www.ti.com/jtag']
+More information about JTAG emulation can be found on the TI website at [https://www.ti.com/jtag "www.ti.com/jtag"]
+
 ====== Figure 27. JTAG Pad Connections  ======
 [[images/27fig-PB-JTAGpads.png]]
 
