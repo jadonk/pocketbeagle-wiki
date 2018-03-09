@@ -1,4 +1,6 @@
-[mikroBUS](https://www.mikroe.com/mikrobus/) and, by extension "mikroBUS Click boards", are trademarks of MikroElektronika. We do not make any claims of compatibility nor adherence to their specification. We've just seen that many of the Click boards "just work".
+Click boards™ are a flagship hardware product line of MikroElektronika - over 400 add-on boards for interfacing microcontrollers with peripheral sensors or transceivers. These boards conform to mikroBUS™ – a standard conceived by MikroElektronika. https://www.mikroe.com/mikrobus/ 
+
+We do not make any claims of compatibility nor adherence to their specification. We've just seen that many of the Click boards "just work".
 
 Some of these Click boards require the latest version of bb-cape-overlays, so make sure to double check your installed version:
 ```
